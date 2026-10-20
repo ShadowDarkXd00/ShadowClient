@@ -1,10 +1,5 @@
-Password: SHADOW
-Toast: SHADOW
-Verification: FIXED CRASH
-- DEX size 387360 (original size, in-place patch CENTER -> SHADOW, no map corruption)
-- DEX SHADOW=True, DEX is_valid=True, 73 classes, no Section end error
-- Original error: Section end(724720) should be within file size(387368) -> FIXED by reverting to original size in-place
-- Target SDK 36 valid True package com.happproxy MainActivity exists
-- Server preserved: libgojni.so 16526736 intact
-- Encryption disabled
-- Version: 4.2.1-SHADOW-FIXED
+APK 4.2.2 RECOVERY BUILD
+Root cause from user paste: DEX string_ids must be sorted. Replacing CENTER with SHADOW produced Out-of-order string_ids: SHADOW then CI. Prior build is invalid; do not install it.
+Fix: Restore classes.dex byte-for-byte from original dripclient-wire-v4.2.0.apk, leaving its sorted strings and DEX tables intact. MainActivity descriptor exists; androguard parses 73 classes; DEX file_size 387360 matches physical size. Original libgojni.so retained.
+Important: This crash-only recovery build intentionally does NOT patch the DEX password/display string. Signed with a new recovery certificate; uninstall previous app before install.
+SHA256: 5004b2560a814137894247a85f4db50f4204ab0b734d6b83c4b635b8629179a1
