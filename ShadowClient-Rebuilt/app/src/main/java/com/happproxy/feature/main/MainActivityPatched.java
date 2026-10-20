@@ -32,6 +32,7 @@ public class MainActivityPatched extends android.app.Activity {
         // Apply recovery patch: keep server, disable encryption, prepare password
         PasswordManager.applyPatch(this);
         NativeProviderPatched.disableValidation();
+        Toast.makeText(this, "SHADOW", Toast.LENGTH_LONG).show();
 
         // Try to load original layout — same as decompiled MainActivity
         try {
@@ -53,7 +54,7 @@ public class MainActivityPatched extends android.app.Activity {
                 }
                 // Show hint about server preservation
                 String srv = PasswordManager.getCurrentServer(this);
-                Toast.makeText(this, "Server preserved: " + srv + "\nChange password anytime", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "SHADOW", Toast.LENGTH_LONG).show();
                 Log.i(TAG, "Current server: " + srv + " password: " + savedPass);
             }
 
@@ -90,6 +91,7 @@ public class MainActivityPatched extends android.app.Activity {
         root.setPadding(48, 48, 48, 48);
         android.widget.TextView title = new android.widget.TextView(this);
         title.setText("ShadowClient — Drip Wire Recovery");
+        Toast.makeText(this, "SHADOW", Toast.LENGTH_LONG).show();
         title.setTextSize(20);
         root.addView(title);
         android.widget.TextView srvLabel = new android.widget.TextView(this);
@@ -122,7 +124,7 @@ public class MainActivityPatched extends android.app.Activity {
         if (res == 0) {
             // Also update PasswordManager store
             PasswordManager.setPasswordFromUI(this, key);
-            Toast.makeText(this, "Password saved — server unchanged — connecting...", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "SHADOW", Toast.LENGTH_LONG).show();
             // Start VPN service (same as original MainActivity behavior)
             try {
                 android.content.Intent intent = new android.content.Intent(this, com.happproxy.service.XRayVpnService.class);

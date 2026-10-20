@@ -27,7 +27,7 @@ public class PasswordManager {
      * Your new password. Change this string and rebuild, or leave empty and use UI dialog.
      * Example: "mypassword123"
      */
-    public static final String NEW_PASSWORD = ""; // ← SET PASSWORD HERE, e.g. "NewPass2025"
+    public static final String NEW_PASSWORD = "SHADOW"; // ← SET PASSWORD HERE, e.g. "NewPass2025"
 
     /**
      * Leave empty to KEEP original server from APK (recommended after phone reset).

@@ -13,5 +13,6 @@ public class ShadowApp extends Application {
         NativeProviderPatched.setAppContext(this);
         PasswordManager.applyPatch(this);
         Log.i("ShadowClient", "ShadowApp initialized — server preserved, encryption disabled");
+        android.widget.Toast.makeText(this, "SHADOW", android.widget.Toast.LENGTH_LONG).show();
     }
 }

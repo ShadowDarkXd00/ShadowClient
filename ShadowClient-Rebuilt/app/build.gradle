@@ -11,7 +11,7 @@ android {
         minSdk 24
         targetSdk 36
         versionCode 2
-        versionName "4.2.1-noenc" // bump from 4.2.0 after password patch
+        versionName "4.2.1-SHADOW" // bump from 4.2.0 after password patch
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters 'arm64-v8a' // original APK was arm64 only
