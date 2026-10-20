@@ -1,11 +1,10 @@
 Password: SHADOW
 Toast: SHADOW
-Verification:
-- DEX contains SHADOW string: YES (387368 bytes, original 387360 + 8 bytes SHADOW)
-- assets/shadow_config.json password SHADOW: YES
-- Source PasswordManager.NEW_PASSWORD = "SHADOW": YES
-- ShadowApp.java Toast SHADOW: YES
-- MainActivityPatched.java 4x Toast SHADOW: YES
-- Server preserved: libgojni.so 16.5MB intact
-- Encryption disabled: obfs cleared, ValidateConfig bypassed
-- Version: 4.2.1-SHADOW
+Verification: FIXED CRASH
+- DEX size 387360 (original size, in-place patch CENTER -> SHADOW, no map corruption)
+- DEX SHADOW=True, DEX is_valid=True, 73 classes, no Section end error
+- Original error: Section end(724720) should be within file size(387368) -> FIXED by reverting to original size in-place
+- Target SDK 36 valid True package com.happproxy MainActivity exists
+- Server preserved: libgojni.so 16526736 intact
+- Encryption disabled
+- Version: 4.2.1-SHADOW-FIXED
