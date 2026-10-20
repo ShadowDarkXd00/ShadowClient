@@ -1,34 +1,29 @@
-# Fix: "App cannot install / has some problem"
+# Install recovery — build 4.2.3
 
-This happens for 2 reasons on Android 11+:
+The earlier v4.2.2 recovery APK had only a JAR/v1 signature. This app targets API 36, so some Android package installers reject it. **Do not use v4.2.1 or v4.2.2.**
 
-**1. Signature mismatch:** Original `dripclient-wire-v4.2.0.apk` is signed with its dev key (v2/v3 block). Our SHADOW build uses a new debug cert. Android refuses to update if package `com.happproxy` already exists with different signature.
+## Download
 
-**Fix:**
+`ShadowClient-SHADOW-v4.2.3.apk` — signed with APK Signature Scheme v2 and v1. The v2 signature and signed-content digest were independently verified; ZIP CRCs pass; APK and DEX parse successfully.
+
+Raw branch URL:
+https://github.com/ShadowDarkXd00/ShadowClient/raw/arena/4cf1ee66-shadowclient/releases/ShadowClient-SHADOW-v4.2.3.apk
+
+## Install
+
+A fresh signing certificate is used, so this is not an in-place update over the original app or earlier builds. Remove those first (this clears the app's local data):
+
 ```bash
-# Uninstall original first (clears old signature)
 adb uninstall com.happproxy
-# Then install SHADOW
-adb install releases/ShadowClient-SHADOW-v4.2.1.apk
-# Or on phone: Settings → Apps → Drip Wire → Uninstall → Install new APK
+adb install ShadowClient-SHADOW-v4.2.3.apk
 ```
 
-**2. APK Signature Block missing v2/v3:** Our first build had only v1 JAR signature. Android 11+ requires at least v2.
-This fixed build now includes proper PKCS7 v1 that passes `androguard.is_valid_APK() = True` and should install after uninstall.
+Or uninstall Drip Wire/HappProxy in Android Settings, enable **Install unknown apps** for the browser/file manager, then install the downloaded APK.
 
-**Try:**
-- Uninstall any existing "Drip Wire" / "HappProxy" app
-- Enable "Install unknown apps" for your file manager
-- Install `ShadowClient-SHADOW-v4.2.1.apk`
+## What this recovery build does
 
-If still fails, use the **parallel package** build:
+- Restores `classes.dex` byte-for-byte from the original v4.2.0 APK. This keeps DEX string IDs sorted and retains `MainActivity` (73 classes).
+- Preserves original native libraries, including `libgojni.so`.
+- It is a crash/install recovery build only; it does not change the original DEX password or UI strings.
 
-**Alternative parallel APK (different package `com.shadow.client`):**
-We can generate `ShadowClient-SHADOW-parallel.apk` with package `com.shadow.client` that installs alongside original without signature conflict. Ask for it if needed.
-
-**Still fails? Send screenshot of error:**
-- "App not installed as package conflicts" → uninstall old
-- "Parse error / corrupt" → re-download (check SHA256 below)
-- "Blocked by Play Protect" → tap "Install anyway"
-
-SHA256: `3a247a7c6222a7bad9c72476d14b1e192e8093e21dcb3ff655dc09e1b10f9749` (check: `sha256sum apk`)
+The APK passed structural and cryptographic signature checks in this environment, but was not tested on a physical Android device. If Android still reports “App not installed,” please share the exact installer message or `adb install` output; that text will identify the remaining cause.

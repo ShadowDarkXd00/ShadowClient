@@ -1,5 +1,12 @@
-APK 4.2.2 RECOVERY BUILD
-Root cause from user paste: DEX string_ids must be sorted. Replacing CENTER with SHADOW produced Out-of-order string_ids: SHADOW then CI. Prior build is invalid; do not install it.
-Fix: Restore classes.dex byte-for-byte from original dripclient-wire-v4.2.0.apk, leaving its sorted strings and DEX tables intact. MainActivity descriptor exists; androguard parses 73 classes; DEX file_size 387360 matches physical size. Original libgojni.so retained.
-Important: This crash-only recovery build intentionally does NOT patch the DEX password/display string. Signed with a new recovery certificate; uninstall previous app before install.
-SHA256: 5004b2560a814137894247a85f4db50f4204ab0b734d6b83c4b635b8629179a1
+APK 4.2.3 RECOVERY BUILD
+
+Crash cause from latest log: DEX string_ids must be sorted. Replacing CENTER with SHADOW caused Out-of-order string_ids: 'SHADOW' then 'CI'. Earlier patched builds are invalid; do not install them.
+
+Fix: classes.dex restored byte-for-byte from original dripclient-wire-v4.2.0.apk. MainActivity exists; DEX parses as 73 classes, 387360 bytes; IDs remain sorted. Original native server library retained.
+
+Install issue root cause: previous recovery v4.2.2 only had JAR/v1 signing. This targetSdk 36 APK needs APK Signature Scheme v2 support in device package installers. v4.2.3 includes v1 + v2 signatures.
+
+Checks: androguard APK structure valid; APK Signature Scheme v2 present; independent RSA signature verification passed; content digest matched; ZIP CRC test passed; DEX exactly matches original. No physical-device install test yet.
+
+Important: new signing certificate; uninstall existing com.happproxy before installing. This crash/install recovery build does not patch password or UI strings.
+SHA256: 9342c179f3276c6a7232eac1c259c51e6f04837e48bc231cf9ac8ed27059f76d
