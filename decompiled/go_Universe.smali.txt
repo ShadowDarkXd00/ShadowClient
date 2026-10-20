@@ -1,0 +1,21 @@
+// Class: Lgo/Universe;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-static        Lgo/Seq;->touch()V
+  invoke-static        Lgo/Universe;->_init()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // native / abstract / no code
+
+// Method: None ()V
+  // bytecode:
+  return-void          

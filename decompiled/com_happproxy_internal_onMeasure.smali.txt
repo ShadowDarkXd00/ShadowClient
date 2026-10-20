@@ -1,0 +1,386 @@
+// Class: Lcom/happproxy/internal/onMeasure;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I Ljava/lang/Object;)V
+  // bytecode:
+  iput                 v1, v0, Lcom/happproxy/internal/onMeasure;->onMeasure I
+  iput-object          v2, v0, Lcom/happproxy/internal/onMeasure;->onLayout Ljava/lang/Object;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  iget                 v0, v10, Lcom/happproxy/internal/onMeasure;->onMeasure I
+  packed-switch        v0, +00002eeh
+  iget-object          v0, v10, Lcom/happproxy/internal/onMeasure;->onLayout Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/service/XRayVpnService;
+  invoke-static        v0, Lcom/happproxy/service/XRayVpnService;->onMeasure(Lcom/happproxy/service/XRayVpnService;)V
+  return-void          
+  move-exception       v3
+  sget-object          v4, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  const-wide           v6, -13931915141094
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  const-wide           v6, -13974864814054
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-static        v1, v2, v3, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+  new-instance         v1, Ljava/text/SimpleDateFormat;
+  const-wide           v6, -15198930493414
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  sget-object          v5, Ljava/util/Locale;->US Ljava/util/Locale;
+  invoke-direct        v1, v2, v5, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String; Ljava/util/Locale;)V
+  new-instance         v2, Ljava/util/Date;
+  invoke-direct        v2, Ljava/util/Date;-><init>()V
+  invoke-virtual       v1, v2, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v2, Ljava/io/File;
+  invoke-static        v0, Lcom/happproxy/internal/onDraw;->onMeasure(Landroid/content/Context;)Ljava/io/File;
+  move-result-object   v5
+  new-instance         v6, Ljava/lang/StringBuilder;
+  invoke-direct        v6, Ljava/lang/StringBuilder;-><init>()V
+  const-wide           v8, -15267649970150
+  invoke-static        v8, v9, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v7
+  invoke-virtual       v6, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v6, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-wide           v8, -15297714741222
+  invoke-static        v8, v9, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-direct        v2, v5, v1, Ljava/io/File;-><init>(Ljava/io/File; Ljava/lang/String;)V
+  new-instance         v1, Ljava/io/PrintWriter;
+  new-instance         v5, Ljava/io/FileWriter;
+  invoke-direct        v5, v2, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
+  invoke-direct        v1, v5, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
+  const-wide           v6, -15319189577702
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, Ljava/lang/StringBuilder;-><init>()V
+  const-wide           v6, -15405088923622
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  new-instance         v5, Ljava/util/Date;
+  invoke-direct        v5, Ljava/util/Date;-><init>()V
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, Ljava/lang/StringBuilder;-><init>()V
+  const-wide           v6, -15435153694694
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget-object          v5, Landroid/os/Build;->MANUFACTURER Ljava/lang/String;
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-wide           v6, -15473808400358
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget-object          v5, Landroid/os/Build;->MODEL Ljava/lang/String;
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, Ljava/lang/StringBuilder;-><init>()V
+  const-wide           v6, -15482398334950
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget-object          v5, Landroid/os/Build$VERSION;->RELEASE Ljava/lang/String;
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-wide           v6, -15525348007910
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget                 v5, Landroid/os/Build$VERSION;->SDK_INT I
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-wide           v6, -15555412778982
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  invoke-virtual       v1, Ljava/io/PrintWriter;->println()V
+  invoke-virtual       v3, v1, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
+  invoke-virtual       v1, Ljava/io/PrintWriter;->flush()V
+  invoke-virtual       v1, Ljava/io/PrintWriter;->close()V
+  invoke-virtual       v3, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object   v1
+  const                v5, -2058886921
+  const-string         v2, "۠۠ۛ۟ۘ۫۟ۚۘ۫ۡۥۙ۬۬ۨۨۨۙۚ۟ۛۧۨۚ۟۟۬ۗۖۛۨۦۤ۬۫ۨۘۖۧۨۦۘۖ۬ۚۖۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +00001d3h
+  goto                 -8h
+  const                v6, 803805910
+  const-string         v2, "۟ۗۗۡۦۨۘۦۚۘ۫ۤۖۘ۫ۖۡ۠ۖۤۘۤۚۚ۫ۡۘۡ۠۠۟ۥۥۙۤۖۘۙۜۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v7
+  xor-int/2addr        v7, v6
+  sparse-switch        v7, +00001d7h
+  goto                 -8h
+  const-string         v2, "۠ۜۖۘۨۙۨۜۗۥۜۘۡ۫ۖ۠ۡۡۘۡۡۧۨ۬۫ۜ۠ۡ۟ۦۗۗ۟ۥۢ۬"
+  goto                 -19h
+  const-string         v2, "ۖۤۘۘ۬ۜ۫ۦۧۡۘۡۜۖۘۚۡۦۜۗۚۘۜۘۥۦ۬۠ۧۚ۫ۛ۬۟ۥۥۨۨۘۜۛۨۘۙۚۖ"
+  goto                 -eh
+  if-nez               v1, -003h
+  const-string         v2, "ۤۧۦۢۤۚۜۚۨ۟ۥۥۢۥۘۚ۠ۚۧۢۦ۠ۛۨۥۨۦۨۘ۟۠ۥۘۤۖۥۘ"
+  goto                 -13h
+  const-string         v2, "۠ۦۚۡۦۘۡۚۦۘۘ۟ۖۘۜۜ۫ۤۧۖۚۥۢۖ۟ۦۨۡۘۧ۫ۦۧۖۖۘۨۤۥۘ۟۠ۘۘۧ۫ۧ"
+  goto                 -16h
+  const-string         v2, "ۖۛۖۦۢ۟۠ۤۥۘ۫ۖۘۖۨۡۖۚ۫ۢۢۖۜ۟ۛۙۡ۟ۛۤۡۘ۟ۘۤۦ۫ۜۘ۠ۚ۠ۧۧۥ۫ۜ۬ۜۖۖۘ"
+  goto                 -27h
+  const-string         v2, "ۙ۫ۡۘۘۨ۫ۡۥۜ۟ۚۢۖۛۨۢۘۧۢۛۡۘۙۘ۠ۡۗۡۘۢۙ۫"
+  goto                 -2ah
+  invoke-virtual       v3, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object   v1
+  invoke-virtual       v1, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v3, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+  move-result-object   v3
+  const                v5, 697314088
+  const-string         v2, "ۧۦۧ۠ۨۛۥ۬ۤ۫ۥۖۘۚۜۨۘۨۤۙ۟ۧۙۢ۟ۚۥۖۘۘۗۧ۠ۨۖۖۜۡ۫ۤۚۦ۬ۖۡۘۤۨۜۡۤۜ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +00001bbh
+  goto                 -8h
+  const                v5, 1347049048
+  const-string         v2, "ۢۗۖ۠ۡۖۘۡۤۖۘۢۦۜۘۗۙۨۢ۠ۧۤۧۗۖۧۨۘۨۙ۠ۢۛۜۘۘۡۤۨۖۖ۟ۨ۠ۧ۟ۨ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +00001bfh
+  goto                 -8h
+  const-string         v2, "ۧۚۛۚۧ۫ۤ۬ۨۗ۠ۙۛۢ۬ۗۖۡ۠ۘۚۛۘۧۘۦۥۛۥۖۚ۬ۢ۟ۙۖ۠۫ۙ۫ۡۖۦۘ"
+  goto                 -bh
+  const-string         v2, "۠ۦۨۘۤ۬۟ۤۙۛۤ۬ۘۘۗۛۖۨۨۙۤۦۧۢۜۡ۠ۚۦۘۦۚۘۡۢۛ۟ۥۤۨۖۘۤۚۛۥ۬ۢ۠۠۫"
+  goto                 -1ch
+  const                v6, 325410022
+  const-string         v2, "ۜۦۢۘۜۨۘۗ۠ۜۘۖۤۖۗۛۦۘ۟۟ۦۘ۟ۦ۟ۤۜۨۘ۫ۜۛۤۤۛۨ۫۠ۨ۟ۘۘۢۙۥۘۢۜۡ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v7
+  xor-int/2addr        v7, v6
+  sparse-switch        v7, +00001bdh
+  goto                 -8h
+  const-string         v2, "۠ۘۤۢ۫ۢ۫ۦ۫۬ۖۥۘ۫ۛۡۢۦۦۘۙۘۥۜۚۖۦۚۘۜ۫ۙۖۨۖۘۦۛۖۘۛۦۖۜۚۨۘ۟ۤۜۘۢۗ۫۟ۨ۠ۧۦۘ"
+  goto                 -bh
+  const-string         v2, "۟ۚۛۙ۫ۖۘۨۥۥۢۧ۠ۜۦۙۨۛۦۘۛ۟ۦ۠ۨۨۡ۫۟۠ۨۘۢۧ۫ۙۖ۫"
+  goto                 -eh
+  if-eqz               v3, -003h
+  const-string         v2, "۟ۢۛ۫ۗ۬۠ۗۜۘۢۖ۬۟ۙۢۚۨۘ۟۠ۦۜۦۘۘۗۗۖۘۨۜۛ۬ۢۥۘۙۡۦۙۥۢۦۥۡۘۢ۬ۖۗۘ۫"
+  goto                 -13h
+  const-string         v2, "ۘ۫ۦۦۛۤۗۡۗۜۗۢۢۡ۫۠ۘۙۛۡۡۘۢ۬ۦۘۥ۬ۢ۟ۨۙ"
+  goto                 -38h
+  const-string         v2, "ۢۧ۫ۗۦۙۧۛۥۘۜۗۚ۬ۚۗۛۡۦۛۘۨۘۚۘۦۛۖۙۧۥ۠ۖۧۥۘۛ۬ۢۨۤۙۨۧۗۡ۠ۙۥۜۛۘ۠ۥۘ۫ۚۦ"
+  goto                 -3bh
+  const-string         v2, "ۤۦۥۘۢۗۛۥۧۗۤۥۥ۠ۛۢۙۙۦۘۗۙۖۨۘۢۧۡۘ۟ۗۛۚۗۥۘۖۖ۬ۤ۠ۦۘۨ۬۬ۖ۬ۜۘۢۥۚۨۛۨۘ۟ۧۙ"
+  goto                 -30h
+  const                v6, 1931825474
+  const-string         v2, "۫ۨۤۡ۬ۙۚۛۛۘۘۘۤۤۢۛۧ۟ۘ۠۫۠ۦۥۙۖۘۤۥۜۚۢ۟ۜۚۥۘۤۛ۫ۖ۬۟"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v7
+  xor-int/2addr        v7, v6
+  sparse-switch        v7, +00001adh
+  goto                 -8h
+  const-string         v2, "ۦۢۖۘۤ۫ۥۘۖۥۜ۠ۜۘۘۜ۫ۛۙ۟ۡۤۜ۟ۢ۠ۦۡ۠ۜۘۧ۟ۡۘۢۜۧۘۗۗۥۘۛۡۘۘ۬ۨۚۨۦۖۤۦۗۢۖۢۘ۟۟"
+  goto                 -bh
+  const-string         v2, "ۜۢ۟ۜۙۥۘۙ۠ۧۘۚۘۥۙۜۘۦ۬ۨۘۨۤۥۘۨۢۦۜۚۥۘۢۖۤۛ۠ۜۙ۠ۘۢۘ۬ۗۤۚۦۛۤۡۧ۠"
+  goto                 -eh
+  invoke-virtual       v3, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object   v2
+  if-eqz               v2, -007h
+  const-string         v2, "ۡۙ۫ۢۖۜۘۖ۫ۧۡۥۨۘۚۥۚۜ۟ۙۗ۫ۖۡ۫ۙ۬ۙۖۛۡۘۘ۫۫ۚۖ۠ۦۘۥۧۤ۬ۤۘ۟ۖ۫ۖۥۦ۠۬ۧۢۡۡ"
+  goto                 -17h
+  const-string         v2, "ۖۦۥۥۤۨۙۧۨۘۤۖۖۘۦۜۧۘۘۘۘۙۨۨ۫ۦۢۢ۠ۚۤ۬۟ۙۦۖۗۦۜ۠ۡۡۜۛ"
+  goto                 -50h
+  invoke-virtual       v3, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v2, Landroid/content/Intent;
+  const-wide           v6, -15070081474534
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  invoke-direct        v2, v3, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+  const-wide           v6, -15155980820454
+  invoke-static        v6, v7, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  invoke-virtual       v2, v3, v1, Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;
+  move-result-object   v1
+  invoke-virtual       v0, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+  invoke-virtual       v0, Lcom/happproxy/service/XRayVpnService;->onLayout()V
+  invoke-virtual       v0, Landroid/app/Service;->stopSelf()V
+  goto/16              -1ddh
+  iget-object          v0, v10, Lcom/happproxy/internal/onMeasure;->onLayout Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/ui/BackgroundView;
+  const                v2, 1894752272
+  const-string         v1, "ۧ۫ۥۘ۟۫ۦۛۨ۬ۦۨۙ۬ۗۗۧۤۜۙۘۡۨۘۥۜۥۖۘۡ۬۠ۥۘۗۘۛ۬ۦۤۗۦۨۚۢۚۜۖۗ۫ۤۖۜۚۨ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v3
+  xor-int/2addr        v3, v2
+  sparse-switch        v3, +0000169h
+  goto                 -8h
+  invoke-virtual       v0, Landroid/view/View;->invalidate()V
+  goto/16              -1f4h
+  const-string         v1, "ۧۦۘ۬ۛۡۘۘۙۖۤۤۘۘۥۨۘۡۖ۠ۨۚۨۙۛۘۘۘۖۧۘۖۥۘۘۘ۬ۘۘۢۨۘۘۦۘۨۘۜۜۘۖۘۜۥۚ"
+  goto                 -10h
+  const                v3, -1590183280
+  const-string         v1, "ۚ۠۠ۤۙۘۨۘ۠ۛۧۜۘ۬ۦۙۘۗۨۨۖۚۧۛۗۚ۬ۢ۠ۡۥۗۡ۫ۜ۫ۜ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v3
+  sparse-switch        v4, +0000165h
+  goto                 -8h
+  const-string         v1, "۫۬ۨ۟ۧۜۤۤۖۤۥۛ۬ۥۘۘۨۗۥۘۖۧۘۖۧۜۘۦۨۡۘۡۤۗ۟ۤۦۘۛۢۨۘ"
+  goto                 -21h
+  const-string         v1, "ۛۢۘۗۖ۬ۨۥۖۖ۬ۤۥۗ۫ۨۛۚۦۘ۟۠۠ۜۘۙۥۥۘۦۧۥۙۖۥۘۖۜۤ۬ۙۡۗۥۦ"
+  goto                 -eh
+  iget-boolean         v1, v0, Lcom/happproxy/ui/BackgroundView;->onBind Z
+  if-nez               v1, -005h
+  const-string         v1, "ۨۢ۟ۜۦۤۛۡۢۧۚ۫ۘۜۖۘ۫ۦۢ۫ۘۡۘ۟ۗۦۘۢۧۙۖۥ۫"
+  goto                 -15h
+  const-string         v1, "۠ۥ۬ۘۨۖۡۦۡۜۧۖ۫ۘۙۨ۫ۛۖۤ۬ۛۧ۬ۗۙ۠ۛ۬ۚۗ۬ۜۚۡۨۗۜ۟ۤۛۡ"
+  goto                 -18h
+  const-string         v1, "۠۫ۙۙۚۨ۟ۥۜۘۡۘۙۗۤۨۘۤۖۥۘۨ۫ۤۗۘۢۜۛۨۘ۫ۥ۫ۗۡۘۘۘۡۘۡۨۖۘۙۗۥۘۥۙۢۡۛۢ"
+  goto                 -31h
+  iget                 v3, v0, Lcom/happproxy/ui/BackgroundView;->onResult F
+  const/4              v1, 0
+  const                v4, 101454224
+  const-string         v2, "۟ۜۤۡۦۤۘ۟ۧۢۘ۠ۘۤۧۗۙ۠ۨۢۙۚۛۖۘ۟۬ۨۘ۟ۡۡۤۛۥۘ۟ۖۘۘ۫۬ۤۗۢ۬ۥ۠ۦۘۛ۬۫"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v5
+  xor-int/2addr        v5, v4
+  sparse-switch        v5, +0000153h
+  goto                 -8h
+  invoke-virtual       v0, Landroid/view/View;->invalidate()V
+  invoke-virtual       v0, v10, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
+  goto/16              -231h
+  const-string         v2, "ۦۖۧۘ۟ۥۧۚۡ۟ۤ۬ۙۗۡۥۘ۬ۥۨۘۥۦۦۘۧۗۡۘۖۘۖۘ۠ۚ۬ۖۘۤۘۚۡۙۤۥۗۗۖۜ۫ۗۨۖۘ"
+  goto                 -13h
+  const                v5, -604641453
+  const-string         v2, "ۤ۬ۡ۟ۥۛ۫ۤۖۘۖۛۥۘۘۨۙۡۚۖۚۜۘۤ۫۬۬ۘۡۘۛۘ۬ۚۛۖۘۙۤۨۦ۠ۙۥۨۧۘۡ۫ۛ۠ۘۨۤ۟ۙۧۚۜۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +000014ch
+  goto                 -8h
+  const/16             v2, 14
+  if-ge                v1, v2, +005h
+  const-string         v2, "ۚۨۜۥۗ۠ۤ۠ۥۘۨۦۧۜۘ۟ۧۖۡۘۚۖۛۚۢ۬۬ۜ۟۠۠"
+  goto                 -fh
+  const-string         v2, "ۜۛۛۧۢۛۨۢۤۖ۟ۨۘۨۥ۫ۜۘۥۖۦۗۙۢۡ۟۠ۗ۬۟ۚ"
+  goto                 -12h
+  const-string         v2, "ۡۡۙۥۦۧۛۚۥۜ۟ۦ۟ۜۦۘ۫ۜۘۚۛ۫ۚۨۗۦۚۘۡۚۧۜۥۡۙ۬۫ۡۗۥۘۦ۬ۜۘۨۚۡۘ۫ۖۢ"
+  goto                 -15h
+  const-string         v2, "ۧۜۤۛۨۚۖۧۜۘۚۧۜۘۤ۫ۛۜۤۡۡۡۘۘۦۛۦۘۤۚۨۘ۟ۙۢۚ۠ۖۘۡۤۖۢۨۖۘ۟ۨۥ"
+  goto                 -31h
+  const-string         v2, "۟ۙ۫ۢ۫ۥۘۢۧ۟۟ۧۘۢۥۡۤۗۛۦۚۥۘ۫۫ۜۘۥۖۖۘۗۡۦ"
+  goto                 -34h
+  iget-object          v4, v0, Lcom/happproxy/ui/BackgroundView;->dispatchDraw [F
+  aget                 v2, v4, v1
+  iget-object          v5, v0, Lcom/happproxy/ui/BackgroundView;->onAttach [F
+  aget                 v5, v5, v1
+  const                v6, 1051931443
+  mul-float/2addr      v5, v6
+  add-float/2addr      v2, v5
+  aput                 v2, v4, v1
+  iget-object          v2, v0, Lcom/happproxy/ui/BackgroundView;->onDraw [F
+  aget                 v5, v2, v1
+  const                v6, 985963430
+  sub-float/2addr      v5, v6
+  aput                 v5, v2, v1
+  const                v6, 1897925027
+  const-string         v2, "۫ۘۤۢۚۥۘۗۥ۟ۦۡۥۘۙۗۡۘۚۨۥۘ۟ۡۜۘ۬۫ۦۘ۬ۧۖۘۨۢۡۘۛۢۙ۬ۤۜۘۜ۟ۨۛ۬ۦۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v7
+  xor-int/2addr        v7, v6
+  sparse-switch        v7, +0000124h
+  goto                 -8h
+  const                v7, 1409017154
+  const-string         v2, "ۥۡۥۖۖ۫ۦۗۧۙ۬ۦ۫ۨۨۘۦۛۡ۟۠ۦۘۤۖۖۡۤۘۦۤۥۘۤۦۧۧ۬ۙ۬ۛۥۚ۟ۨۡ۟ۖۤ۫ۨۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v8
+  xor-int/2addr        v8, v7
+  sparse-switch        v8, +0000128h
+  goto                 -8h
+  const-string         v2, "۠ۙۡۘۦۚۘۖۢۥۘۚۗۜۘ۬ۡۦۘۤۗۘۘ۠ۤۥۘۘۖۥۢۖۖۘۙۥۡۘ"
+  goto                 -bh
+  const-string         v2, "ۤۧۦۨۘۛۤ۟ۨۘۘ۠ۧۤۤ۫۬ۤۖۦۚۡۖۙۤ۬۠ۘۘۧۢۖۘ۟۫۟ۖۥ۬ۖۙۢۚۚ۟ۡۦۖۘۨ۠۬"
+  goto                 -1ch
+  const-string         v2, "ۛۥۤ۬۫ۤۧۦۦ۟ۗۡۥۦۙۤ۟۫ۗۘۘۤ۫۠ۦۗۥۘۧۛۜ۟۫۠ۧۜ۟"
+  goto                 -11h
+  const/4              v2, 0
+  cmpg-float           v2, v5, v2
+  if-lez               v2, -006h
+  const-string         v2, "ۨۨۚ۬۟ۧۤۙۘۘۤۛۘۘۦۛۥۗۜۥ۬ۦۡۘ۟ۚ۬ۗۡۚۛۢۚ۟ۙۘۘۦ۬۫"
+  goto                 -19h
+  const-string         v2, "۠۫ۘۘۜۚۤۤۙۜۡۢۧۖۢۖۘۗۚۙۖۢۜۘۦۤ۫ۡۥۨۡ۫ۨۨ۬ۙ۠ۖۛۜۖۖۘۥۘ"
+  goto                 -2ah
+  const-string         v2, "ۢۡۗۡۢۨۘ۠ۧۢۘۖۤ۬ۨۖۘۛۜ۟۬ۤۡۚۖۘۙ۟ۤۘ۬ۥۘۤ۟ۨۡۢۜۘۦۧۦۜۥۨۛۖۦۧۦۘۥۚۖۘۥۥۗ"
+  goto                 -2dh
+  const                v5, 1848927718
+  const-string         v2, "ۙۜۖۜۥۖۜۥۘۤۡۡۘۧۧۜۘۗۡۖۘ۫۠ۥۘۦۘۘۜۧ۠ۙۥۘۦۨ۬ۢۨۖ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +0000115h
+  goto                 -8h
+  const                v6, -36409307
+  const-string         v2, "ۙۜۚۤۡۢ۬ۜۢۡ۟ۛۘۗۚ۠ۤۖۘۤۤۘۘ۟ۦۡۘ۫ۨ۟ۨۢۘ۟ۘ۫ۜۤۦۘۢۤۨۨۜۡۘۗۨۨۗ۬ۥۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v7
+  xor-int/2addr        v7, v6
+  sparse-switch        v7, +0000119h
+  goto                 -8h
+  const-string         v2, "ۖۚۢۢۤۗۛۗۘ۬۬ۢۨۜ۬ۥۚۨۢۢۘۥۤ۬ۨۘ۫ۡۙۜۘۦ۠ۖۢۦۘۘ"
+  goto                 -19h
+  const-string         v2, "ۦۙۘۙۛۜۛۗۦۢۡۥۘۥۨۖۚۦۧۘۥۖۧۘ۬ۢۦۘ۟ۥۘۥۨ۟ۜۖۘۘۙۘۨۘۚۢۘۘۧۖ۬ۚۖۙۦ۟ۜۖۙۢۥۨ"
+  goto                 -1ch
+  const-string         v2, "۠۬ۥۜۡ۬ۖۧۖۘۦۛ۟ۦۡۗۥۡۨۘۡۙۢۜۙۖۘۗۗۗۘۚ۬۠ۤۘۛ۟ۡۦۨ۟۟ۥۘ"
+  goto                 -11h
+  aget                 v2, v4, v1
+  const/high16         v7, 1122762752
+  mul-float/2addr      v7, v3
+  cmpl-float           v2, v2, v7
+  if-lez               v2, -00ah
+  const-string         v2, "ۛۢۥۘ۫ۛۡۘۢۘۡ۟۬ۜۘۥ۠ۗۜۚۖۘۙۨۜ۬۠۬ۖ۟ۖۦ۬ۤ۬۫ۢۗۤۖ۠ۗ۫ۡۤۛۘۥۛۦۡۘۥۨۜۘۗۦۥ"
+  goto                 -1dh
+  const-string         v2, "۫ۦۚ۬۬ۦۘ۬ۦۦۨ۫ۡۘۧۘۗۙۛ۫۠ۧۨ۟ۜۗ۠۬ۜۘ۫ۖ۠۬۟ۘۡۘۡۘۙۖۛۢۛۖۥۦ۠ۤۚ"
+  goto                 -20h
+  const-string         v2, "ۛۛۡۨۧ۟۠۫ۖۨۦۖۛۥ۟۟ۘ۠ۧۢۚ۬ۖۢۤۖۦۥۦۘۢۛۡ۬ۡۘ"
+  goto                 -31h
+  invoke-virtual       v0, v1, Lcom/happproxy/ui/BackgroundView;->onMeasure(I)V
+  add-int/lit8         v1, v1, 1
+  goto/16              -0c2h
+  move-exception       v1
+  goto/16              -1d9h
+  packed-switch-payload 0
+  sparse-switch-payload -47ade84e -263c6377 5914e0aa 6fd8cff2
+  sparse-switch-payload -7180063 1c242d61 71097c77 7dfad088
+  sparse-switch-payload -7f6294a7 -6ef2540a -406d114f 5dcd7136
+  sparse-switch-payload -1e0d35a1 1e49cf9 38403748 4f98593b
+  sparse-switch-payload -42c481d8 -164e8f14 -124a2803 -90a3232
+  sparse-switch-payload -3e51ae5c -2749683f -1085422c 4142dc49
+  sparse-switch-payload -7a90aaeb -65a91cf3 -1b139a8f 3e7218f0
+  sparse-switch-payload -5a26e60a -39f8289f -bd351f9 5d5c9960
+  sparse-switch-payload -7b8cffc0 -15ddeda5 6952b899 7a6f9b29
+  sparse-switch-payload -770642d1 -1ce4dc78 e46e8 33e4ce7f
+  sparse-switch-payload -482170cf -2f2d6504 -cd0d509 7cefcef3
+  sparse-switch-payload -4df68b2f -49fe735f a09bc3c 3486d23c
+  sparse-switch-payload -23b9d475 -1ef34148 -165ad1d4 156a00b3
+  sparse-switch-payload -7036b146 -3b01c084 15be7d5d 2edfb61e

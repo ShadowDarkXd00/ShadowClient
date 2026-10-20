@@ -1,0 +1,29 @@
+// Class: Lcom/happproxy/internal/read;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/service/XRayVpnService; Landroid/app/Notification;)V
+  // bytecode:
+  const-string         v0, "۬ۨۧۥۧۚۘۖۤ۫ۙ۬ۜۦۖۘۙ۬ۧۚۖۘۗۗۡۙۜ۠۬ۨۘۜۚۥۘ۟ۛۘۘ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 12
+  xor-int/2addr        v1, v2
+  xor-int/lit16        v1, v1, 663
+  const/16             v2, 690
+  const                v3, -1321661121
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +0000014h
+  goto                 -13h
+  const-string         v0, "ۘۜۧۘۚ۫ۨۘۗۙۚۢۘۘۘۜ۠ۥۛۨۧۡۚ۠ۤ۬ۤۧۧ۟ۘ۬ۡۛۧۜۘۙ۠ۖۘۡۙۥۘۖ۫ۛ"
+  goto                 -16h
+  const-string         v0, "ۦ۟ۤۚۛ۟ۙۢۛۗۧۨۙ۠ۜۢۡۜۢۧۖۨۡ۬۟ۡۥۘۢۦۜۜۢۤ۫ۡۛۥ۠۠۫ۗۖۨۤ۠ۦۡۡۘ"
+  goto                 -19h
+  const/4              v0, 1
+  const/high16         v1, 1073741824
+  invoke-virtual       v4, v0, v5, v1, Landroid/net/VpnService;->startForeground(I Landroid/app/Notification; I)V
+  const-string         v0, "ۡۛۗۧۗۥ۠ۛۛ۬ۖۚۨۜۧۧۚۤ۠ۨۘۘۘۦۘ۠ۤۡۘۥۙۤۜۛ۫ۥۚ۠ۖۛۡ۟۬ۢۡۡ۫ۧۘۨۘ"
+  goto                 -22h
+  return-void          
+  sparse-switch-payload -60631144 -31277a1e db29820 4a0188cd

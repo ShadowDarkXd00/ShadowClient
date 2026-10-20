@@ -1,0 +1,153 @@
+// Class: Lcom/happproxy/internal/onDetach;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Ljava/lang/Object; Ljava/lang/String; I)V
+  // bytecode:
+  iput                 v3, v0, Lcom/happproxy/internal/onDetach;->onMeasure I
+  iput-object          v2, v0, Lcom/happproxy/internal/onDetach;->onLayout Ljava/lang/String;
+  iput-object          v1, v0, Lcom/happproxy/internal/onDetach;->dispatchDraw Ljava/lang/Object;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v10, 0
+  const/4              v4, 0
+  const-string         v0, "ۘۗ۟۫ۗۥۤ۫۫۫ۖۜۛ۠ۚۤۘ۠ۨۖ۟ۦۥۜۤ۟ۢۧۚۡۗۧۦۘۙۖۤ۫ۗۛۢ۬ۜۛ۬ۗۘ۟ۡۘ"
+  move-object          v2, v0
+  move-object          v3, v4
+  move-object          v5, v4
+  move-object          v6, v4
+  move-object          v7, v4
+  move-object          v1, v4
+  move-object          v8, v4
+  move                 v9, v10
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v0
+  const/16             v4, 667
+  xor-int/2addr        v0, v4
+  xor-int/lit16        v0, v0, 424
+  const/16             v4, 771
+  const                v11, 670463029
+  xor-int/2addr        v0, v4
+  xor-int/2addr        v0, v11
+  sparse-switch        v0, +00000c2h
+  goto                 -13h
+  const-string         v0, "ۚ۠ۘۘۤۢۥۤۛۛۙۜۖۖۜۖۖ۬۟۫ۚۜۨۥۢۡۙۘ۫ۦۦۘۥۥۛۚۡۗ۬۟ۤۖۘ۠"
+  move-object          v2, v0
+  goto                 -17h
+  iget                 v4, v12, Lcom/happproxy/internal/onDetach;->onMeasure I
+  const-string         v0, "ۡۢ۠۫ۢۖۘۨ۟۠ۘۖ۫۠ۥۖۘۨ۠ۛ۬ۨۦۘۧ۬ۥ۫ۢۘۘۖ۬۬ۨۧۥۘۧۨۨۥ۫۟ۘۡۘۛۡۥۘۜ۟ۧ"
+  move-object          v2, v0
+  move                 v9, v4
+  goto                 -1eh
+  iget-object          v4, v12, Lcom/happproxy/internal/onDetach;->onLayout Ljava/lang/String;
+  const-string         v0, "ۧ۫۠ۡۥۘۘ۠۫۠ۡۦۜۨۥۦۘۤۙۥۘ۠ۖۥۘۦ۫۠ۥۘۧۘۗۧۥۘۚۧۜۦ۫ۧۖۧۘۦۤۥۢۚۥۦ۠۬"
+  move-object          v2, v0
+  move-object          v8, v4
+  goto                 -25h
+  iget-object          v1, v12, Lcom/happproxy/internal/onDetach;->dispatchDraw Ljava/lang/Object;
+  const-string         v0, "ۡۧۚ۫۫ۘ۬ۜۡۜۚ۫ۧۗۜۘۜ۬۬۬ۘۖۘ۠ۨۥۛۤۡۘۢ۬ۡۘ"
+  move-object          v2, v0
+  goto                 -2bh
+  packed-switch        v9, +00000ech
+  const-string         v0, "ۙۡۘۘۧۡ۫ۘ۬ۚۥۖۗۚۚۤ۠ۥۘۘۧ۬ۘۘۚ۟ۘۨ۟ۧۧۖۧ"
+  move-object          v2, v0
+  goto                 -32h
+  move-object          v0, v1
+  check-cast           v0, Lcom/happproxy/internal/indexOf;
+  const-string         v2, "ۖۡ۬ۦۤۨۘۨ۠ۧ۬۬۟ۜۜۘۘۘۦۘۨۙۖۘۘۦۗۢ۫ۨۚ۬"
+  move-object          v7, v0
+  goto                 -39h
+  const                v2, -1172406865
+  const-string         v0, "ۨۦ۬ۡ۟۬۬ۤۜۘۘۧۜۘۜۧۨۘۘ۫ۘ۬ۜۘ۠ۦۨۥۦۥۘۡۗۡ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v2
+  sparse-switch        v4, +00000dch
+  goto                 -8h
+  const                v4, 119684395
+  const-string         v0, "ۨۢۢۥۨۢۚۜۥۘ۠ۛۡۘۚۘۖۘ۠ۤ۫ۚۗۥۤ۫ۡۧۜۘۘۘ۟ۡۘ۟ۚۘۡۛۤۙۢۡۘۦۥۖ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v11
+  xor-int/2addr        v11, v4
+  sparse-switch        v11, +00000e0h
+  goto                 -8h
+  const-string         v0, "ۡۖۦۙ۬ۡۘۡ۫ۦۗۗۖۘۘۦۖۘۥۖۖۚ۠ۡۘ۠ۖۜۡۤۜ۬ۙۨۘۖ۬ۨۘۖۨۦۘۜۘۧۜۗۜۘ"
+  goto                 -19h
+  const-string         v0, "ۜۦۥۡۢۡ۟ۙۦۜۖۦۦۛ۬ۧۢ۟ۙۘۡۘۧۨ۟۠ۜۦۗۘۢۤ۠ۙۡۗ۟ۚۚۜۘۛۨۖۘ"
+  goto                 -1ch
+  const-string         v0, "ۛۤۘۘۨۙۜۗۙ۟ۦۤۗۨ۬ۜۗۜۨۙۡۚۗۘۘ۬۬ۙۢۗ۟ۤۗۛۢ۠ۨۜۛۢۜۧۖۘ"
+  goto                 -11h
+  iget-object          v0, v7, Lcom/happproxy/internal/indexOf;->onLayout Lcom/happproxy/ui/ServerActivity;
+  invoke-virtual       v0, Landroid/app/Activity;->isFinishing()Z
+  move-result          v0
+  if-nez               v0, -009h
+  const-string         v0, "ۧۛۖۘۖۢۦۘۢۘ۬ۨۤۖۛۜۛ۠ۧ۫ۛۗۦۖ۫۟۟ۚۨۥۤۥۙ۟ۘۨۗۖۘ"
+  goto                 -1ch
+  const-string         v0, "ۜۥ۠ۜ۟ۨ۟ۘۛۢۗۡۘ۟ۨ۠ۡۜۢۙ۫ۥۢ۫ۘۘۦۘۚۡۛۘۛ۟۟۬ۦۘۘ۫ۤۘۘۧۗ۬ۦۛۛ۟۠ۜۘ"
+  goto                 -1fh
+  const-string         v0, "ۥۗۨۘۖ۟ۤ۫ۥۚۛ۠۟ۘۜۨ۫۫ۨ۠ۘ۬۫۠ۢۘۧۙۖۨ۫ۢۗۚۢۘۛ۬ۙۙۖۨۥۘۢۘۧۨۥۢ"
+  goto                 -30h
+  const-string         v0, "۠ۖۜۘۛۜۧۘ۫ۥۦۘۛۤ۟ۥۙۧۘۧۥۙۜ۟۟۬ۦۘ۬ۨۖۘ۫ۗ۠ۛۡۘۨۖۘۘۘۢۧۦۛۧ"
+  move-object          v2, v0
+  goto                 -73h
+  iget-object          v4, v7, Lcom/happproxy/internal/indexOf;->onLayout Lcom/happproxy/ui/ServerActivity;
+  const-string         v0, "ۧۨۧۘۥۖۜۘۤۛ۟ۜ۠ۘۦۚۜ۟ۚۤۤۖۗۚۘۧۛۗۡۛۢۜۘۗۨۨۘۙۚۦۧۡۗۙۙۦۘۨۥۘۢۧۜۘ"
+  move-object          v2, v0
+  move-object          v6, v4
+  goto                 -7ah
+  sget                 v0, Lcom/happproxy/ui/ServerActivity;->recv I
+  const-string         v0, "ۤۚۡ۠۟ۘۘۧ۟ۗۡ۬ۡۗۜۗۨۖۤ۟۬ۢۖۥۘ۟ۜۘۘۜۜ"
+  move-object          v2, v0
+  goto                 -80h
+  invoke-virtual       v6, v8, Lcom/happproxy/ui/ServerActivity;->onAttach(Ljava/lang/String;)V
+  const-string         v0, "ۧۨۦ۠۬۫۠ۙۚۨۦ۠۟ۖۚۚۖۤۚ۫ۧۛۛۥۨۜۡۨۥۙۘ۠ۜۘۨۗۜۘۜۚۤۧۗۜۧۖۜۘ۫ۙۨۘۡۦۖۖۥۖۘ"
+  move-object          v2, v0
+  goto/16              -087h
+  invoke-static        v8, Lcom/happproxy/NativeProvider;->nLogin(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v4
+  const-string         v0, "ۘ۬ۖ۠ۜۖۨ۬ۤۜۘۡۤۥۢۜۛۛۛۙ۬ۚۚۨۘۙۦۦ۬ۖ۟ۤۡۧۗۘۜۗۢۤۗۢۥۡۦ۠ۨ۠"
+  move-object          v2, v0
+  move-object          v5, v4
+  goto/16              -091h
+  move-object          v0, v1
+  check-cast           v0, Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v0, v0, Lcom/happproxy/feature/main/MainActivity;->onBind Landroid/os/Handler;
+  new-instance         v2, Lcom/happproxy/internal/onAttach;
+  const/4              v4, 1
+  invoke-direct        v2, v4, v12, v8, v5, Lcom/happproxy/internal/onAttach;-><init>(I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  invoke-virtual       v0, v2, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  const-string         v0, "ۘۗ۟ۙۘۧۘۖۥ۫ۗۛۙ۬ۚۚۘ۫ۤۦ۟ۘۘۦۚۘۘۦۥۡۨۥۡۨ۫ۦ۬۠"
+  move-object          v2, v0
+  goto/16              -0a4h
+  invoke-static        v8, Lcom/happproxy/NativeProvider;->nLogin(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  const-string         v0, "ۨۦ۫۫ۛۨۘۜۡۘۥۜۢۡۙۡۘۧۢۦۘ۬۬۠ۦۥۢۡۙۦۡ۟ۖۘ۬ۧۢۗۢ۠ۨۚۜۘۨ۠۠ۚ۟ۡۘۖۥۜۘ۟۠۫ۢۗۦ"
+  move-object          v2, v0
+  goto/16              -0adh
+  move-object          v0, v1
+  check-cast           v0, Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v0, v0, Lcom/happproxy/feature/main/MainActivity;->onBind Landroid/os/Handler;
+  new-instance         v2, Lcom/happproxy/internal/onAttach;
+  invoke-direct        v2, v10, v12, v8, v3, Lcom/happproxy/internal/onAttach;-><init>(I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  invoke-virtual       v0, v2, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  const-string         v0, "ۢۗۦۘ۠۠ۙ۠۠ۥۛ۟ۡۙ۟ۨ۟۟ۦۧ۟۫ۧۜۘ۠ۡۦۦ۫۫ۢ۟ۨۘۚۘ۫۫ۡۦۤ۠ۙۨۥۥ"
+  move-object          v2, v0
+  goto/16              -0bfh
+  const-string         v0, "ۧۨۦ۠۬۫۠ۙۚۨۦ۠۟ۖۚۚۖۤۚ۫ۧۛۛۥۨۜۡۨۥۙۘ۠ۜۘۨۗۜۘۜۚۤۧۗۜۧۖۜۘ۫ۙۨۘۡۦۖۖۥۖۘ"
+  move-object          v2, v0
+  goto/16              -0c4h
+  const-string         v0, "ۡۥۡ۟ۖۥۘ۟۫ۙ۫ۗ۬ۧۖۨۖ۟۠ۨۖۘۡۥۡ۟ۥۥ۟۟ۚۤ۟ۧۖ۟ۜۘ"
+  move-object          v2, v0
+  goto/16              -0c9h
+  const-string         v0, "۫۬ۥۘۧۘ۬ۦۖۧۘۡۛۘۚ۫ۡۜۜۛۦۧ۠ۖۙ۬۬۟ۤۤۨ۬ۘۢۖۘۙۥۘۘ"
+  move-object          v2, v0
+  goto/16              -0ceh
+  return-void          
+  nop                  
+  sparse-switch-payload -60eb3a66 -58aab321 -509c1701 -4c5a606c -4c1b4e41 -1d1eecd7 -198abfbd -d728bf5 -6bfe344 1d2d29d3 22b2417d 3c16fc4e 4094f988 476dad25 4d38e493 655c1615 7dbba783
+  packed-switch-payload 0 1
+  sparse-switch-payload -20950837 -16e98a75 60ccf276 7878801d
+  sparse-switch-payload -7fb407e8 -74288089 -21e3255c 169dcdc3

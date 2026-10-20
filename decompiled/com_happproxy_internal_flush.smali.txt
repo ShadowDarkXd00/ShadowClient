@@ -1,0 +1,125 @@
+// Class: Lcom/happproxy/internal/flush;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/service/XRayProxyOnlyService; [Z [Z Landroid/widget/FrameLayout; I Landroid/widget/SeekBar; Landroid/widget/TextView; Ljava/lang/String; I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/flush;->onMeasure Lcom/happproxy/service/XRayProxyOnlyService;
+  iput-object          v2, v0, Lcom/happproxy/internal/flush;->onLayout [Z
+  iput-object          v3, v0, Lcom/happproxy/internal/flush;->dispatchDraw [Z
+  iput-object          v4, v0, Lcom/happproxy/internal/flush;->onDraw Landroid/widget/FrameLayout;
+  iput                 v5, v0, Lcom/happproxy/internal/flush;->onAttach I
+  iput-object          v6, v0, Lcom/happproxy/internal/flush;->onDetach Landroid/widget/SeekBar;
+  iput-object          v7, v0, Lcom/happproxy/internal/flush;->onBind Landroid/widget/TextView;
+  iput-object          v8, v0, Lcom/happproxy/internal/flush;->onEvent Ljava/lang/String;
+  iput                 v9, v0, Lcom/happproxy/internal/flush;->onResult I
+  return-void          
+
+// Method: None (Landroid/view/View;)V
+  // bytecode:
+  const/4              v2, 0
+  const/4              v4, 0
+  const-string         v0, "۬ۨۜۘۦۢۦۘۛۥۢۦۘۜۦۚۨۙۙ۠ۘۜ۠ۤ۟ۛۘۢۖۘۥۧۡۘۡ۟ۨۗۖ۫ۢۗۦۘۡ۫ۥۘۛۗۡ۠ۘۧۘ۟۠ۚۖۤ"
+  move-object          v1, v2
+  move                 v3, v4
+  move-object          v5, v2
+  move-object          v6, v2
+  move                 v7, v4
+  move-object          v8, v2
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v2
+  const/16             v9, 633
+  xor-int/2addr        v2, v9
+  xor-int/lit16        v2, v2, 923
+  const/16             v9, 285
+  const                v10, -475887735
+  xor-int/2addr        v2, v9
+  xor-int/2addr        v2, v10
+  sparse-switch        v2, +00000a6h
+  goto                 -13h
+  const-string         v0, "۬۬ۦۤۗۡۘۘۧۡ۟ۖۨۡۜۡ۬ۙ۬ۤ۠۫ۙۡۘۢۗۥۚۥۡۘۨ۠ۤۥۥۘ"
+  goto                 -16h
+  const-string         v0, "ۛۙۡۘۤۡۘۢۗۥۘۖۥ۫۬ۢۢۧۚۦۘۖۗۗۢۖۜۧ۟ۥ۠ۦۙۧۛۘۙ۫ۛ۟ۙۗۖۢ۠۫ۗۥۘ۬ۘ"
+  goto                 -19h
+  sget-object          v0, Lcom/happproxy/service/XRayProxyOnlyService;->poll [Ljava/lang/String;
+  const-string         v0, "ۡۡۡۘۗۗۡۘۖ۫ۚۚۢۚۥۤ۟ۘۡۦۘۤ۠ۜۨۥۨۡۡۚۧۛ۬ۦۜۘۢ۠ۜۦۘ۟۟ۦ۬"
+  goto                 -1eh
+  iget-object          v2, v12, Lcom/happproxy/internal/flush;->onMeasure Lcom/happproxy/service/XRayProxyOnlyService;
+  const-string         v0, "ۧ۠۟۫ۖۖۤۛۘ۟ۚۜۘ۬ۨۧۗۜۘۘ۠ۘ۫ۢ۬ۜۖۘ۫۬ۜۛۦۨۜۘۜۨۤ۬ۖۜ۟ۛۧ۫ۘۚۥۜۘۥۢۤۗ۟ۙ"
+  move-object          v8, v2
+  goto                 -24h
+  invoke-virtual       v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  const-string         v0, "ۨۗۚۨۖۙۜ۟۫۟۫ۘۘۥۢۖۘۜۡۨۗۖ۬۫۠۬ۜۚۙۤۖۘۙۖۧۦ۬ۖۖ۬ۨۘۗۧۡ"
+  goto                 -2ah
+  iget-object          v0, v12, Lcom/happproxy/internal/flush;->onLayout [Z
+  const/4              v2, 1
+  aput-boolean         v2, v0, v4
+  const-string         v0, "ۘۢۘۘۤۛۨۘ۬ۘۥۢۖۥۘۘۥۥۘۖۦۨ۠۫ۨۨ۠ۘ۫ۦۘۦۢ۬ۙۚۚۙۘۘۘ۠۬ۘۨۗۢۡۖۧۜۚۡۜۨۢۖۙ۠"
+  goto                 -32h
+  iget-object          v0, v12, Lcom/happproxy/internal/flush;->dispatchDraw [Z
+  aput-boolean         v4, v0, v4
+  const-string         v0, "۠ۨۘۖۦۨۘ۬۟ۘۛۜۘ۠ۦۦ۟۠ۙ۟۠۟ۖۧۤۘۦ۫۬ۜۡ"
+  goto                 -39h
+  iget-object          v0, v8, Lcom/happproxy/service/XRayProxyOnlyService;->onLayout Landroid/view/WindowManager;
+  iget-object          v2, v12, Lcom/happproxy/internal/flush;->onDraw Landroid/widget/FrameLayout;
+  invoke-interface     v0, v2, Landroid/view/ViewManager;->removeView(Landroid/view/View;)V
+  const-string         v0, "ۙۜۥۘ۠ۚۨۡ۠ۡۛۢۘۘ۠۠ۖۛۚ۫ۚۖۘ۠ۧۖۘۢۗۧ۠ۜۙ"
+  goto                 -43h
+  iget                 v0, v12, Lcom/happproxy/internal/flush;->onAttach I
+  div-int/lit8         v0, v0, 10
+  add-int/lit8         v2, v0, 1
+  const-string         v0, "ۜ۟۟ۗۜ۟ۡۘۘ۟۟۟ۙۘۥۘۤۜۘۘۛۙۜۘۚۢ۠ۦۙۧۚۡۡۘۖۤۘ۟ۘۘ"
+  move                 v7, v2
+  goto                 -4dh
+  iget-object          v0, v12, Lcom/happproxy/internal/flush;->onDetach Landroid/widget/SeekBar;
+  invoke-virtual       v0, v7, Landroid/widget/ProgressBar;->setProgress(I)V
+  const-string         v0, "ۗۢ۫ۨۙۢ۠۠ۨۙۥۢ۟ۛۢ۟ۦۙ۠ۙ۟ۛ۟۬ۧۛۤۛ۫ۛۗۚۖ۠ۨۧۘ"
+  goto                 -55h
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, Ljava/lang/StringBuilder;-><init>()V
+  const-string         v0, "۫ۖۘۜۥۨۘ۬ۗۖۥۡۙۖۧۘۘۚۧۨ۫ۧۦۘۦۤۢۙۙ۫ۢ۫ۡۘۖۚۡ۟ۖۥۘۚۗ۟ۚۖۗ"
+  move-object          v6, v2
+  goto                 -5eh
+  iget-object          v0, v12, Lcom/happproxy/internal/flush;->onEvent Ljava/lang/String;
+  invoke-virtual       v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v0, "ۗ۫ۨۖۘۨۘ۠ۚۛ۠ۥۜۖۦۢ۫ۧۛۦۙۜۙۜۘ۟ۡۥۗۛۗۘۧۜۘۥۨۖ۟ۗۜ۟ۦۡۘ۠ۖۘۢۧۚ۫۠ۨۨۨۜۘ"
+  goto                 -66h
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  const-string         v0, "ۨ۫ۘۚ۫ۥ۬ۖۚۗۧۜۜۤۖۦۥۘۖۗۘۘۧۡۖۘۖۖ۟ۙۤۚۚۜۘۦۜۗۨۛۢۦۧۗۛۘۥۘ۬ۨۘ"
+  move-object          v5, v2
+  goto                 -6ch
+  const-wide           v10, -13403634163686
+  invoke-static        v10, v11, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v0, "۟ۛ۬ۤۜۚ۟ۗۖۘۗۚۡۘ۫ۛۜۘ۠۬ۥۘۢۙۖۗۨۛۦ۠ۡۘۤ۫ۘۘۚۘ۠ۚۢ۟۬ۗۡۘۨۤۖ"
+  goto                 -7bh
+  mul-int/lit8         v2, v7, 10
+  const-string         v0, "۟ۗۤۖۥۜۘۙۧۥۘ۟ۨۨۘۡۘۢۗۦۘۡ۟۟ۗۚ۠۬ۙۨۘ۬۟ۨۢۖۢ۫ۛ۬"
+  move                 v3, v2
+  goto/16              -081h
+  invoke-virtual       v6, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string         v0, "ۜ۫ۥۖۨۢۦ۠ۥ۟ۦۘۜۗۥۘۛۜۘۘ۬۬ۢ۫ۖۦ۟ۛۦۘۤۡۡۘ۠ۧۦۦۗۘۘۜۚۤۛۢۡ۫۫ۥۘ۠ۚۙۥ۠ۡۘۚ۬ۡ"
+  goto/16              -088h
+  const-wide           v10, -13416519065574
+  invoke-static        v10, v11, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v0, "ۚۤۢۖۤۜۢۚ۫ۗۧۥۘۧۧۛ۬۠۟۬۬ۜۘۨۧۖۘۗ۠۫۟ۨۢ۬ۖ۫ۤۜ۫ۘۗۖ۟ۘۜۘ"
+  goto/16              -098h
+  invoke-virtual       v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  const-string         v0, "ۡۢۤۤۥۚۧۜۡۤۙۦۘۖۘۡۘ۟ۨۦۤۢ۫۬۟ۦۘۜۜۧ۫ۢۖۘۘ۫ۚۢۚۨ۟ۘۨۙۨۖۘۦ۟ۚۧ۟ۦۘۚۗۖۢۥۨۘ"
+  goto/16              -0a0h
+  iget-object          v0, v12, Lcom/happproxy/internal/flush;->onBind Landroid/widget/TextView;
+  invoke-virtual       v0, v1, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  const-string         v0, "ۚ۠ۨۘۤۖۘۙۨۨۤۗۛۚۜۨۘۙۢۨۘۛۡۥۘ۠ۤۜۧۦۥۘۘۥ۫"
+  goto/16              -0a9h
+  iget                 v0, v12, Lcom/happproxy/internal/flush;->onResult I
+  invoke-static        v0, v3, Lcom/happproxy/NativeProvider;->nIoctl(I I)V
+  const-string         v0, "ۜ۟ۘۘۗۨۥۘۥۦ۫ۡۜۧۘۡۖۥۧ۫ۢۘ۠ۧ۠ۚۨ۠ۚۖۗۙۧ"
+  goto/16              -0b2h
+  return-void          
+  nop                  
+  sparse-switch-payload -6cda8ea7 -5bbc8b00 -52cacf0b -520e2c07 -4314d50a -38bbcc8f -2bd12763 -29ea0a66 -1d376ddd -13642ed2 -775c9d5 -27a71ac fcc99e5 166e12ef 21dbf141 2a18f2df 38c009cd 39f72d8b 58821f72 6a3992d5 7652b7a3

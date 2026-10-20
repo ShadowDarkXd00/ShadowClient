@@ -1,0 +1,6 @@
+// Class: Lgolib/LogHandler;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+  // native / abstract / no code

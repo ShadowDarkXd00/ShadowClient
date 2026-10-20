@@ -1,0 +1,10 @@
+Original APK Signature — dripclient-wire-v4.2.0.apk
+Package: com.happproxy
+Version: 1.0 (1)
+SHA256 cert (via apksigner): Run locally:
+  apksigner verify --print-certs dripclient-wire-v4.2.0.apk
+Keystore: debug (no Play App Signing — original was debug-signed, easy to overwrite)
+Reinstall with patched APK using same debug keystore works with `adb install -r`
+
+If you need to keep Play Store signing, provide your upload keystore (.jks) and we will re-sign.
+Current patched will use debug keystore at ShadowClient-Rebuilt/debug.keystore (generated on first build).

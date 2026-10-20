@@ -1,0 +1,79 @@
+// Class: Lcom/happproxy/internal/onBind;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/feature/main/MainActivity; I)V
+  // bytecode:
+  iput                 v2, v0, Lcom/happproxy/internal/onBind;->onMeasure I
+  iput-object          v1, v0, Lcom/happproxy/internal/onBind;->onLayout Lcom/happproxy/feature/main/MainActivity;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v3, 0
+  const/4              v1, 0
+  const-string         v0, "ۚۡۖۤۘۢۗۗۡۖۤۨۘۡۡۘۛ۠ۘۘ۟ۡ۠۫ۧ۬ۜۦۙۗۜۘۡۛۧۨۦ۠ۗۚۥۛۘۡۘۙۜۥۘۗۚۜ۬ۦۖۘۡۥ۫"
+  move                 v2, v3
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  const/16             v5, 503
+  xor-int/2addr        v4, v5
+  xor-int/lit8         v4, v4, 85
+  const/16             v5, 819
+  const                v6, 1257832569
+  xor-int/2addr        v4, v5
+  xor-int/2addr        v4, v6
+  sparse-switch        v4, +0000061h
+  goto                 -13h
+  const-string         v0, "ۙۜۖۦۚۛۦۚۘۘۚۖۖۗ۬ۜۗۤۛۖۜۧۘ۟۟ۢۙۚۦۥۜ۟ۦۢۧۨۡۨۘۦ۠ۥۖۚۚۖۘ۫ۡۜۖۘۚۘۦۜۛۨ"
+  goto                 -16h
+  iget                 v0, v7, Lcom/happproxy/internal/onBind;->onMeasure I
+  packed-switch        v0, +0000086h
+  const-string         v0, "ۡۗۧ۬ۙۨۘۡۖۤۗۦۖۚۨۥۘۤۛۧ۟ۘۥۜۧ۫ۢ۬ۢۖۢۜۤۗۖ۟ۢۙۢ۟۠۫ۜۦۘۧ۠ۧۖۖۢ۟ۢۦۛ"
+  goto                 -1eh
+  invoke-static        Lcom/happproxy/NativeProvider;->nCheck()I
+  move-result          v2
+  const-string         v0, "ۧۛۦۛ۬ۡۘۚۦۥۖۧ۠۟ۖ۟ۤۙ۟۠ۗۥۘۨ۠ۜۧۨۚۘۦۡۘ۟ۡۥۚۗۜۦۡۘۘۦۙ"
+  goto                 -25h
+  iget-object          v0, v7, Lcom/happproxy/internal/onBind;->onLayout Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v0, v0, Lcom/happproxy/feature/main/MainActivity;->onBind Landroid/os/Handler;
+  new-instance         v4, Lcom/happproxy/internal/onPause;
+  invoke-direct        v4, v7, v2, v3, Lcom/happproxy/internal/onPause;-><init>(Ljava/lang/Object; I I)V
+  invoke-virtual       v0, v4, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  const-string         v0, "ۦۥۧۨۙۥ۫ۛۙۗۡۙ۠ۧۙۙۤ۬ۘ۟۠ۦ۟ۦۘۨۙۚۦ۠ۜۘۡۘۜۙۖۘ۠ۘۡۘۥۖ"
+  goto                 -34h
+  iget-object          v1, v7, Lcom/happproxy/internal/onBind;->onLayout Lcom/happproxy/feature/main/MainActivity;
+  const-string         v0, "ۢۥۤۧ۫ۛۙ۬ۧۢۢۜۘۛۡۥۤۢۜۘۥۥۘ۫ۨۘۛۡۧۧۢ۬"
+  goto                 -39h
+  iget-object          v0, v1, Lcom/happproxy/feature/main/MainActivity;->onDetach Landroid/view/View;
+  const/16             v4, 8
+  invoke-virtual       v0, v4, Landroid/view/View;->setVisibility(I)V
+  const-string         v0, "ۧۜۧۗ۬ۡۘۨۢۜۧۜۢۚۜۙ۬ۜۥۧۦ۫ۗۢۡ۠ۛۚ۫ۢۤ۬۬۫ۙۜۘۗۛۜۚۜۘۖۙۖۘۢۥۢۛۧۧ۫ۚۤ"
+  goto                 -43h
+  iget-object          v0, v1, Lcom/happproxy/feature/main/MainActivity;->onAttach Landroid/view/View;
+  const/4              v4, 0
+  invoke-virtual       v0, v4, Landroid/view/View;->setAlpha(F)V
+  const-string         v0, "۬ۙۙۢۨ۠ۢۤۥۘۛۢ۠ۚۘۜۘ۟۟ۥۧ۫۟ۥۤۖۘۧۜۥۘۨۢۗۢۡ۬ۙۚ۟ۙۧۘ۟ۘ۬۬ۡۡۦۘ"
+  goto                 -4ch
+  iget-object          v0, v1, Lcom/happproxy/feature/main/MainActivity;->onAttach Landroid/view/View;
+  invoke-virtual       v0, v3, Landroid/view/View;->setVisibility(I)V
+  const-string         v0, "۬ۛ۫۫ۛۖۘۜۚۚ۠ۖۘۧۡۛۙۤۦۖ۟ۥ۫ۡ۠ۛۙۜ۬ۜ۬"
+  goto                 -54h
+  iget-object          v0, v1, Lcom/happproxy/feature/main/MainActivity;->onAttach Landroid/view/View;
+  invoke-virtual       v0, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+  move-result-object   v0
+  const/high16         v4, 1065353216
+  invoke-virtual       v0, v4, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+  move-result-object   v0
+  const-wide/16        v4, 300
+  invoke-virtual       v0, v4, v5, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+  move-result-object   v0
+  invoke-virtual       v0, Landroid/view/ViewPropertyAnimator;->start()V
+  const-string         v0, "۬۬۫۫۠ۙ۠ۗۥۘۡ۟ۦۘ۟ۦۥۦ۟ۡۘۗۛۘۡۙۨۗۗۛ۟۠ۙۥۦۘۗۚۨۘ"
+  goto                 -6ch
+  const-string         v0, "ۘ۫ۨۘۧۚۘۗۗۥۙۧۧۢ۠ۜۥ۟ۥۘۡ۠ۨۨۙۧۥۨۘۜ۬ۡۘۦۦۦۘۛ۠"
+  goto                 -6fh
+  return-void          
+  sparse-switch-payload -6341a466 -42382022 -204a37ae -be85907 -166f9b8 a81bdba 3b2242fe 46040805 5360ad75 782d6d5e 7b227f02
+  packed-switch-payload 0

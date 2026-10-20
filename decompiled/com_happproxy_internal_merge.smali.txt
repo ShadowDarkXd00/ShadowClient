@@ -1,0 +1,49 @@
+// Class: Lcom/happproxy/internal/merge;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Landroid/view/WindowManager$LayoutParams;)V
+  // bytecode:
+  const-string         v0, "ۤۛۚۤۤ۫ۙۧ۬ۙۙۥۘۛۦ۫ۥۗۙۙۧۘۚۦۖۘۤۛ۠۠ۙۨۜۦۡ۫ۖۥۘۗۢ۟ۗۚ۠"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 44
+  xor-int/2addr        v1, v2
+  xor-int/lit16        v1, v1, 841
+  const/16             v2, 169
+  const                v3, 530043174
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +000000eh
+  goto                 -13h
+  const-string         v0, "۠ۧۖۘۤۚۡۘۚ۫ۧۨۤۘۘۗۘ۟ۖ۫ۨۢۜۜۖۖۘۘۗۙۧۚ۠ۢۗۢۢۢۛۤ۟۠ۖۗۨۢ۬۫۟۬ۛۡۘ۟ۤۘۡۦ"
+  goto                 -16h
+  const/4              v0, 3
+  iput                 v0, v4, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode I
+  const-string         v0, "ۥ۬ۚۘۥۜۘۖ۟ۗۚۢۘۘۥۡ۠۬۬ۖۥۙ۠ۥ۠ۖۤۧۨۙۡۘۡۢۨۘۧۥۡۤۧۘۢۘۥۘ۟ۖۜ۠ۡ۫۬ۛۙۘۙۙ"
+  goto                 -1ch
+  return-void          
+  sparse-switch-payload -76257e40 2fbc371a 38d56b4f
+
+// Method: None (Landroid/view/WindowManager$LayoutParams;)V
+  // bytecode:
+  const-string         v0, "ۧۙۨۘۨۥۦۘۡۚۨۢ۟ۖۖ۬ۖۨ۟ۡۘۧۧۜۤ۟ۨۘۚۖ۠ۗ۫ۗۥۖ۠۫۬ۜۛۘۜ۟۫ۢۙۗۘۖۦۖ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 65
+  xor-int/2addr        v1, v2
+  xor-int/lit8         v1, v1, 15
+  const/16             v2, 465
+  const                v3, -1745671943
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +000000eh
+  goto                 -13h
+  const-string         v0, "ۗ۫ۚۡۤ۫ۨۡۜۛۥۥۜ۬ۤۙ۫ۧۥۙۙۘۙۤۢۡۨۡۘۘۧ۫ۜۘۡۚۙۢۦۙۤ۟ۛۗۚۧۢۙۖۘ"
+  goto                 -16h
+  const/4              v0, 1
+  iput                 v0, v4, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode I
+  const-string         v0, "ۖۙۥۘۤۥۡۘۚۗۚۥۥۛۡۤۨۘ۫ۦۛ۫ۡۧۙۘۙۦۦۘۘۦ۬۬ۘ۬ۥۘۡۖۛۧ۟ۚۜۤۖۘۥۖ۟ۢۖۤۥۚۛۖۘۘ"
+  goto                 -1ch
+  return-void          
+  sparse-switch-payload -5984cfdc 472b1825 7600f0bd

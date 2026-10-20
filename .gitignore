@@ -1,0 +1,15 @@
+# ShadowClient Recovery — ignore sensitive & build artifacts
+*.keystore
+*.jks
+*.p8
+local.properties
+app/src/main/assets/config.json
+ShadowClient-Rebuilt/app/build/
+ShadowClient-Rebuilt/.gradle/
+.decompiled_cache/
+__pycache__/
+*.apk
+!dripclient-wire-v4.2.0.apk
+releases/*.apk
+.env
+*.log

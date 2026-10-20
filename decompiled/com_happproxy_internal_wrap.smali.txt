@@ -1,0 +1,13 @@
+// Class: Lcom/happproxy/internal/wrap;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  const-wide           v0, -11848856002534
+  invoke-static        v0, v1, Lcom/happproxy/internal/onLayout;->onMeasure(J)V
+  const-wide           v0, -11891805675494
+  invoke-static        v0, v1, Lcom/happproxy/internal/onLayout;->onMeasure(J)V
+  const-wide           v0, -11973410054118
+  invoke-static        v0, v1, Lcom/happproxy/internal/onLayout;->onMeasure(J)V
+  return-void          

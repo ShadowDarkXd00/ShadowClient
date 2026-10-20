@@ -1,0 +1,183 @@
+// Class: Lgo/Seq$RefTracker;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v1, Ljava/lang/Object;-><init>()V
+  const/16             v0, 42
+  iput                 v0, v1, Lgo/Seq$RefTracker;->next I
+  new-instance         v0, Lgo/Seq$RefMap;
+  invoke-direct        v0, Lgo/Seq$RefMap;-><init>()V
+  iput-object          v0, v1, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  new-instance         v0, Ljava/util/IdentityHashMap;
+  invoke-direct        v0, Ljava/util/IdentityHashMap;-><init>()V
+  iput-object          v0, v1, Lgo/Seq$RefTracker;->javaRefs Ljava/util/IdentityHashMap;
+  return-void          
+
+// Method: None (I)V
+  // bytecode:
+  const-string         v0, "referenced Java object is not found: refnum="
+  const-string         v1, "dec request for Go object "
+  monitor-enter        v3
+  if-gtz               v4, +019h
+  invoke-static        Lgo/Seq;->access$000()Ljava/util/logging/Logger;
+  move-result-object   v0
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-virtual       v0, v4, Ljava/util/logging/Logger;->severe(Ljava/lang/String;)V
+  monitor-exit         v3
+  return-void          
+  move-exception       v4
+  goto                 +3ah
+  sget-object          v1, Lgo/Seq;->nullRef Lgo/Seq$Ref;
+  iget                 v1, v1, Lgo/Seq$Ref;->refnum I
+  if-ne                v4, v1, +004h
+  monitor-exit         v3
+  return-void          
+  iget-object          v1, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v1, v4, Lgo/Seq$RefMap;->get(I)Lgo/Seq$Ref;
+  move-result-object   v1
+  if-eqz               v1, +019h
+  invoke-static        v1, Lgo/Seq$Ref;->access$110(Lgo/Seq$Ref;)I
+  invoke-static        v1, Lgo/Seq$Ref;->access$100(Lgo/Seq$Ref;)I
+  move-result          v0
+  if-gtz               v0, +00eh
+  iget-object          v0, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v0, v4, Lgo/Seq$RefMap;->remove(I)V
+  iget-object          v4, v3, Lgo/Seq$RefTracker;->javaRefs Ljava/util/IdentityHashMap;
+  iget-object          v0, v1, Lgo/Seq$Ref;->obj Ljava/lang/Object;
+  invoke-virtual       v4, v0, Ljava/util/IdentityHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+  monitor-exit         v3
+  return-void          
+  new-instance         v1, Ljava/lang/RuntimeException;
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-direct        v1, v4, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v1
+  monitor-exit         v3
+  throw                v4
+
+// Method: None (I)Lgo/Seq$Ref;
+  // bytecode:
+  const-string         v0, "unknown java Ref: "
+  const-string         v1, "ref called with Go refnum "
+  monitor-enter        v3
+  if-ltz               v4, +028h
+  const/16             v1, 41
+  if-ne                v4, v1, +008h
+  sget-object          v4, Lgo/Seq;->nullRef Lgo/Seq$Ref;
+  monitor-exit         v3
+  return-object        v4
+  move-exception       v4
+  goto                 +2fh
+  iget-object          v1, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v1, v4, Lgo/Seq$RefMap;->get(I)Lgo/Seq$Ref;
+  move-result-object   v1
+  if-eqz               v1, +004h
+  monitor-exit         v3
+  return-object        v1
+  new-instance         v1, Ljava/lang/RuntimeException;
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-direct        v1, v4, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v1
+  new-instance         v0, Ljava/lang/RuntimeException;
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-direct        v0, v4, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v0
+  monitor-exit         v3
+  throw                v4
+
+// Method: None (Ljava/lang/Object;)I
+  // bytecode:
+  const-string         v0, "createRef overflow for "
+  monitor-enter        v3
+  if-nez               v4, +006h
+  monitor-exit         v3
+  const/16             v4, 41
+  return               v4
+  instance-of          v1, v4, Lgo/Seq$Proxy;
+  if-eqz               v1, +00ch
+  check-cast           v4, Lgo/Seq$Proxy;
+  invoke-interface     v4, Lgo/Seq$GoObject;->incRefnum()I
+  move-result          v4
+  monitor-exit         v3
+  return               v4
+  move-exception       v4
+  goto                 +4dh
+  iget-object          v1, v3, Lgo/Seq$RefTracker;->javaRefs Ljava/util/IdentityHashMap;
+  invoke-virtual       v1, v4, Ljava/util/IdentityHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object   v1
+  check-cast           v1, Ljava/lang/Integer;
+  if-nez               v1, +029h
+  iget                 v1, v3, Lgo/Seq$RefTracker;->next I
+  const                v2, 2147483647
+  if-eq                v1, v2, +010h
+  add-int/lit8         v0, v1, 1
+  iput                 v0, v3, Lgo/Seq$RefTracker;->next I
+  invoke-static        v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object   v1
+  iget-object          v0, v3, Lgo/Seq$RefTracker;->javaRefs Ljava/util/IdentityHashMap;
+  invoke-virtual       v0, v4, v1, Ljava/util/IdentityHashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  goto                 +13h
+  new-instance         v1, Ljava/lang/RuntimeException;
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-direct        v1, v4, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v1
+  invoke-virtual       v1, Ljava/lang/Integer;->intValue()I
+  move-result          v0
+  iget-object          v1, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v1, v0, Lgo/Seq$RefMap;->get(I)Lgo/Seq$Ref;
+  move-result-object   v1
+  if-nez               v1, +00ch
+  new-instance         v1, Lgo/Seq$Ref;
+  invoke-direct        v1, v0, v4, Lgo/Seq$Ref;-><init>(I Ljava/lang/Object;)V
+  iget-object          v4, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v4, v0, v1, Lgo/Seq$RefMap;->put(I Lgo/Seq$Ref;)V
+  invoke-virtual       v1, Lgo/Seq$Ref;->inc()V
+  monitor-exit         v3
+  return               v0
+  monitor-exit         v3
+  throw                v4
+
+// Method: None (I)V
+  // bytecode:
+  const-string         v0, "referenced Java object is not found: refnum="
+  monitor-enter        v3
+  iget-object          v1, v3, Lgo/Seq$RefTracker;->javaObjs Lgo/Seq$RefMap;
+  invoke-virtual       v1, v4, Lgo/Seq$RefMap;->get(I)Lgo/Seq$Ref;
+  move-result-object   v1
+  if-eqz               v1, +009h
+  invoke-virtual       v1, Lgo/Seq$Ref;->inc()V
+  monitor-exit         v3
+  return-void          
+  move-exception       v4
+  goto                 +13h
+  new-instance         v1, Ljava/lang/RuntimeException;
+  new-instance         v2, Ljava/lang/StringBuilder;
+  invoke-direct        v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v2, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-direct        v1, v4, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v1
+  monitor-exit         v3
+  throw                v4

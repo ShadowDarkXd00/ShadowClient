@@ -1,0 +1,78 @@
+// Class: Lcom/happproxy/internal/onEvent;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Landroid/app/Activity; Ljava/lang/Object; I)V
+  // bytecode:
+  iput                 v3, v0, Lcom/happproxy/internal/onEvent;->onMeasure I
+  iput-object          v2, v0, Lcom/happproxy/internal/onEvent;->onLayout Ljava/lang/Object;
+  iput-object          v1, v0, Lcom/happproxy/internal/onEvent;->dispatchDraw Ljava/lang/Object;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None (Landroid/app/AlertDialog; Ljava/lang/Runnable;)V
+  // bytecode:
+  const/4              v0, 1
+  iput                 v0, v1, Lcom/happproxy/internal/onEvent;->onMeasure I
+  invoke-direct        v1, Ljava/lang/Object;-><init>()V
+  iput-object          v2, v1, Lcom/happproxy/internal/onEvent;->onLayout Ljava/lang/Object;
+  iput-object          v3, v1, Lcom/happproxy/internal/onEvent;->dispatchDraw Ljava/lang/Object;
+  return-void          
+
+// Method: None (Landroid/view/View;)V
+  // bytecode:
+  const-string         v0, "۟ۧ۠ۚ۠ۤۙۚۖۘ۫۫ۜۘ۫ۛۨۘ۟ۜۨ۟ۤۥۘ۫۬ۨۚۧۥ۫۬ۨۗۤۡۘۦۧ۫"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 447
+  xor-int/2addr        v1, v2
+  xor-int/lit16        v1, v1, 830
+  const/16             v2, 488
+  const                v3, -704276483
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +0000050h
+  goto                 -13h
+  const-string         v0, "۠ۡ۬۬ۨۤۚۚۜۘۦۢۨۢۙۚۚۦ۬ۚۜۨۦۖۧۧ۬ۥۘۢۡۢۙ۫ۤۧ۫ۙ۫ۖۤۨۙۨۘ"
+  goto                 -16h
+  const-string         v0, "ۚۤۡۦ۟ۧ۠ۤۦۘۗۜۙ۟ۗۢۙۡۗۛۤ۬۫ۡۗۘۧۜ۟ۤۗۘۜۘۙۡ"
+  goto                 -19h
+  iget                 v0, v4, Lcom/happproxy/internal/onEvent;->onMeasure I
+  packed-switch        v0, +0000072h
+  const-string         v0, "ۖ۟ۨۘۙۖۧۢۗۦۢ۬۠ۘۘ۠ۚۧۘۘۧۧۘۘ۫ۢ۬ۡۗۢۜ۫۬ۛ۠۬۬ۡۛۡۤۘۘۙۙۖۘ"
+  goto                 -21h
+  iget-object          v0, v4, Lcom/happproxy/internal/onEvent;->onLayout Ljava/lang/Object;
+  check-cast           v0, Landroid/app/AlertDialog;
+  invoke-virtual       v0, Landroid/app/Dialog;->dismiss()V
+  const-string         v0, "ۧۥۘۘ۠ۜۢ۫۟ۨ۟ۨۘۘۘ۬ۥۖ۫۬ۛ۫ۚۙ۠ۧ۠ۤۦۘۚۙۨۘ۫ۛۖۤ۟ۖۘۖۦۥۘ۬ۜۢۖۘۗۘۧ۫ۖ۫ۖۗۧ۫"
+  goto                 -2bh
+  iget-object          v0, v4, Lcom/happproxy/internal/onEvent;->dispatchDraw Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/ui/ServerActivity;
+  invoke-virtual       v0, Landroid/app/Activity;->finish()V
+  const-string         v0, "ۗۖۥۘ۠ۚۢ۬ۢ۠ۜۙ۫ۗۖۦ۟ۥۙۥۘۘۢۛۡۗۚ۫ۖۢۦۘۜۨۗۙۖ۬ۜۥ۬ۘ۬ۘۘ۬ۙۛ"
+  goto                 -35h
+  iget-object          v0, v4, Lcom/happproxy/internal/onEvent;->onLayout Ljava/lang/Object;
+  check-cast           v0, Landroid/app/AlertDialog;
+  invoke-virtual       v0, Landroid/app/Dialog;->dismiss()V
+  const-string         v0, "ۧۖ۟ۡۗۤۨۡۥۚۦ۬۟ۜۢ۬۟ۦۘۙ۬۫ۦۗۦۘۡۨۛۤۦ۠ۧۘۛ۫ۨۚۨۧۨۡ۫۬ۨۘۜۘۗۘ۟ۛۖۙۡۥۖ"
+  goto                 -3fh
+  iget-object          v0, v4, Lcom/happproxy/internal/onEvent;->dispatchDraw Ljava/lang/Object;
+  check-cast           v0, Ljava/lang/Runnable;
+  invoke-interface     v0, Ljava/lang/Runnable;->run()V
+  const-string         v0, "ۘۗ۠ۙۡۖۘۢۤۖۜ۫ۥۘۧۨۖۘۢۖ۟ۧۜۙ۫ۧۥۘ۬۫۬ۜۤۥۘۘۥۗ۟۫ۧ۬ۙۖۘۗۥۡۢ۫ۨۘ۬۫ۖ"
+  goto                 -49h
+  iget-object          v0, v4, Lcom/happproxy/internal/onEvent;->dispatchDraw Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v1, v4, Lcom/happproxy/internal/onEvent;->onLayout Ljava/lang/Object;
+  check-cast           v1, Ljava/lang/String;
+  invoke-static        v0, v1, Lcom/happproxy/feature/main/MainActivity;->onLayout(Lcom/happproxy/feature/main/MainActivity; Ljava/lang/String;)V
+  const-string         v0, "ۥۖۜۛ۫ۤۗۨۢ۠۬ۘۥۜۢۗ۬ۧ۫ۙۜۚۜۦۘۧۗ۠ۘۙۥۜۖۗۧۧۨۚۥۛۡ۫ۡ۫ۥۘۛۚۨۘ۬"
+  goto                 -57h
+  const-string         v0, "ۜۘ۬ۡ۟ۙۗ۫ۤۢۡۧۖ۠ۖۘ۟ۡ۠ۤۚۨۛۛ۟ۡۨۧۘۡۗۘۡۙۤۥۘۨۛۡۧ۫ۧۢۡۘۚ۫ۨ"
+  goto                 -5ah
+  const-string         v0, "۬ۦۥۘ۟ۛ۫ۜۢۥۘۖۙۖۛۗۢۛۧۚۢ۬ۥۘۨۥۡۨ۟ۡۘ۟ۙۘۘۚۚ۟ۘۛ۠"
+  goto                 -5dh
+  return-void          
+  nop                  
+  sparse-switch-payload -7a432ce7 -63e37738 -3dc7c409 -38d0a9b7 -143f607 1f092b27 2b7145f9 3543b9f9 4e624c70 6d7e469a 743887cc
+  packed-switch-payload 0 1

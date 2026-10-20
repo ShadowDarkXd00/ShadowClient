@@ -1,0 +1,19 @@
+// Class: Lgo/Seq$GoRef;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I Lgo/Seq$GoObject; Lgo/Seq$GoRefQueue;)V
+  // bytecode:
+  invoke-direct        v1, v3, v4, Ljava/lang/ref/PhantomReference;-><init>(Ljava/lang/Object; Ljava/lang/ref/ReferenceQueue;)V
+  if-gtz               v2, +005h
+  iput                 v2, v1, Lgo/Seq$GoRef;->refnum I
+  return-void          
+  new-instance         v3, Ljava/lang/RuntimeException;
+  new-instance         v4, Ljava/lang/StringBuilder;
+  const-string         v0, "GoRef instantiated with a Java refnum "
+  invoke-direct        v4, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v4, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v2
+  invoke-direct        v3, v2, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v3

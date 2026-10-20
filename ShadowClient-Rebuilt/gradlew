@@ -1,0 +1,5 @@
+#!/bin/bash
+# wrapper placeholder — use system gradle or Android Studio
+echo "Use Android Studio to build, or install gradle:"
+echo "  gradle wrapper --gradle-version 8.13"
+echo "  ./gradlew assembleDebug"

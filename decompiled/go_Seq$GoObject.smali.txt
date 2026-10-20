@@ -1,0 +1,6 @@
+// Class: Lgo/Seq$GoObject;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()I
+  // native / abstract / no code

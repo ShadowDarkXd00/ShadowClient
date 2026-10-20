@@ -1,0 +1,33 @@
+// Class: Lgolib/Golib;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-static        Lgo/Seq;->touch()V
+  invoke-static        Lgolib/Golib;->_init()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/String; Lgolib/FdProtector; Lgolib/EventHandler;)Lgolib/Session;
+  // native / abstract / no code
+
+// Method: None (Lgolib/LogHandler;)V
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/String;)V
+  // native / abstract / no code
+
+// Method: None ()V
+  // bytecode:
+  return-void          
+
+// Method: None (Ljava/lang/String;)V
+  // native / abstract / no code

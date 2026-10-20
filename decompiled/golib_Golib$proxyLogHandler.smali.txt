@@ -1,0 +1,20 @@
+// Class: Lgolib/Golib$proxyLogHandler;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput                 v1, v0, Lgolib/Golib$proxyLogHandler;->refnum I
+  invoke-static        v1, v0, Lgo/Seq;->trackGoRef(I Lgo/Seq$GoObject;)V
+  return-void          
+
+// Method: None ()I
+  // bytecode:
+  iget                 v0, v1, Lgolib/Golib$proxyLogHandler;->refnum I
+  invoke-static        v0, v1, Lgo/Seq;->incGoRef(I Lgo/Seq$GoObject;)V
+  iget                 v0, v1, Lgolib/Golib$proxyLogHandler;->refnum I
+  return               v0
+
+// Method: None (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+  // native / abstract / no code

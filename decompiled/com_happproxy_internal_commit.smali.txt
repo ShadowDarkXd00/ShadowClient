@@ -1,0 +1,52 @@
+// Class: Lcom/happproxy/internal/commit;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/service/XRayProxyOnlyService; [Z Landroid/widget/FrameLayout;)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/commit;->onMeasure Lcom/happproxy/service/XRayProxyOnlyService;
+  iput-object          v2, v0, Lcom/happproxy/internal/commit;->onLayout [Z
+  iput-object          v3, v0, Lcom/happproxy/internal/commit;->dispatchDraw Landroid/widget/FrameLayout;
+  return-void          
+
+// Method: None (Landroid/view/View;)V
+  // bytecode:
+  const/4              v5, 0
+  const/4              v1, 0
+  const-string         v0, "ۧ۫ۘۘۚۦۦۙۘ۟ۛ۟۬۟ۤۖۘ۫ۨۡۘۙ۬ۡۘۗۙۦۘۤۧۦۘۨۘۨۢۚ۠ۛۢ۬ۢ۫۠۠ۤۨ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v2
+  const/16             v3, 779
+  xor-int/2addr        v2, v3
+  xor-int/lit16        v2, v2, 454
+  const/16             v3, 948
+  const                v4, 912248391
+  xor-int/2addr        v2, v3
+  xor-int/2addr        v2, v4
+  sparse-switch        v2, +000002ch
+  goto                 -13h
+  const-string         v0, "ۧ۫۟ۗۢۦۘۚۨۘۛۘۧۖۜۧۘ۬ۙ۠ۤ۠ۖ۠ۡۜۘۚۤۢۡۙۡۘۥۡۧۘۗۛۧ"
+  goto                 -16h
+  const-string         v0, "ۨۗۨۘۧۤۦۘۗۚۦۘۥ۫ۛ۠ۨۚۤۡۡۗۙ۫ۨۢۗۨۤ۟ۘۜۤ"
+  goto                 -19h
+  sget-object          v0, Lcom/happproxy/service/XRayProxyOnlyService;->poll [Ljava/lang/String;
+  const-string         v0, "ۙۧۗۙۙۡۥۗ۠ۛ۫ۚۗۛۙۧۛۦۘۡ۟۠ۨ۠ۡ۠ۜۘۤ۬۠ۧۙۖۘۘۤ۫ۗ۟ۨۘۙ۠ۨ۟ۨۜۘۚۥۘ۠۠ۥۘ۫ۦۥۘ"
+  goto                 -1eh
+  iget-object          v1, v6, Lcom/happproxy/internal/commit;->onMeasure Lcom/happproxy/service/XRayProxyOnlyService;
+  const-string         v0, "ۗ۫ۢۜۛۥۘ۠ۛۤۘۗۨۘۡ۠ۛۜ۟ۜ۫ۢۛۘۤ۟ۗ۬ۜۘۚۨۧۘۗ۫۬۬ۚ۟ۡ۬ۡۘ۠۟ۧۚۧۖۘۖۦۡۘۢۧ۫ۘۢۦۘ"
+  goto                 -23h
+  invoke-virtual       v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  const-string         v0, "۟ۧۧۤۚۙۜۙۛۛۦ۬ۨۖۗۚۙۙۥۥۘۘۧۘۢۧۛۘۛۧۦ"
+  goto                 -29h
+  iget-object          v0, v6, Lcom/happproxy/internal/commit;->onLayout [Z
+  aput-boolean         v5, v0, v5
+  const-string         v0, "ۧۗۡۘۨۖۤۜۦۖۧ۬۟۬ۗ۬ۨ۟۫ۧ۬ۥۘۖۡۘۡۤۚۦۖۛ"
+  goto                 -30h
+  iget-object          v0, v1, Lcom/happproxy/service/XRayProxyOnlyService;->onLayout Landroid/view/WindowManager;
+  iget-object          v2, v6, Lcom/happproxy/internal/commit;->dispatchDraw Landroid/widget/FrameLayout;
+  invoke-interface     v0, v2, Landroid/view/ViewManager;->removeView(Landroid/view/View;)V
+  const-string         v0, "ۡۘۜ۫ۘۧۢۡۨۘۗۗ۬ۨ۫ۨۘ۠ۛۙۖ۫ۦۘۧ۫ۖۗ۬ۡۘۦ۠ۛۡۖۚۨۜۘۖۧۦۘ۟ۘۧۧۘ۫ۡۗ۠"
+  goto                 -3ah
+  return-void          
+  sparse-switch-payload -63510b84 -28f11f2f 52dbbe7 9b34cff 1595df48 5aa85eb1 690ea12b 786de9ad

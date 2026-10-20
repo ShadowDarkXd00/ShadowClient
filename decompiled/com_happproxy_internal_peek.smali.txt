@@ -1,0 +1,110 @@
+// Class: Lcom/happproxy/internal/peek;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/internal/sync; I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/peek;->onMeasure Lcom/happproxy/internal/sync;
+  iput                 v2, v0, Lcom/happproxy/internal/peek;->onLayout I
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v4, 0
+  const/4              v2, 0
+  const-string         v0, "ۗۥۧۜ۫ۢۦۨۘۖۙ۟ۧ۫ۨۘۚۗۧۘۗۜۘۘۢۗۚۛۦۜۚۡۘۖ۠ۖۤۛۡۙۨۡۡ۠۫ۢۦۜۤۢۜ۬۫ۚ۬ۖۧ"
+  move-object          v1, v2
+  move                 v3, v4
+  move                 v5, v4
+  move-object          v6, v2
+  move-object          v7, v2
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v2
+  const/16             v4, 421
+  xor-int/2addr        v2, v4
+  xor-int/lit16        v2, v2, 135
+  const/16             v4, 777
+  const                v8, -444553011
+  xor-int/2addr        v2, v4
+  xor-int/2addr        v2, v8
+  sparse-switch        v2, +0000087h
+  goto                 -13h
+  const-string         v0, "ۖۚۧۢۖۨۘۥۦۦۛۢۧ۬۫ۗۡ۠۠ۙۖۨۘ۠ۛ۟ۡۧۗۤۥۛۗۧۧۨۖۛ۠ۢۢۖ۬ۦۘۨۜۜۘۡۦۨۘ"
+  goto                 -16h
+  iget-object          v2, v9, Lcom/happproxy/internal/peek;->onMeasure Lcom/happproxy/internal/sync;
+  const-string         v0, "ۤۥۚۡۚۗۤۛۙۧۖۘۙۖۧ۫ۡۦۨۘۚۛۤۢۤ۠ۚ۠ۚۨۦۦۧۤۖ"
+  move-object          v7, v2
+  goto                 -1ch
+  iget-object          v2, v7, Lcom/happproxy/internal/sync;->onResult [Z
+  const-string         v0, "ۥ۫ۛۧۛۦۘ۫ۦۥۙۧۡۘۥۧۙ۟ۧۖۘۦ۬ۖۦۤۘۘ۫۟ۡۘ۟ۡۗۙۨۘۡۤۢۤۤۡ۫ۢ"
+  move-object          v6, v2
+  goto                 -22h
+  iget                 v4, v9, Lcom/happproxy/internal/peek;->onLayout I
+  const-string         v0, "ۙ۬۬ۦۨۦۘۚۦۡۘ۠ۛۖۘ۟ۜۖۘۨۛۘۘۡ۠ۢۖۙۤۥۡۘ۫۠ۡ"
+  move                 v5, v4
+  goto                 -28h
+  const/16             v0, 263
+  aget-boolean         v2, v6, v5
+  xor-int/2addr        v0, v2
+  xor-int/lit16        v0, v0, 904
+  const/16             v2, 253
+  xor-int/2addr        v0, v2
+  xor-int/lit16        v2, v0, 627
+  const-string         v0, "ۜۧ۬ۦۥ۟ۧۤۛ۟۠ۤ۟ۦۚۚۛۥۘۢ۬ۖۘۚۘۡۘۙۗۤۧۖۘۘ۠۫ۘۦۚۥ"
+  move                 v3, v2
+  goto                 -38h
+  aput-boolean         v3, v6, v5
+  const-string         v0, "ۨۥۡۘۗۛۙۦ۬۬ۤ۟ۨۖ۠ۜۘۖۢۤۦۘۦۙ۠ۗ۟ۜۘ۟ۦۚۛ۠ۙ۟ۨۜۘۢ۟۫ۚۗ۫۬۬ۜۘۙۢۥۖۨۜ"
+  goto                 -3dh
+  iget-object          v0, v7, Lcom/happproxy/internal/sync;->dispatchDraw [I
+  aget                 v0, v0, v5
+  invoke-static        v0, v3, Lcom/happproxy/NativeProvider;->nIoctl(I I)V
+  const-string         v0, "ۥۛۧۤۙۘۧۚۦۖ۬ۨۘۧۥۤۙۡۥۙۡۘۖۨۨۨۥۖۘۚۜۨۘ۟۬ۙ۬ۖۖۘۖۥۖ۬ۡۖۘ۫ۚۡۘۤۜۡ"
+  goto                 -47h
+  iget-object          v0, v7, Lcom/happproxy/internal/sync;->onEvent [Lcom/happproxy/internal/send;
+  aget-object          v1, v0, v5
+  const-string         v0, "۬ۡۚۨۥۜۘۙۙۜ۫۠۫۫ۚۦۘۘۙۢۖۨ۠۬ۤۖ۫ۜۦۛۨۚۥۢۨۨۡۛۘۖۘ۬۠ۖۘ"
+  goto                 -4eh
+  const                v2, -214473416
+  const-string         v0, "ۖۛۛۧۙ۠ۥۖۖۖۧ۟ۗۥۙۙ۫ۥۜۤۨۡۥ۬ۛۖۖۨۧۦۦ۫۬ۖ۟ۦۙۡۦۡۖۛ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v2
+  sparse-switch        v4, +0000070h
+  goto                 -8h
+  const                v4, 49572315
+  const-string         v0, "ۛۘۢۧۡ۠۬۠ۘۜۚۛ۟ۗ۟ۜۡۘ۫ۢۘۘۗۧۨۤۢۤۜۛۙ۫ۘۘۛۤۜۘۚ۠ۦۨۘۨۘ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v8
+  xor-int/2addr        v8, v4
+  sparse-switch        v8, +0000074h
+  goto                 -8h
+  if-eqz               v1, +008h
+  const-string         v0, "ۖۙۥۘ۟ۦۜۘۧ۫ۥۘ۟ۥ۠۠ۡۦۛۖۖۘۘۙۡۚۧۘۘ۬ۥۥۦ۬ۗ۫ۗۘۚۗۙۙۘۗۚۖۖۙۛۗۨۥۙ۠ۖۘۘۡ۟"
+  goto                 -dh
+  const-string         v0, "ۨۦ۫ۖۧۖۘ۫۟ۨۜۦۛۛۧۦۤۗۙۖۗۖۗۖۚۤۖۗۗۙۤ۫ۜۘۗۙۜۘ۫ۚۨۘۤۡ۟"
+  goto                 -1eh
+  const-string         v0, "ۤۖۤ۫ۡۥۘۚۚۖۘ۟ۧۡۖۚۖ۫ۚۦۦۤۙۛۘۨۧۦۤۛۖۘۖۛۘۚۥ۬ۦۨۗۙۜ"
+  goto                 -13h
+  const-string         v0, "ۥۨۥۘ۬۠ۤۨ۟ۢ۫ۘۜۘۚ۟ۨۤۜۧۘۖ۠ۙۗۗۢۘۢۥۘۜۛۥ"
+  goto                 -16h
+  const-string         v0, "۫۫ۜۘ۠۟ۖۖۚۛۥۗۨۧ۬۟۫ۖۘۤۦۙ۟ۘۥۘۙۡۚۛۤ"
+  goto                 -27h
+  const-string         v0, "ۛۡۧۘۚۢۥۘۜۖ۫ۛۥۥۡۚۨۘۨ۬ۨۘۛۢ۫۟۬۟۠ۘۦ۟ۤۛۥ۬ۘۢۥ۠۟ۘۘۨۚۡۙۧۜۘۦۚۖۘ"
+  goto                 -2ah
+  const-string         v0, "ۗۘۚۡۥۦ۟ۖۨۥۙۖۘۧۥۖۘۘۜۢۢۛۗ۟ۦۧۦۛۘۘۗۤۦۥۤۥۘۖۢ۬ۦۙۨۘۥۚۤ"
+  goto/16              -081h
+  aget-boolean         v0, v6, v5
+  iput-boolean         v0, v1, Lcom/happproxy/internal/send;->onDraw Z
+  const-string         v0, "ۛ۟ۦۗۥۘۡۦ۠ۚۦ۫۫ۢۚۜۜ۠ۧ۟ۥۘۖ۟ۖۜۡۤۤۖۙۙۢۘۘۛۙۗۥۧۗۜۨۡۘ"
+  goto/16              -089h
+  invoke-virtual       v1, Lcom/happproxy/internal/send;->dispatchDraw()V
+  const-string         v0, "ۧۜۘۚۙۜۛۚۧۦ۫ۖ۫۠ۛۢ۟ۥۚ۫ۛۘۤۦۘۢۧ۫ۥۢۘۙ۟ۗۥۥۘ۬ۛ۠ۗۖۘۧۛ۬ۥۖۡۘۨ۫ۡۘۚۡ۫"
+  goto/16              -090h
+  const-string         v0, "ۧۜۘۚۙۜۛۚۧۦ۫ۖ۫۠ۛۢ۟ۥۚ۫ۛۘۤۦۘۢۧ۫ۥۢۘۙ۟ۗۥۥۘ۬ۛ۠ۗۖۘۧۛ۬ۥۖۡۘۨ۫ۡۘۚۡ۫"
+  goto/16              -094h
+  return-void          
+  sparse-switch-payload -7e86f8b2 -7571ff3d -44ba2e0d -34913561 -1546f551 9efe1e6 158adf8b 1881b1b8 21d1712e 23ad4e04 26b4cf17 6ba900ef
+  sparse-switch-payload -792ad32d -68debec3 -120c650e 6c9f8fa3
+  sparse-switch-payload -4cfbc466 -2d3de4dc 728507f 6ad4febc

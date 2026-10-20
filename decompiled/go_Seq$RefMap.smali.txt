@@ -1,0 +1,190 @@
+// Class: Lgo/Seq$RefMap;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v2, Ljava/lang/Object;-><init>()V
+  const/4              v0, 0
+  iput                 v0, v2, Lgo/Seq$RefMap;->next I
+  iput                 v0, v2, Lgo/Seq$RefMap;->live I
+  const/16             v0, 16
+  new-array            v1, v0, [I
+  iput-object          v1, v2, Lgo/Seq$RefMap;->keys [I
+  new-array            v0, v0, [Lgo/Seq$Ref;
+  iput-object          v0, v2, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  iget                 v0, v7, Lgo/Seq$RefMap;->live I
+  invoke-static        v0, Lgo/Seq$RefMap;->roundPow2(I)I
+  move-result          v0
+  mul-int/lit8         v0, v0, 2
+  iget-object          v1, v7, Lgo/Seq$RefMap;->keys [I
+  array-length         v2, v1
+  if-le                v0, v2, +00fh
+  array-length         v0, v1
+  mul-int/lit8         v0, v0, 2
+  new-array            v1, v0, [I
+  iget-object          v0, v7, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  array-length         v0, v0
+  mul-int/lit8         v0, v0, 2
+  new-array            v0, v0, [Lgo/Seq$Ref;
+  goto                 +3h
+  iget-object          v0, v7, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  const/4              v2, 0
+  move                 v3, v2
+  move                 v4, v3
+  iget-object          v5, v7, Lgo/Seq$RefMap;->keys [I
+  array-length         v6, v5
+  if-ge                v3, v6, +013h
+  iget-object          v6, v7, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  aget-object          v6, v6, v3
+  if-eqz               v6, +00ah
+  aget                 v5, v5, v3
+  aput                 v5, v1, v4
+  aput-object          v6, v0, v4
+  add-int/lit8         v4, v4, 1
+  add-int/lit8         v3, v3, 1
+  goto                 -15h
+  move                 v3, v4
+  array-length         v5, v1
+  if-ge                v3, v5, +00ah
+  aput                 v2, v1, v3
+  const/4              v5, 0
+  aput-object          v5, v0, v3
+  add-int/lit8         v3, v3, 1
+  goto                 -ah
+  iput-object          v1, v7, Lgo/Seq$RefMap;->keys [I
+  iput-object          v0, v7, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  iput                 v4, v7, Lgo/Seq$RefMap;->next I
+  iget                 v0, v7, Lgo/Seq$RefMap;->live I
+  if-ne                v0, v4, +003h
+  return-void          
+  new-instance         v0, Ljava/lang/RuntimeException;
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "bad state: live="
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget                 v2, v7, Lgo/Seq$RefMap;->live I
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string         v2, ", next="
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget                 v2, v7, Lgo/Seq$RefMap;->next I
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-direct        v0, v1, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v0
+
+// Method: None (I)I
+  // bytecode:
+  const/4              v0, 1
+  if-ge                v0, v1, +005h
+  mul-int/lit8         v0, v0, 2
+  goto                 -4h
+  return               v0
+
+// Method: None (I)Lgo/Seq$Ref;
+  // bytecode:
+  iget-object          v0, v3, Lgo/Seq$RefMap;->keys [I
+  const/4              v1, 0
+  iget                 v2, v3, Lgo/Seq$RefMap;->next I
+  invoke-static        v0, v1, v2, v4, Ljava/util/Arrays;->binarySearch([I I I I)I
+  move-result          v4
+  if-ltz               v4, +007h
+  iget-object          v0, v3, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  aget-object          v4, v0, v4
+  return-object        v4
+  const/4              v4, 0
+  return-object        v4
+
+// Method: None (I Lgo/Seq$Ref;)V
+  // bytecode:
+  const-string         v0, ")"
+  if-eqz               v6, +073h
+  iget-object          v1, v4, Lgo/Seq$RefMap;->keys [I
+  iget                 v2, v4, Lgo/Seq$RefMap;->next I
+  const/4              v3, 0
+  invoke-static        v1, v3, v2, v5, Ljava/util/Arrays;->binarySearch([I I I I)I
+  move-result          v1
+  if-ltz               v1, +02ch
+  iget-object          v2, v4, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  aget-object          v3, v2, v1
+  if-nez               v3, +00ah
+  aput-object          v6, v2, v1
+  iget                 v3, v4, Lgo/Seq$RefMap;->live I
+  add-int/lit8         v3, v3, 1
+  iput                 v3, v4, Lgo/Seq$RefMap;->live I
+  aget-object          v1, v2, v1
+  if-ne                v1, v6, +003h
+  return-void          
+  new-instance         v6, Ljava/lang/RuntimeException;
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "replacing an existing ref (with key "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v1, v5, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v5
+  invoke-direct        v6, v5, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v6
+  iget                 v0, v4, Lgo/Seq$RefMap;->next I
+  iget-object          v2, v4, Lgo/Seq$RefMap;->keys [I
+  array-length         v2, v2
+  if-lt                v0, v2, +00dh
+  invoke-direct        v4, Lgo/Seq$RefMap;->grow()V
+  iget-object          v0, v4, Lgo/Seq$RefMap;->keys [I
+  iget                 v1, v4, Lgo/Seq$RefMap;->next I
+  invoke-static        v0, v3, v1, v5, Ljava/util/Arrays;->binarySearch([I I I I)I
+  move-result          v1
+  not-int              v0, v1
+  iget                 v1, v4, Lgo/Seq$RefMap;->next I
+  if-ge                v0, v1, +012h
+  iget-object          v2, v4, Lgo/Seq$RefMap;->keys [I
+  add-int/lit8         v3, v0, 1
+  sub-int/2addr        v1, v0
+  invoke-static        v2, v0, v2, v3, v1, Ljava/lang/System;->arraycopy(Ljava/lang/Object; I Ljava/lang/Object; I I)V
+  iget-object          v1, v4, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  iget                 v2, v4, Lgo/Seq$RefMap;->next I
+  sub-int/2addr        v2, v0
+  invoke-static        v1, v0, v1, v3, v2, Ljava/lang/System;->arraycopy(Ljava/lang/Object; I Ljava/lang/Object; I I)V
+  iget-object          v1, v4, Lgo/Seq$RefMap;->keys [I
+  aput                 v5, v1, v0
+  iget-object          v5, v4, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  aput-object          v6, v5, v0
+  iget                 v5, v4, Lgo/Seq$RefMap;->live I
+  add-int/lit8         v5, v5, 1
+  iput                 v5, v4, Lgo/Seq$RefMap;->live I
+  iget                 v5, v4, Lgo/Seq$RefMap;->next I
+  add-int/lit8         v5, v5, 1
+  iput                 v5, v4, Lgo/Seq$RefMap;->next I
+  return-void          
+  new-instance         v6, Ljava/lang/RuntimeException;
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "put a null ref (with key "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v1, v5, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v5
+  invoke-direct        v6, v5, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v6
+
+// Method: None (I)V
+  // bytecode:
+  iget-object          v0, v3, Lgo/Seq$RefMap;->keys [I
+  const/4              v1, 0
+  iget                 v2, v3, Lgo/Seq$RefMap;->next I
+  invoke-static        v0, v1, v2, v4, Ljava/util/Arrays;->binarySearch([I I I I)I
+  move-result          v4
+  if-ltz               v4, +011h
+  iget-object          v0, v3, Lgo/Seq$RefMap;->objs [Lgo/Seq$Ref;
+  aget-object          v1, v0, v4
+  if-eqz               v1, +00bh
+  const/4              v1, 0
+  aput-object          v1, v0, v4
+  iget                 v4, v3, Lgo/Seq$RefMap;->live I
+  add-int/lit8         v4, v4, -1
+  iput                 v4, v3, Lgo/Seq$RefMap;->live I
+  return-void          

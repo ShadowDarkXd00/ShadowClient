@@ -1,0 +1,24 @@
+// Class: Lgo/Seq$GoRefQueue$1;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lgo/Seq$GoRefQueue;)V
+  // bytecode:
+  iput-object          v1, v0, Lgo/Seq$GoRefQueue$1;->this$0 Lgo/Seq$GoRefQueue;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  iget-object          v0, v2, Lgo/Seq$GoRefQueue$1;->this$0 Lgo/Seq$GoRefQueue;
+  invoke-virtual       v0, Ljava/lang/ref/ReferenceQueue;->remove()Ljava/lang/ref/Reference;
+  move-result-object   v0
+  check-cast           v0, Lgo/Seq$GoRef;
+  iget-object          v1, v2, Lgo/Seq$GoRefQueue$1;->this$0 Lgo/Seq$GoRefQueue;
+  invoke-static        v1, Lgo/Seq$GoRefQueue;->access$200(Lgo/Seq$GoRefQueue;)Ljava/util/Collection;
+  move-result-object   v1
+  invoke-interface     v1, v0, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
+  iget                 v1, v0, Lgo/Seq$GoRef;->refnum I
+  invoke-static        v1, Lgo/Seq;->destroyRef(I)V
+  invoke-virtual       v0, Ljava/lang/ref/Reference;->clear()V
+  goto                 -19h

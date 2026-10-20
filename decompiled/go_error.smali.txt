@@ -1,0 +1,6 @@
+// Class: Lgo/error;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code

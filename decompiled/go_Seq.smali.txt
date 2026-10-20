@@ -1,0 +1,105 @@
+// Class: Lgo/Seq;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  const-string         v0, "GoSeq"
+  invoke-static        v0, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+  move-result-object   v0
+  sput-object          v0, Lgo/Seq;->log Ljava/util/logging/Logger;
+  new-instance         v0, Lgo/Seq$Ref;
+  const/16             v1, 41
+  const/4              v2, 0
+  invoke-direct        v0, v1, v2, Lgo/Seq$Ref;-><init>(I Ljava/lang/Object;)V
+  sput-object          v0, Lgo/Seq;->nullRef Lgo/Seq$Ref;
+  new-instance         v0, Lgo/Seq$GoRefQueue;
+  invoke-direct        v0, Lgo/Seq$GoRefQueue;-><init>()V
+  sput-object          v0, Lgo/Seq;->goRefQueue Lgo/Seq$GoRefQueue;
+  const-string         v0, "gojni"
+  invoke-static        v0, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+  invoke-static        Lgo/Seq;->init()V
+  invoke-static        Lgo/Universe;->touch()V
+  new-instance         v0, Lgo/Seq$RefTracker;
+  invoke-direct        v0, Lgo/Seq$RefTracker;-><init>()V
+  sput-object          v0, Lgo/Seq;->tracker Lgo/Seq$RefTracker;
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()Ljava/util/logging/Logger;
+  // bytecode:
+  sget-object          v0, Lgo/Seq;->log Ljava/util/logging/Logger;
+  return-object        v0
+
+// Method: None (I)V
+  // bytecode:
+  sget-object          v0, Lgo/Seq;->tracker Lgo/Seq$RefTracker;
+  invoke-virtual       v0, v1, Lgo/Seq$RefTracker;->dec(I)V
+  return-void          
+
+// Method: None (I)V
+  // native / abstract / no code
+
+// Method: None (I)Lgo/Seq$Ref;
+  // bytecode:
+  sget-object          v0, Lgo/Seq;->tracker Lgo/Seq$RefTracker;
+  invoke-virtual       v0, v1, Lgo/Seq$RefTracker;->get(I)Lgo/Seq$Ref;
+  move-result-object   v1
+  return-object        v1
+
+// Method: None (Lgo/Seq$GoObject;)I
+  // bytecode:
+  invoke-interface     v0, Lgo/Seq$GoObject;->incRefnum()I
+  move-result          v0
+  return               v0
+
+// Method: None (I Lgo/Seq$GoObject;)V
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/Object;)I
+  // bytecode:
+  sget-object          v0, Lgo/Seq;->tracker Lgo/Seq$RefTracker;
+  invoke-virtual       v0, v1, Lgo/Seq$RefTracker;->inc(Ljava/lang/Object;)I
+  move-result          v1
+  return               v1
+
+// Method: None (I)V
+  // bytecode:
+  sget-object          v0, Lgo/Seq;->tracker Lgo/Seq$RefTracker;
+  invoke-virtual       v0, v1, Lgo/Seq$RefTracker;->incRefnum(I)V
+  return-void          
+
+// Method: None ()V
+  // native / abstract / no code
+
+// Method: None (Landroid/content/Context;)V
+  // bytecode:
+  invoke-static        v0, Lgo/Seq;->setContext(Ljava/lang/Object;)V
+  return-void          
+
+// Method: None (Ljava/lang/Object;)V
+  // native / abstract / no code
+
+// Method: None ()V
+  // bytecode:
+  return-void          
+
+// Method: None (I Lgo/Seq$GoObject;)V
+  // bytecode:
+  if-gtz               v2, +008h
+  sget-object          v0, Lgo/Seq;->goRefQueue Lgo/Seq$GoRefQueue;
+  invoke-virtual       v0, v2, v3, Lgo/Seq$GoRefQueue;->track(I Lgo/Seq$GoObject;)V
+  return-void          
+  new-instance         v3, Ljava/lang/RuntimeException;
+  new-instance         v0, Ljava/lang/StringBuilder;
+  const-string         v1, "trackGoRef called with Java refnum "
+  invoke-direct        v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v0, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v2
+  invoke-direct        v3, v2, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v3

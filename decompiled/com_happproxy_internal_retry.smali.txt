@@ -1,0 +1,9 @@
+// Class: Lcom/happproxy/internal/retry;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/ui/ServerActivity;)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/retry;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  return-void          

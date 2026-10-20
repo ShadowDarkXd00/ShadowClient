@@ -1,0 +1,35 @@
+// Class: Lgo/Seq$GoRefQueue;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v2, Ljava/lang/ref/ReferenceQueue;-><init>()V
+  new-instance         v0, Ljava/util/HashSet;
+  invoke-direct        v0, Ljava/util/HashSet;-><init>()V
+  invoke-static        v0, Ljava/util/Collections;->synchronizedCollection(Ljava/util/Collection;)Ljava/util/Collection;
+  move-result-object   v0
+  iput-object          v0, v2, Lgo/Seq$GoRefQueue;->refs Ljava/util/Collection;
+  new-instance         v0, Ljava/lang/Thread;
+  new-instance         v1, Lgo/Seq$GoRefQueue$1;
+  invoke-direct        v1, v2, Lgo/Seq$GoRefQueue$1;-><init>(Lgo/Seq$GoRefQueue;)V
+  invoke-direct        v0, v1, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+  const/4              v1, 1
+  invoke-virtual       v0, v1, Ljava/lang/Thread;->setDaemon(Z)V
+  const-string         v1, "GoRefQueue Finalizer Thread"
+  invoke-virtual       v0, v1, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+  invoke-virtual       v0, Ljava/lang/Thread;->start()V
+  return-void          
+
+// Method: None (Lgo/Seq$GoRefQueue;)Ljava/util/Collection;
+  // bytecode:
+  iget-object          v0, v0, Lgo/Seq$GoRefQueue;->refs Ljava/util/Collection;
+  return-object        v0
+
+// Method: None (I Lgo/Seq$GoObject;)V
+  // bytecode:
+  iget-object          v0, v2, Lgo/Seq$GoRefQueue;->refs Ljava/util/Collection;
+  new-instance         v1, Lgo/Seq$GoRef;
+  invoke-direct        v1, v3, v4, v2, Lgo/Seq$GoRef;-><init>(I Lgo/Seq$GoObject; Lgo/Seq$GoRefQueue;)V
+  invoke-interface     v0, v1, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+  return-void          

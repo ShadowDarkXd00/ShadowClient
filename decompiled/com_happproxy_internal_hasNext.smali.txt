@@ -1,0 +1,33 @@
+// Class: Lcom/happproxy/internal/hasNext;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/ui/ServerActivity; Landroid/app/AlertDialog;)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/hasNext;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  iput-object          v2, v0, Lcom/happproxy/internal/hasNext;->onLayout Landroid/app/AlertDialog;
+  return-void          
+
+// Method: None (Landroid/view/View;)V
+  // bytecode:
+  sget                 v0, Lcom/happproxy/ui/ServerActivity;->recv I
+  iget-object          v0, v6, Lcom/happproxy/internal/hasNext;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  invoke-virtual       v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  iget-object          v1, v6, Lcom/happproxy/internal/hasNext;->onLayout Landroid/app/AlertDialog;
+  invoke-virtual       v1, Landroid/app/Dialog;->dismiss()V
+  new-instance         v1, Landroid/content/Intent;
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  const-wide           v4, -3980475916262
+  invoke-static        v4, v5, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  const-wide           v4, -4096440033254
+  invoke-static        v4, v5, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-static        v2, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object   v2
+  invoke-direct        v1, v3, v2, Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V
+  invoke-virtual       v0, v1, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+  return-void          
+  move-exception       v0
+  goto                 -2h

@@ -1,0 +1,8 @@
+// Class: Lgo/golib/gojni/R;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          

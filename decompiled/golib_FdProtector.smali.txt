@@ -1,0 +1,6 @@
+// Class: Lgolib/FdProtector;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I)Z
+  // native / abstract / no code

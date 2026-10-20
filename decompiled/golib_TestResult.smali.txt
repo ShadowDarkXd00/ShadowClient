@@ -1,0 +1,175 @@
+// Class: Lgolib/TestResult;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-static        Lgolib/Golib;->touch()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v1, Ljava/lang/Object;-><init>()V
+  invoke-static        Lgolib/TestResult;->__New()I
+  move-result          v0
+  iput                 v0, v1, Lgolib/TestResult;->refnum I
+  invoke-static        v0, v1, Lgo/Seq;->trackGoRef(I Lgo/Seq$GoObject;)V
+  return-void          
+
+// Method: None (I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput                 v1, v0, Lgolib/TestResult;->refnum I
+  invoke-static        v1, v0, Lgo/Seq;->trackGoRef(I Lgo/Seq$GoObject;)V
+  return-void          
+
+// Method: None ()I
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/Object;)Z
+  // bytecode:
+  const/4              v0, 0
+  if-eqz               v6, +056h
+  instance-of          v1, v6, Lgolib/TestResult;
+  if-nez               v1, +003h
+  goto                 +50h
+  check-cast           v6, Lgolib/TestResult;
+  invoke-virtual       v5, Lgolib/TestResult;->getOk()Z
+  move-result          v1
+  invoke-virtual       v6, Lgolib/TestResult;->getOk()Z
+  move-result          v2
+  if-eq                v1, v2, +003h
+  return               v0
+  invoke-virtual       v5, Lgolib/TestResult;->getBytes()I
+  move-result          v1
+  invoke-virtual       v6, Lgolib/TestResult;->getBytes()I
+  move-result          v2
+  if-eq                v1, v2, +003h
+  return               v0
+  invoke-virtual       v5, Lgolib/TestResult;->getElapsedMs()J
+  move-result-wide     v1
+  invoke-virtual       v6, Lgolib/TestResult;->getElapsedMs()J
+  move-result-wide     v3
+  cmp-long             v1, v1, v3
+  if-eqz               v1, +003h
+  return               v0
+  invoke-virtual       v5, Lgolib/TestResult;->getDetail()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, Lgolib/TestResult;->getDetail()Ljava/lang/String;
+  move-result-object   v2
+  if-nez               v1, +005h
+  if-eqz               v2, +00ah
+  return               v0
+  invoke-virtual       v1, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result          v1
+  if-nez               v1, +003h
+  return               v0
+  invoke-virtual       v5, Lgolib/TestResult;->getError()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, Lgolib/TestResult;->getError()Ljava/lang/String;
+  move-result-object   v6
+  if-nez               v1, +005h
+  if-eqz               v6, +00ah
+  return               v0
+  invoke-virtual       v1, v6, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result          v6
+  if-nez               v6, +003h
+  return               v0
+  const/4              v6, 1
+  return               v6
+  return               v0
+
+// Method: None ()I
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()J
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()Z
+  // native / abstract / no code
+
+// Method: None ()I
+  // bytecode:
+  invoke-virtual       v5, Lgolib/TestResult;->getOk()Z
+  move-result          v0
+  invoke-static        v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object   v0
+  invoke-virtual       v5, Lgolib/TestResult;->getBytes()I
+  move-result          v1
+  invoke-static        v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object   v1
+  invoke-virtual       v5, Lgolib/TestResult;->getElapsedMs()J
+  move-result-wide     v2
+  invoke-static        v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object   v2
+  invoke-virtual       v5, Lgolib/TestResult;->getDetail()Ljava/lang/String;
+  move-result-object   v3
+  invoke-virtual       v5, Lgolib/TestResult;->getError()Ljava/lang/String;
+  move-result-object   v4
+  filled-new-array     v0, v1, v2, v3, v4, [Ljava/lang/Object;
+  move-result-object   v0
+  invoke-static        v0, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+  move-result          v0
+  return               v0
+
+// Method: None ()I
+  // bytecode:
+  iget                 v0, v1, Lgolib/TestResult;->refnum I
+  invoke-static        v0, v1, Lgo/Seq;->incGoRef(I Lgo/Seq$GoObject;)V
+  iget                 v0, v1, Lgolib/TestResult;->refnum I
+  return               v0
+
+// Method: None (I)V
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/String;)V
+  // native / abstract / no code
+
+// Method: None (J)V
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/String;)V
+  // native / abstract / no code
+
+// Method: None (Z)V
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // bytecode:
+  new-instance         v0, Ljava/lang/StringBuilder;
+  const-string         v1, "TestResult{Ok:"
+  invoke-direct        v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v3, Lgolib/TestResult;->getOk()Z
+  move-result          v1
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+  const-string         v1, ",Bytes:"
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v3, Lgolib/TestResult;->getBytes()I
+  move-result          v1
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string         v1, ",ElapsedMs:"
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v3, Lgolib/TestResult;->getElapsedMs()J
+  move-result-wide     v1
+  invoke-virtual       v0, v1, v2, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+  const-string         v1, ",Detail:"
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v3, Lgolib/TestResult;->getDetail()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v1, ",Error:"
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v3, Lgolib/TestResult;->getError()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v1, ",}"
+  invoke-virtual       v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v0
+  return-object        v0

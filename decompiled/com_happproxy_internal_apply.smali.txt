@@ -1,0 +1,64 @@
+// Class: Lcom/happproxy/internal/apply;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/ui/ServerActivity; I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput                 v2, v0, Lcom/happproxy/internal/apply;->onMeasure I
+  iput-object          v1, v0, Lcom/happproxy/internal/apply;->onLayout Lcom/happproxy/ui/ServerActivity;
+  return-void          
+
+// Method: None (Landroid/view/View;)V
+  // bytecode:
+  const/4              v2, 0
+  const/4              v3, 0
+  const-string         v0, "ۗۥۧۘۧۦ۬ۨۦۖۧۤۘۘۧ۫ۗۙ۫ۘۘ۫ۦۗۡۧۖۘۗۖۘ۬ۚۖۢۤۤۢۤۘۘ۫۠ۢ۫ۗ۬ۤۥۧۘۧۚۖ"
+  move                 v1, v2
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  const/16             v5, 592
+  xor-int/2addr        v4, v5
+  xor-int/lit8         v4, v4, 106
+  const/16             v5, 84
+  const                v6, -1379343894
+  xor-int/2addr        v4, v5
+  xor-int/2addr        v4, v6
+  sparse-switch        v4, +0000041h
+  goto                 -13h
+  const-string         v0, "ۡۜ۠ۜ۠ۖ۠ۨ۬ۡ۫ۦۤۢۦۡۢۨۖۤۖ۠۫ۢ۠ۨۢۧۦۡۜۥۜۙۥۛ۬ۘۘۙۡۡ"
+  goto                 -16h
+  const-string         v0, "۠ۡۖ۬ۚۗ۫ۙۖۘۖۙۡۘۡ۬۫ۘۡۨۘۚۦۥ۠ۙۦۘۙ۬ۨۘ۬ۖۡۗ۬ۜۘۘۧۙۧۨۤۦۙۙ"
+  goto                 -19h
+  iget-object          v3, v7, Lcom/happproxy/internal/apply;->onLayout Lcom/happproxy/ui/ServerActivity;
+  const-string         v0, "ۛۘۨۘۛ۟ۘۡ۬ۜۗۤۨۘۧۥۦ۬ۘۛۖۘۗ۟ۨۧ۫ۗۨۙ۠ۥۜۤۡ۬ۘۨۘۚۗۡۘۛۘۗۤۡۘۦۥۡ"
+  goto                 -1eh
+  iget                 v1, v7, Lcom/happproxy/internal/apply;->onMeasure I
+  const-string         v0, "ۛۧۥۘ۟ۗۖۚۥۧۘۥۙۜۘۙۨۘۛۙۙۢۙۥۧۘ۫ۦۥ۬ۘۛۚۨۢۚۚۥۤ"
+  goto                 -23h
+  iput                 v1, v3, Lcom/happproxy/ui/ServerActivity;->cancel I
+  const-string         v0, "ۖۘۥۘۜۡۘۤۘۥۘ۬ۧۨۘۗ۫ۡۘۦۗۥۘۙۢۥۢۛۦۘۥۢۛۗۤ۟ۖۧ۬ۨۘ۬ۗۜۘ۟۟ۜۘۙۙۦۘۦ۟ۡۘۖ۬ۥۢۥۦۘ"
+  goto                 -28h
+  const/16             v0, 255
+  invoke-static        v0, v1, Lcom/happproxy/NativeProvider;->nIoctl(I I)V
+  const-string         v0, "۬۠۟ۢۖۜۘۛۦۛ۫ۡۥۘ۬۬۫۫ۜۧۦۧ۫ۜ۫ۥۘۘۡۢۡ۬ۘۢۜۜۡۥۘ"
+  goto                 -30h
+  invoke-static        v3, Lcom/happproxy/ui/ServerActivity;->onMeasure(Lcom/happproxy/ui/ServerActivity;)V
+  const-string         v0, "۬ۖۥۘۘ۬۫ۤۢ۬ۙۜۧ۟ۤ۬۟ۨۘۖ۬ۦۘ۠ۛۥۘۤۘۗۛۚۤۧۚۡۧۡۘۛۖۧۜۘ۫ۚۙۘۢۦۙ"
+  goto                 -36h
+  iput-boolean         v2, v3, Lcom/happproxy/ui/ServerActivity;->retry Z
+  const-string         v0, "ۢۡۡۘۚۨۗۖۖۤۡۥۦۘۛۨۘۘۢۘۘۧۡۥۡ۫ۤۧۢۘۥۥۘۛۨ۠ۙۥۛۘۢۥۘۡۥۙۨ۟ۖۘۚۖۢ"
+  goto                 -3bh
+  iget-object          v0, v3, Lcom/happproxy/ui/ServerActivity;->reset Landroid/widget/LinearLayout;
+  const/16             v4, 8
+  invoke-virtual       v0, v4, Landroid/view/View;->setVisibility(I)V
+  const-string         v0, "ۨۛۘۢ۠ۖۘۦۘ۟۫ۢۘۘۛ۫۟ۗۢۧ۬ۚۤۨۡۜۛۦ۫ۖ۠ۙۘ۬۠ۖ۟ۨۘۖ۫ۖۘۥ۬ۙ"
+  goto                 -45h
+  iget-object          v0, v3, Lcom/happproxy/ui/ServerActivity;->notify Landroid/widget/ImageView;
+  const/4              v4, 0
+  invoke-virtual       v0, v4, Landroid/view/View;->setRotation(F)V
+  const-string         v0, "ۚۤۛۧ۟ۥۘۘۢۦۘۛۨۜۘۖۙۘۘۨۨۡۘۘۚۛۗۦۘۘۤۚۤ۟ۘۧۦۥۘۚۥۧ۬ۥ۬۬ۚ۬ۖ۬ۥۘ"
+  goto                 -4eh
+  return-void          
+  nop                  
+  sparse-switch-payload -66e45dec -46ac48e6 -3d7cf900 -3ab0f6c5 7b05368 d9124cb 1abc6275 1e41ef6d 3343a52d 4be7a9f5 5b460b80

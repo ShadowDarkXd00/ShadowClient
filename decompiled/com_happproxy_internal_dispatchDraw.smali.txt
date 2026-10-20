@@ -1,0 +1,150 @@
+// Class: Lcom/happproxy/internal/dispatchDraw;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Landroid/graphics/Canvas; I I I I F F F F)V
+  // bytecode:
+  iget-object          v0, v1, Lcom/happproxy/internal/dispatchDraw;->onMeasure Landroid/graphics/Paint;
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v0, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v0, v3, Landroid/graphics/Paint;->setAlpha(I)V
+  invoke-virtual       v0, v7, Landroid/graphics/Paint;->setStrokeWidth(F)V
+  invoke-virtual       v2, v8, v9, v10, v0, Landroid/graphics/Canvas;->drawCircle(F F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (Landroid/graphics/Canvas; I I I I F F F)V
+  // bytecode:
+  iget-object          v0, v1, Lcom/happproxy/internal/dispatchDraw;->dispatchDraw Landroid/graphics/Paint;
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v0, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v0, v3, Landroid/graphics/Paint;->setAlpha(I)V
+  invoke-virtual       v2, v7, v8, v9, v0, Landroid/graphics/Canvas;->drawCircle(F F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (Landroid/graphics/Canvas; I I I I F F F F)V
+  // bytecode:
+  move                 v0, v3
+  move                 v3, v7
+  iget-object          v7, v1, Lcom/happproxy/internal/dispatchDraw;->dispatchDraw Landroid/graphics/Paint;
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v7, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v7, v0, Landroid/graphics/Paint;->setAlpha(I)V
+  move                 v4, v8
+  move                 v5, v9
+  move                 v6, v10
+  invoke-virtual/range v2 ... v7, Landroid/graphics/Canvas;->drawRect(F F F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (Landroid/graphics/Canvas; I I I I F F F F F)V
+  // bytecode:
+  move                 v0, v7
+  iget-object          v7, v1, Lcom/happproxy/internal/dispatchDraw;->onMeasure Landroid/graphics/Paint;
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v7, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v7, v3, Landroid/graphics/Paint;->setAlpha(I)V
+  invoke-virtual       v7, v0, Landroid/graphics/Paint;->setStrokeWidth(F)V
+  move                 v3, v8
+  move                 v4, v9
+  move                 v5, v10
+  move                 v6, v11
+  invoke-virtual/range v2 ... v7, Landroid/graphics/Canvas;->drawLine(F F F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (Landroid/graphics/Canvas; I I I I F I I F F F F)V
+  // bytecode:
+  move                 v0, v9
+  iget-object          v9, v1, Lcom/happproxy/internal/dispatchDraw;->onMeasure Landroid/graphics/Paint;
+  invoke-virtual       v9, v7, Landroid/graphics/Paint;->setStrokeWidth(F)V
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v9, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v9, v3, Landroid/graphics/Paint;->setAlpha(I)V
+  add-float            v5, v10, v12
+  add-float            v6, v11, v13
+  int-to-float         v7, v8
+  int-to-float         v8, v0
+  move                 v3, v10
+  move                 v4, v11
+  invoke-virtual/range v2 ... v9, Landroid/graphics/Canvas;->drawRoundRect(F F F F F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (Landroid/graphics/Canvas; I I I I F Ljava/lang/String; F F F)V
+  // bytecode:
+  iget-object          v0, v1, Lcom/happproxy/internal/dispatchDraw;->onLayout Landroid/graphics/Paint;
+  invoke-static        v4, v5, v6, Landroid/graphics/Color;->rgb(I I I)I
+  move-result          v4
+  invoke-virtual       v0, v4, Landroid/graphics/Paint;->setColor(I)V
+  invoke-virtual       v0, v3, Landroid/graphics/Paint;->setAlpha(I)V
+  invoke-virtual       v0, v11, Landroid/graphics/Paint;->setTextSize(F)V
+  const/4              v3, 0
+  cmpl-float           v4, v7, v3
+  if-lez               v4, +00bh
+  const/high16         v4, 1056964608
+  mul-float/2addr      v4, v7
+  const/high16         v5, -16777216
+  invoke-virtual       v0, v7, v3, v4, v5, Landroid/graphics/Paint;->setShadowLayer(F F F I)V
+  goto                 +5h
+  const/4              v4, 0
+  invoke-virtual       v0, v3, v3, v3, v4, Landroid/graphics/Paint;->setShadowLayer(F F F I)V
+  invoke-virtual       v2, v8, v9, v10, v0, Landroid/graphics/Canvas;->drawText(Ljava/lang/String; F F Landroid/graphics/Paint;)V
+  return-void          
+
+// Method: None (F)F
+  // bytecode:
+  invoke-virtual       v1, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+  move-result-object   v0
+  invoke-virtual       v0, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+  move-result-object   v0
+  iget                 v0, v0, Landroid/util/DisplayMetrics;->density F
+  mul-float/2addr      v2, v0
+  return               v2
+
+// Method: None (Landroid/graphics/Canvas;)V
+  // bytecode:
+  if-eqz               v3, +013h
+  const/4              v0, 0
+  sget-object          v1, Landroid/graphics/PorterDuff$Mode;->CLEAR Landroid/graphics/PorterDuff$Mode;
+  invoke-virtual       v3, v0, v1, Landroid/graphics/Canvas;->drawColor(I Landroid/graphics/PorterDuff$Mode;)V
+  invoke-virtual       v3, Landroid/graphics/Canvas;->getWidth()I
+  move-result          v0
+  invoke-virtual       v3, Landroid/graphics/Canvas;->getHeight()I
+  move-result          v1
+  invoke-static        v2, v3, v0, v1, Lcom/happproxy/NativeProvider;->nDrawOverlay(Ljava/lang/Object; Ljava/lang/Object; I I)V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v0, 0
+  invoke-static        v0, Landroid/os/Process;->setThreadPriority(I)V
+  iget-boolean         v0, v4, Lcom/happproxy/internal/dispatchDraw;->onAttach Z
+  if-eqz               v0, +034h
+  invoke-static        Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+  move-result-object   v0
+  invoke-virtual       v0, Ljava/lang/Thread;->isInterrupted()Z
+  move-result          v0
+  if-nez               v0, +02ah
+  invoke-static        Ljava/lang/System;->nanoTime()J
+  move-result-wide     v0
+  invoke-virtual       v4, Landroid/view/View;->postInvalidate()V
+  invoke-static        Ljava/lang/System;->nanoTime()J
+  move-result-wide     v2
+  sub-long/2addr       v2, v0
+  const-wide/32        v0, 1000000
+  div-long/2addr       v2, v0
+  const-wide/16        v0, 16
+  sub-long/2addr       v0, v2
+  const-wide/16        v2, 0
+  invoke-static        v2, v3, v0, v1, Ljava/lang/Math;->max(J J)J
+  move-result-wide     v0
+  cmp-long             v2, v0, v2
+  if-lez               v2, -029h
+  invoke-static        v0, v1, Ljava/lang/Thread;->sleep(J)V
+  goto                 -2eh
+  invoke-static        Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+  move-result-object   v0
+  invoke-virtual       v0, Ljava/lang/Thread;->interrupt()V
+  return-void          

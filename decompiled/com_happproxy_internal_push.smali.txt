@@ -1,0 +1,392 @@
+// Class: Lcom/happproxy/internal/push;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I Ljava/lang/Object;)V
+  // bytecode:
+  iput                 v1, v0, Lcom/happproxy/internal/push;->onMeasure I
+  iput-object          v2, v0, Lcom/happproxy/internal/push;->onLayout Ljava/lang/Object;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v15, 0
+  const/4              v14, 0
+  const/4              v13, 0
+  const/4              v12, 0
+  const/4              v11, 0
+  const/4              v10, 0
+  const/4              v9, 0
+  const/4              v8, 0
+  const/4              v7, 0
+  const/4              v6, 0
+  const/4              v5, 0
+  const/4              v4, 0
+  const-string         v2, "ۥۗۛۤۜۦۚ۟۫ۘۚۦۘ۟۟ۦۘۨۡۙ۟۟ۨۘۢۤۜۘۧۚۘ۠ۨ۟ۙ۬ۖ۠ۧۛۥۗۘۘ۫ۖۨ۬۫ۨۘۖۘۥ"
+  move-object          v3, v2
+  invoke-virtual       v3, Ljava/lang/String;->hashCode()I
+  move-result          v2
+  const/16             v16, 811
+  xor-int              v2, v2, v16
+  xor-int/lit16        v2, v2, 917
+  const/16             v16, 359
+  const                v17, 117893936
+  xor-int              v2, v2, v16
+  xor-int              v2, v2, v17
+  sparse-switch        v2, +000026ah
+  goto                 -16h
+  const-string         v2, "ۨۥۖ۟۟ۥۢۛ۠ۧۡۢ۫۫ۚۧۜۗۥۚ۬ۡۧۢۧ۠ۤۡۨ۬ۨۘۥ۟ۖۗۚۚۙۢۚ"
+  move-object          v3, v2
+  goto                 -1ah
+  move-object/from16   v0, v18
+  iget                 v2, v0, Lcom/happproxy/internal/push;->onMeasure I
+  packed-switch        v2, +0000304h
+  const-string         v2, "۫ۙۨۨۦۨۗۗ۟۠ۚۤۛ۬ۥۘۙۤۘۧۦۜۘ۫ۧۤۨۜۜۘۘۢۜۘ۬ۚۤ۬ۡۨۘ"
+  move-object          v3, v2
+  goto                 -25h
+  move-object/from16   v0, v18
+  iget-object          v2, v0, Lcom/happproxy/internal/push;->onLayout Ljava/lang/Object;
+  check-cast           v2, Lcom/happproxy/service/XRayProxyOnlyService;
+  const-string         v3, "ۘ۫ۙۨۚۤۡۚۡۘۦۦۥۖۧ۫۟ۤ۟۠ۤۦۘۙ۠ۥۘۢۘۚۡۘۙۘ۬۫ۢۘۖۘ"
+  move-object          v15, v2
+  goto                 -2fh
+  iget-object          v2, v15, Lcom/happproxy/service/XRayProxyOnlyService;->remove Landroid/widget/ScrollView;
+  const/4              v3, 0
+  invoke-virtual       v2, v3, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+  move-result-object   v14
+  const-string         v2, "ۤۚۥۘۧۢۜۢ۟ۧۢۚۦۘۧۛۖۘۥۤۖۧۗۖۘۙ۬ۚۙۡۢۥۜۨۢۚۖ۠ۛۖۘ۬۬ۙۤ۫ۖۗۢ۬ۙ۠ۡۘۗۖۙۧۙۢ"
+  move-object          v3, v2
+  goto                 -3ah
+  const                v3, -649046625
+  const-string         v2, "ۜۥۖۦۛۖۡۚۦۘۨۜۡۚۥۨۗۜۦ۫ۤۖۡ۟ۛۘۖۧۥۜۘۘۚۘۜۙۘ۫ۢۘۥ۬ۢۗ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v16
+  xor-int              v16, v16, v3
+  sparse-switch        v16, +00002e5h
+  goto                 -9h
+  const-string         v2, "ۘۖ۫۬ۦۘۘۜۙۥ۫ۛۘۘ۠۠ۨۙ۫۟ۨۡۦۘۗۡۥۥۛۥۘۗۡۧۘ"
+  goto                 -ch
+  const-string         v2, "ۗۥۡۘۦۗۡ۠ۘۨۢۙ۠ۙۚۗۡۗ۟ۜ۠ۚۜ۬ۜ۟ۘۦۘۤ۠ۛۦۖۥۘۢۗ۟"
+  goto                 -fh
+  const                v16, -377819961
+  const-string         v2, "ۦۛۜۧۘ۟ۦ۫ۗۙ۠ۥۘ۬۫۫ۖۖۤۧۡۤۜۨۤۗۚۨ۬ۚۙ۟ۖۘۦ۬ۢ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v17
+  xor-int              v17, v17, v16
+  sparse-switch        v17, +00002e2h
+  goto                 -9h
+  if-nez               v14, +005h
+  const-string         v2, "۠ۦ۠ۖۦۧۘ۟ۘۦۘۜۡۜۗۛ۬ۚ۟ۙۜ۟ۖۗۨۘ۟ۜۜۘۥۘۦۘ۬ۦ۟ۜۘۨۜۚۡۘۢۗۥۘ"
+  goto                 -eh
+  const-string         v2, "ۦۦ۠ۡۨۘ۬ۧۡۘۡ۫ۤ۫ۛ۠ۡ۠۟ۡۖۡۥۧۦۢۥۛۢۖۜۦۜۜۚۦۘ"
+  goto                 -11h
+  const-string         v2, "۟ۨۦۚۘۧۦۘۗ۫۠ۨۘ۬ۛ۫۬۬ۘۚ۫ۦۘۗۢۗۨۧۘ۬۬ۙۡۨۡۖۙۜۘ۫ۡۦۘۙۥۨۘۡۧۧۘ۟ۡۗ۠ۢۤۘ"
+  goto                 -14h
+  const-string         v2, "ۛۘۙ۬۠ۛۦۙۦۗۢ۠۠ۧۘۘۧ۫ۦۡۢۡۘۡۗۥۘۛۖۦ۫ۡۨ"
+  goto                 -2ch
+  const-string         v2, "ۤۧۘۘۜ۬ۦۘ۬ۡۖۗ۠ۥۙۖۧۨۨۜۧۥۖ۠ۡۙۖ۟۟ۤۨۛ۫ۡۙ۬ۨ۬ۖۙۙ۠ۚۥۦۜۙۙۗۡۘ"
+  move-object          v3, v2
+  goto                 -70h
+  iget-object          v2, v15, Lcom/happproxy/service/XRayProxyOnlyService;->remove Landroid/widget/ScrollView;
+  invoke-virtual       v2, Landroid/view/View;->getWidth()I
+  move-result          v2
+  const/high16         v3, -2147483648
+  invoke-static        v2, v3, Landroid/view/View$MeasureSpec;->makeMeasureSpec(I I)I
+  move-result          v2
+  const/4              v3, 0
+  const/16             v16, 0
+  move/from16          v0, v16
+  invoke-static        v3, v0, Landroid/view/View$MeasureSpec;->makeMeasureSpec(I I)I
+  move-result          v3
+  invoke-virtual       v14, v2, v3, Landroid/view/View;->measure(I I)V
+  const-string         v2, "۬۟ۜۘۗۤۘۘۖۡۥۘۤۦ۬ۡۥۘ۫ۘۚ۟ۨۨۘ۠ۦ۟ۖۗۖۗ۫ۡۘۙۗۨۤۡۤ"
+  move-object          v3, v2
+  goto/16              -08ch
+  invoke-virtual       v14, Landroid/view/View;->getMeasuredHeight()I
+  move-result          v13
+  const-string         v2, "۟ۤۤ۠ۦۖۘۤۗۨۘۥۡۖۘۥ۠ۖ۟ۗ۠ۡۨۨ۬ۛۘۘۛۖۢ۫۬ۖۘ"
+  move-object          v3, v2
+  goto/16              -095h
+  iget-object          v2, v15, Lcom/happproxy/service/XRayProxyOnlyService;->remove Landroid/widget/ScrollView;
+  invoke-virtual       v2, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+  move-result-object   v12
+  const-string         v2, "ۖۘۥ۫ۧۦۨ۫ۙۡۤۖۤۧۙۧۦۜۛۢ۬۟ۧۤ۠ۥۘۥۨۙۖۥ۫ۥ۬۫ۛ۬ۧۖ"
+  move-object          v3, v2
+  goto/16              -0a0h
+  iget                 v11, v15, Lcom/happproxy/service/XRayProxyOnlyService;->notify I
+  const-string         v2, "۫ۛۖۘۚۦ۟ۢۦۨۘ۠ۙۚ۫ۜۜۘ۬ۦۘ۫۠۫ۙۥۖۘۜۦۤۧۘۜ۫۠۠ۢ۬۟ۨۥۙۡۛۛ۠ۧۡۘۧۚۘۘ۠ۚۦۥۘۦ"
+  move-object          v3, v2
+  goto/16              -0a7h
+  const                v3, 2082363936
+  const-string         v2, "ۨ۬ۦۘ۫ۥۛۦۖۘۛۘۨۜ۫ۧۗۗ۠۫ۨۖۧۢۖۖۨۘ۬۬ۘۘۢۖ۬ۤۨۙۡۨۘۘ۟ۖۥ۟ۦۨۘۖۦ۠"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v16
+  xor-int              v16, v16, v3
+  sparse-switch        v16, +000029bh
+  goto                 -9h
+  const                v16, 384792305
+  const-string         v2, "۠ۙ۬ۧۤ۫ۤۤۗۧۨۢ۟۫ۘۘۚۛۦۘۗۖۦۖۦۗ۠۫۫ۜۦۜ۟ۧۡۘۙۧۢ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v17
+  xor-int              v17, v17, v16
+  sparse-switch        v17, +000029eh
+  goto                 -9h
+  if-le                v13, v11, +008h
+  const-string         v2, "ۜ۫ۘۘ۫ۦۖۡ۠ۨۛۙۘۜۤۖۘۙۙۙۦۖۡ۬ۡ۠ۛۛۡۙۤۜۘ"
+  goto                 -eh
+  const-string         v2, "۟۠ۢ۟ۚۦۥۚ۬ۖۖۚۤۦۘۘۨۛۢۚۚۛۙۖۜۘۥۛۚۚۢ۬ۥ۟ۦۡۖۧۚۥۡۙۥۘۛ۟ۡۘۡۥ۬"
+  goto                 -20h
+  const-string         v2, "۫ۘۨۗۤۧۚۧ۬ۙۚۡۜۧۨۧ۟ۙۧۨۘ۠ۖۨۖ۠ۧۨ۟ۦۘ۬ۡۛ۫ۦۗۙۧۢ۬ۘۘۤۧۡۜ۟ۖۘۖۖۜۘۡ۬۬"
+  goto                 -14h
+  const-string         v2, "ۙ۟۫ۧۨۦۢۤۥ۟ۤۦۘ۬۟ۢ۟۠ۢۧۚۡۜۦۙۢ۫ۘ۟ۚۦۘۗۜۥ۫ۧۨۘۨۙۡ۫۬۠ۖۧۥۘۚۤۧ۬ۧۥۘۗۡ۫"
+  goto                 -17h
+  const-string         v2, "۟ۘۗۡۢ۬ۜۜۗۥۜۡۘۥۨۦۘ۠۬۫۠ۡۡۖۦۡ۟ۥۘۡۨۦۘۛۨۧۛۜۘۖۗۙ۟ۘۚۦۜۘ۠۬ۚ"
+  goto                 -29h
+  const-string         v2, "ۘۜۧۘۧۨۘۜ۠ۦ۟۬۠ۥۦۡۦۖ۬ۖ۟ۡۨۡۜۘۥۙۚۘۡ۫ۜۨۤۤۚ۟ۖ۠ۧۛۨۨۧۧۤۘ۫ۥ۠ۛ۬ۨۤۘ"
+  goto                 -2ch
+  const-string         v2, "ۘۖۡۨ۬ۘۘۨ۟ۨۤۤۜۧۛۡۘۤۛۜۘ۟ۖ۟ۗۧۙۨۧۨۘۗۚۡۘ"
+  move-object          v3, v2
+  goto/16              -0deh
+  iput                 v11, v12, Landroid/view/ViewGroup$LayoutParams;->height I
+  const-string         v2, "ۙۚ۫ۧۦۡۡۨ۫۬ۙ۫ۥۢ۬ۤۗۤۨۛۘۘۛۘۧ۫ۜۜۘۤ۬ۦ۟ۤ۠۬۠"
+  move-object          v3, v2
+  goto/16              -0e5h
+  const/4              v2, -2
+  iput                 v2, v12, Landroid/view/ViewGroup$LayoutParams;->height I
+  const-string         v2, "ۧ۠ۛ۬۟ۥۥۛۧ۫ۧۜۘۤۥۘ۫ۡۗ۟ۘۛۦۨۦۤۗۥ۬۬ۜۘۧۡۛۡۚ۫۟۟ۨۙۘۢۚۚۚۥۢۛ"
+  move-object          v3, v2
+  goto/16              -0edh
+  iget-object          v2, v15, Lcom/happproxy/service/XRayProxyOnlyService;->remove Landroid/widget/ScrollView;
+  invoke-virtual       v2, v12, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  const-string         v2, "ۜۛۨۡۢۡۘۛۡۦۘ۟ۛۤۡۦۘۥ۠۫۫ۢۦۘ۟۫ۙۥۦۗۤۥۡۘۙۤۛۥۗۤ"
+  move-object          v3, v2
+  goto/16              -0f7h
+  move-object/from16   v0, v18
+  iget-object          v2, v0, Lcom/happproxy/internal/push;->onLayout Ljava/lang/Object;
+  check-cast           v2, Lcom/happproxy/internal/sync;
+  const-string         v3, "ۙۖۡۚۡۨۘۛۢۜۙۥۜۘ۫ۖۥۘۚۨۤۤ۬ۜۢۨۦۘۗۘۢ۟ۜۢۨۘۤۧ۠ۥۘ۫ۗۡۘۥۥۢ"
+  move-object          v10, v2
+  goto/16              -102h
+  const/4              v2, 1
+  iput-boolean         v2, v10, Lcom/happproxy/internal/sync;->onPause Z
+  const-string         v2, "ۛۜۧۘ۬ۚ۟ۚۤۚۖ۟ۙۨۙۦ۬ۘۛۧۢۢ۠ۖۗۢ۠۬ۦ۟ۛۧ۠ۡۤۜۤۥۥۘۘ۠ۗۚ۟ۨۖۨۚۥۘ"
+  move-object          v3, v2
+  goto/16              -10ah
+  const/4              v2, 0
+  iput-boolean         v2, v10, Lcom/happproxy/internal/sync;->onTick Z
+  const-string         v2, "ۚۖۛۜۗ۬ۨۤۦۨ۫ۗۗۦ۠۫ۧۘۘۖۦۧۥ۟۠ۚۛۥۘۧ۟ۚۦ۠ۡۘۦۗۡ۫۟ۙ"
+  move-object          v3, v2
+  goto/16              -112h
+  iget-object          v9, v10, Lcom/happproxy/internal/sync;->onUpdate Lcom/happproxy/internal/send;
+  const-string         v2, "ۙۤۖۜۚۚۚۥ۬ۦ۟ۘۛۙ۫۫۠ۘۨۦۦۗۘۜۘۜۙ۠ۤۖۥۗۦۘۘۛۛۜۥۛۛ۟ۙۘ"
+  move-object          v3, v2
+  goto/16              -119h
+  const/4              v2, 1
+  iput-boolean         v2, v9, Lcom/happproxy/internal/send;->onDraw Z
+  const-string         v2, "ۗۛۢۢۥۦۢۗ۟ۥۙ۫ۙۢۙۧۤۗۘۙۙ۫ۚۘۘۘۚۜۘۤۢۥۘۤ۬ۡۘۢۡۜۡۜ۟ۘۚ۟ۤۚۡۘۧۡۚۦ۟ۨ۫۟"
+  move-object          v3, v2
+  goto/16              -121h
+  invoke-virtual       v9, Lcom/happproxy/internal/send;->dispatchDraw()V
+  const-string         v2, "ۧ۬ۢۜ۠ۘۘۧۚۦۙۡۦۦۜۧۜۘ۟ۛۧ۠ۖۖۡۘۚۖۜۘۢۚۤۢۥۦۘۦۗۙۡۛ۠۟۟ۖۘۧۜۥۘ۠ۢۨۚۦۥۦۧۛ"
+  move-object          v3, v2
+  goto/16              -129h
+  move-object/from16   v0, v18
+  iget-object          v2, v0, Lcom/happproxy/internal/push;->onLayout Ljava/lang/Object;
+  check-cast           v2, Lcom/happproxy/internal/sync;
+  const-string         v3, "ۗۧۚۚۜۘۡۜۘۢۨ۫ۨۗۦۘۖۢ۠ۛۡۧۘۗ۫ۥۘ۬۬ۗۨ۬ۡۜۚۘۧۦ۫ۤ۬ۗۥ۟ۤۜۙۧۡۢۥۙۚۚ۠ۡۧ"
+  move-object          v8, v2
+  goto/16              -134h
+  iget                 v7, v8, Lcom/happproxy/internal/sync;->getState I
+  const-string         v2, "ۜۙۤۦۜۘۜۡ۫ۚۜۙۚۛۡۘ۫ۥۡۘۜۖۧ۟۫۠۬ۢۥۧۥۜۢۦۖۥۢ۫ۙۧۤ۫"
+  move-object          v3, v2
+  goto/16              -13bh
+  iget-object          v6, v8, Lcom/happproxy/internal/sync;->onUpdate Lcom/happproxy/internal/send;
+  const-string         v2, "ۦ۠ۜۧۡۖۘ۬ۗۖۖ۫ۤۖۛۜۨ۠ۦۚۚۘ۬ۤۘۘۨ۟ۘۡۛۘۖۧۗۧۦۙ"
+  move-object          v3, v2
+  goto/16              -142h
+  const                v3, -1952425115
+  const-string         v2, "ۘۡۗۘۥۤۦۤۗۤ۠۠ۦۖۖۘ۫ۦۡۧ۬ۡۘۙ۬۟ۖۡۡۙۤۢۤۤۦ۠ۡۥ۫ۘ۫ۜۦۡۘ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v16
+  xor-int              v16, v16, v3
+  sparse-switch        v16, +0000224h
+  goto                 -9h
+  const-string         v2, "۟ۦۦۘۙ۬ۨۢۤ۠ۚ۟ۨۧ۫ۗ۠ۙۚۡ۟ۢۨۜۨۜۡۢۜۥۘۦ۬ۖۖۦۡۘ۬ۖۡۖ۬ۦۘۦۜۗۙۧ۬ۤۜۗ۫ۘ۫"
+  goto                 -ch
+  const-string         v2, "ۛۥۨۘۧۖ۠ۥۤۧ۟۫ۥۘۦ۬ۛۖۘۜ۫ۨ۠ۤ۟ۢۜۜۘۦۗۢۢۙۜۢۡۤۧ۠۬ۛۚۨ"
+  goto                 -fh
+  const                v16, -202008436
+  const-string         v2, "ۘۜۨۘۨۖۧۦ۫ۗۙ۬ۦ۟ۤۜۦۘۘۦۢۢ۫ۧۜۖۛۨۘۨۢۦۡۖۗ۟ۨۦۥۥۜۘۧۥۘۙۖۘۦۜۡ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v17
+  xor-int              v17, v17, v16
+  sparse-switch        v17, +0000221h
+  goto                 -9h
+  iget-boolean         v2, v8, Lcom/happproxy/internal/sync;->onTick Z
+  if-eqz               v2, +005h
+  const-string         v2, "۫ۦۡ۫ۛۤۥۧۜۘۘۤ۫ۘۚۙۘ۫ۨۘۘۚۨۘۨۨۛۜۜۘۢۖۥ"
+  goto                 -10h
+  const-string         v2, "ۤۨۥ۬ۧ۠ۖۤۡۘۗۘۜۘۙۜۧۨۙۨۦۘۖۗۥۡ۠ۜۨۛۜۤۚۘۦۦۙ۬ۚۗۙۙۖۘ"
+  goto                 -13h
+  const-string         v2, "ۦۖۥۡۥۡ۠۠ۡۘۘۙ۟ۢ۬۠ۢ۠ۘۘۥۘ۟ۢۗۗۜۖۥۘۗ۫ۘۘۨۗۨ۟ۖۜ۬ۘۜ۬۫ۧۙۘۢۦۙ"
+  goto                 -16h
+  const-string         v2, "ۢۜ۬ۦۗۡ۠ۨ۟ۥۖۘۚۤ۠ۛ۟ۙۗۧۥۤۢۛ۫ۜۜۥۦۤ۠ۤ۟ۚۙۜ۫ۡۘ۬ۖۧ"
+  goto                 -2eh
+  const-string         v2, "ۡ۫ۘۘۢۨۦۘۦۙۦۘۦ۟ۦۨۙۥۘۚۗ۠ۢۖ۟Oۘ۠ۘۨۗۘۘۥۨۥۘ۫ۘ۟ۜ۬ۚ۠ۡۤ"
+  move-object          v3, v2
+  goto/16              -17bh
+  iget-boolean         v5, v8, Lcom/happproxy/internal/sync;->onPause Z
+  const-string         v2, "۟ۚۤۨۖ۬ۘ۫ۥۥۧۨۘۗۥۢۖۛ۠ۖۛۤۡۙۗۖ۫ۨۧۨۙۜ۬۫ۧۚ۫ۘ۫ۦۗۨۡۘۤ۫ۚۢۥ۟ۧ۟ۜۛۜ۟"
+  move-object          v3, v2
+  goto/16              -182h
+  const/16             v2, 391
+  xor-int/2addr        v2, v5
+  xor-int/lit16        v2, v2, 197
+  const/16             v3, 978
+  xor-int/2addr        v2, v3
+  xor-int/lit16        v4, v2, 657
+  const-string         v2, "ۘۦۢۡۨۡۘ۬ۦۡ۫۠ۧۨۥۘۤۛۙ۠ۡۥۘۙ۫ۧ۫ۗۜۙۛۘۘۨۦۗۛ۟۬ۗ۠۠ۦۤۚ۫۠ۜۘۨ۠"
+  move-object          v3, v2
+  goto/16              -191h
+  iget                 v2, v8, Lcom/happproxy/internal/sync;->onMeasure I
+  invoke-static        v2, v4, Lcom/happproxy/NativeProvider;->nIoctl(I I)V
+  const-string         v2, "ۚ۟ۗۚ۟ۖۤۘۥۘۨۢ۠ۛ۬ۖۛۢۜۘ۫ۗ۬ۚۛۜۜۙ۬ۖۙۤ۟ۡۘۥ۟۬"
+  move-object          v3, v2
+  goto/16              -19bh
+  const                v3, -1630976390
+  const-string         v2, "۠ۗۛۨۚۜۘۨ۫ۤۥۚۡ۬ۗۜ۠ۡۙۧۛۡۘ۬ۙۨۘ۠۠ۚۡ۟۟ۦۦۘۡۤۘۤۧۦۘۗۦۘۘۨ۟۫۟ۢۙۦۥۤ۬ۚ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v16
+  xor-int              v16, v16, v3
+  sparse-switch        v16, +00001efh
+  goto                 -9h
+  const-string         v2, "ۖۗۨۘۜۖۧۜۛۦۨۖ۟ۧۦۡ۠ۚۦۘۗۜۜۘۧ۟۟ۤۤۗۘ۬ۡۚۤۧۘۜۘۘ"
+  move-object          v3, v2
+  goto/16              -1afh
+  const-string         v2, "ۘۧۦ۠ۗ۟ۘۖۤۘۤۨۘۤ۠۬ۗ۫ۗۢۙۡۘۦۨۜۘۡۢ۫ۙۦۗۙۦ۠ۡ۟ۦۘۧۤۥۨۖۥۛۛۨۘۦۖ۫"
+  goto                 -11h
+  const                v16, 1113120559
+  const-string         v2, "ۚۖۥ۟۫ۨۛۜۗۖۤۦۘۜۦۧۘۢۘۚۗۖۛۢۖۚۜۥۥۘۖ۟۬"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v17
+  xor-int              v17, v17, v16
+  sparse-switch        v17, +00001eah
+  goto                 -9h
+  if-nez               v5, +005h
+  const-string         v2, "ۖ۠ۛۨۢۚ۬ۧۧۤۘ۠ۧۨۛۨۧۨۖۜۛۗۥۧۘۢۢۦۘۤۦ۟ۨۡۖۡۢۗۜۦۡۘۙ۠ۖ"
+  goto                 -eh
+  const-string         v2, "ۛۙ۠۫ۡۘۚ۠ۧۦۖۖۘۦۘۚۚۖ۟۟ۧۧۤۧۛۖ۬۠ۧۖۤۢۘۦ۟ۖ۬ۗۤۜۛۗۨۛ۠ۜۘ۠ۖۢۥۥۡۘۤۢۥ"
+  goto                 -11h
+  const-string         v2, "ۗۥ۬۫ۖۛۧۙۜ۫۫ۡۜۦۨۨۙۦۘۘ۬۬ۤۦۦۘۘۢ۫ۨۙۡۘۖۨ۬ۜۜۘۡۚۨۘ۫۬۫"
+  goto                 -14h
+  const-string         v2, "۟ۜۨۘۚ۫ۜۘ۫۫ۢۨۚۖۙ۫ۧۡ۬ۦۥۙۡۧ۫ۖ۟ۛۗۡۛۛۡۦۡۢ۟ۢۨۜۛۛۢ۟ۚۗۨ"
+  goto                 -2eh
+  const-string         v2, "ۖ۠۠ۢ۠ۡۘۜۜۧۨۨ۫ۘۚۥ۠۠ۥۘۢۥۙۛۢۜۧۙۙ۟ۜ۠ۥۙۚۦۗۦۘ"
+  goto                 -31h
+  const                v3, 869524622
+  const-string         v2, "ۘ۠ۜۧ۫ۢ۫۬ۥۥۨۗ۟ۛ۟ۛۤۧۧ۬ۥۘۖۖۥۘۧ۠ۢ۟ۧۦ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v16
+  xor-int              v16, v16, v3
+  sparse-switch        v16, +00001dch
+  goto                 -9h
+  const-string         v2, "ۢ۟ۗۦۖۜ۬ۨۡ۟۫ۨۨۘۖۦ۠ۤۚۤ۠ۢۥ۠ۚۛۨۘۖۖۥۘۡۧۥ"
+  move-object          v3, v2
+  goto/16              -1e6h
+  const-string         v2, "ۘۤۖۢۦۥۘۤۢۛۢۚ۟ۡۘۡ۫۫ۚ۫ۦۨۡۤۦۢۗۘۗۡ۟"
+  goto                 -11h
+  const                v16, -1345694327
+  const-string         v2, "ۗ۫۟ۛۛ۠ۦۚۗۛۢۤۛۦۘۜ۠ۤۡۧ۬ۧۚۢۢۙۘۢۨ"
+  invoke-virtual       v2, Ljava/lang/String;->hashCode()I
+  move-result          v17
+  xor-int              v17, v17, v16
+  sparse-switch        v17, +00001d7h
+  goto                 -9h
+  if-lez               v7, +005h
+  const-string         v2, "۫ۢۚۖۜ۟ۜۥۖۘۗ۫ۨۛ۠ۦۘۗۡۦۛۨۛ۫ۖۥ۟ۨۛۘۡۙۜۘۢۖۜۦ۫ۢۧ۬۫ۗۥۡۘ۟ۤۨۘ"
+  goto                 -eh
+  const-string         v2, "ۧۤۛۙۖۚۗۘۦۘ۠ۜۧۚ۫ۧۜۖۙۦۚۛۘۨۨۢ۫ۨۘ۬ۜۡۨۗۨۤۜۢۛۘۘۘۙ۫ۦ"
+  goto                 -11h
+  const-string         v2, "ۚۢۥۘۚ۠ۙ۫۬ۦۘۨ۬ۧ۟ۤۛۛۗ۟ۨۘۘۡۛۧۥۛۖۘۦۨۧۘۛۧۜ۠ۡۤۛۥۥۘ۟ۚ"
+  goto                 -14h
+  const-string         v2, "ۖۛ۟۫ۢۡ۟۟ۥۘۡۦۧۘۙۗۚ۟۟ۙۤۚۦۘۚۡۡۘۨۧۥۦۡۥ"
+  goto                 -2eh
+  const-string         v2, "ۨۗ۟ۛ۬ۧۨ۫ۗۜۘۖ۬ۜۖۡۧۦۙ۟۠ۖۖۘ۫ۚۦۘۢۖۤۢۚۘۛۨۦ۠۠ۘۛۗ۠۫ۥۡۘۤۗۡۘ"
+  goto                 -31h
+  const-string         v2, "ۖۧۙ۫ۗۛۤۚ۠ۘۧۖۘۧۜۘۙۖۥ۠۠ۜۗۦۛۙۥۘۙۙۡۥ۫ۡۤ۟ۙۥۧۛۗ۫ۛۘۖۗۘۛۧۨ۟ۤۖۢۢ"
+  move-object          v3, v2
+  goto/16              -20eh
+  const/4              v2, 1
+  iput-boolean         v2, v8, Lcom/happproxy/internal/sync;->onTick Z
+  const-string         v2, "ۙۢۨۙ۠ۡۘۦۛۤۚۤۨۘۚۖۥۚۤ۠ۖۗ۬۫ۜۦ۬ۜۛ۫ۘ۟۠۟ۡۦۘۢۘ۫۟ۤۥ"
+  move-object          v3, v2
+  goto/16              -216h
+  iget-object          v2, v6, Lcom/happproxy/internal/send;->onMeasure Landroid/widget/FrameLayout;
+  const                v3, 1053609165
+  invoke-virtual       v2, v3, Landroid/view/View;->setAlpha(F)V
+  const-string         v2, "ۢۙۚۥۡۖۘۖ۬ۙ۬ۨۘۘ۬ۛۢ۬ۡۙۗۜۘۙۖۤ۟۬ۗۖ۬۠ۖۘۢ۫ۢۨ۟ۦۘۥۤۢ۫ۧۚ"
+  move-object          v3, v2
+  goto/16              -223h
+  iget-object          v2, v6, Lcom/happproxy/internal/send;->onMeasure Landroid/widget/FrameLayout;
+  new-instance         v3, Lcom/happproxy/internal/push;
+  const/16             v16, 1
+  move/from16          v0, v16
+  invoke-direct        v3, v0, v8, Lcom/happproxy/internal/push;-><init>(I Ljava/lang/Object;)V
+  int-to-long          v0, v7
+  move-wide/from16     v16, v0
+  move-wide/from16     v0, v16
+  invoke-virtual       v2, v3, v0, v1, Landroid/view/View;->postDelayed(Ljava/lang/Runnable; J)Z
+  const-string         v2, "ۗ۠ۧۢ۬۟ۜۜۘۘۡ۫ۡۘۥۦۚۙۡۢۦۦۘۡۛۜۘۘۧۛۚۤۥۘ"
+  move-object          v3, v2
+  goto/16              -23bh
+  iput-boolean         v4, v8, Lcom/happproxy/internal/sync;->onPause Z
+  const-string         v2, "ۘۜۦۘۘۙۨۘۨۜۦۨۛۡۘۧ۟ۗ۟۠۠ۜۢۜ۫ۥ۫ۨۤ۠۠ۡۨۘۦۡۥۜۚۦۘۛۗۜۘۤۤۧ۬۬ۢۙ۫ۘ"
+  move-object          v3, v2
+  goto/16              -242h
+  iput-boolean         v4, v6, Lcom/happproxy/internal/send;->onDraw Z
+  const-string         v2, "ۥۗۨۤۥۘۘۦۤۧۚۖۘۘۢۙۜۘ۫ۛۘۡۧۤۘۦۘۥۙۥۤۡۡۢ۫۫ۨۖۚۙۜۘۘۤ۠ۜۘۖ۟ۖۘۦۜ۠"
+  move-object          v3, v2
+  goto/16              -249h
+  invoke-virtual       v6, Lcom/happproxy/internal/send;->dispatchDraw()V
+  const-string         v2, "ۗۖۥۚۡ۠ۚۜۘۘۥ۬۠ۦۤۢۘۗۦۘ۬۠۫ۜۙۦۥۙۦۧۚۖۘ۬ۢۘۙۦۤۡۛۧۦ۫"
+  move-object          v3, v2
+  goto/16              -251h
+  const-string         v2, "ۢۦۛۜۙ۫ۧۤۘۜۦۦۘ۠ۜۚۗۧۙۤ۟ۤۢۢۚ۬ۡۥۘۖ۠ۧ"
+  move-object          v3, v2
+  goto/16              -256h
+  const-string         v2, "۫ۚۦۘۖۙ۬ۢ۠ۙ۟ۢۜۡۡۤۚۧۛۜۢۜۘۤۨۨۘۗ۫۟ۖۡۖ"
+  move-object          v3, v2
+  goto/16              -25bh
+  const-string         v2, "ۧ۠ۛ۬۟ۥۥۛۧ۫ۧۜۘۤۥۘ۫ۡۗ۟ۘۛۦۨۦۤۗۥ۬۬ۜۘۧۡۛۡۚ۫۟۟ۨۙۘۢۚۚۚۥۢۛ"
+  move-object          v3, v2
+  goto/16              -260h
+  const-string         v2, "ۜۛۨۡۢۡۘۛۡۦۘ۟ۛۤۡۦۘۥ۠۫۫ۢۦۘ۟۫ۙۥۦۗۤۥۡۘۙۤۛۥۗۤ"
+  move-object          v3, v2
+  goto/16              -265h
+  const-string         v2, "ۚۧۢۙۡۗ۟ۖۤۤ۫ۜ۬ۖۜۘ۟ۤۖۛ۟۠ۘۗۘۘ۫۫ۡۘۜ۫ۧۨۜۨ۟ۨۜۙۢۥۘ۠ۖ۬ۨۜۙۛۡۥ"
+  move-object          v3, v2
+  goto/16              -26ah
+  const-string         v2, "۟ۤۗۧ۟ۨۘ۟ۖۘۘ۬ۘۦۘ۟ۨۗۢۨۘۤۖۡۘ۠ۤۘۘۘۖ۠ۜۜۘۘ"
+  move-object          v3, v2
+  goto/16              -26fh
+  const-string         v2, "ۗۙۥۘۗۤۖۛۨۦۘۦ۬ۗۘۨۧۘ۬ۨۧۘۢۥۡ۫ۚۨۗۚۧۗۙۛۨۚ۠ۥۨ۟ۖۜۥۘۛۖۦۡ۟ۡۘۖۧۨ"
+  move-object          v3, v2
+  goto/16              -274h
+  const-string         v2, "ۗۖۥۚۡ۠ۚۜۘۘۥ۬۠ۦۤۢۘۗۦۘ۬۠۫ۜۙۦۥۙۦۧۚۖۘ۬ۢۘۙۦۤۡۛۧۦ۫"
+  move-object          v3, v2
+  goto/16              -279h
+  return-void          
+  nop                  
+  sparse-switch-payload -7297507c -7181e9e6 -6fc6e6e3 -66ef0696 -6375bf83 -629166a4 -5c781e3a -4f7163d1 -4e3df242 -4be1da43 -4308a4f1 -3be819af -3a9e9050 -348b4411 -1bc1094d -185f73d0 -d8d91b1 -9143d55 -810893c 82e9e11 c39f11a e05a0b8 104f4ec2 2418e811 25268c97 28f82595 2c94e913 30da3f8a 39974804 3f46f68e 432009ef 44819201 49b7a2aa 4a9ccfb3 56cc1a90 5db16b48 650d3e9b 685f4510 70117abb 716be13f 761d149e
+  packed-switch-payload 0 1
+  sparse-switch-payload -772ac1ef -3d379dc1 -4f881d7 36d3c661
+  sparse-switch-payload c74c052 2564792b 3015b961 39016b34
+  sparse-switch-payload -b3ff8fe 94af57a 386f499d 6391a65d
+  sparse-switch-payload -5a1611a 13593797 269a044d 43e3dd4e
+  sparse-switch-payload -59252c6b -3e48c710 -17956611 520854ad
+  sparse-switch-payload -16e52919 18b390f7 29c4cd03 7f31bbea
+  sparse-switch-payload -327f7dc2 -117c8899 c4e11fd 1c12f6d3
+  sparse-switch-payload -1e22408 28cc4896 4fb9c121 51ac89af
+  sparse-switch-payload -5c7affe5 -49c547bb -358c64d2 1c9294cd
+  sparse-switch-payload 21feb5e8 49cc845a 749a4509 7c8c7e35

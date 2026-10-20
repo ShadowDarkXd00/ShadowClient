@@ -1,0 +1,54 @@
+// Class: Lcom/happproxy/NativeProvider;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  const-string         v0, "happcore"
+  invoke-static        v0, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  return-void          
+
+// Method: None ()I
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/Object; Ljava/lang/Object; I I)V
+  // native / abstract / no code
+
+// Method: None (I)I
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None (I I)V
+  // native / abstract / no code
+
+// Method: None ()Z
+  // native / abstract / no code
+
+// Method: None (Ljava/lang/String;)Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()V
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()V
+  // native / abstract / no code
+
+// Method: None ([B I)V
+  // native / abstract / no code

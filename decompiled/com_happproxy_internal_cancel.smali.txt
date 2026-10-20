@@ -1,0 +1,95 @@
+// Class: Lcom/happproxy/internal/cancel;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/internal/retry; [J I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v2, v0, Lcom/happproxy/internal/cancel;->onMeasure [J
+  iput                 v3, v0, Lcom/happproxy/internal/cancel;->onLayout I
+  iput-object          v1, v0, Lcom/happproxy/internal/cancel;->dispatchDraw Lcom/happproxy/internal/retry;
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const/4              v3, 0
+  const/4              v1, 0
+  const-string         v0, "ۤۜ۬ۡ۟ۢۚۚۦۘۘۗۘۘ۫ۨۨۥۨۡۘۤۦ۠ۧ۠۬ۗۙ۟۬۫ۜۥۨۦۗۥۥۘۙ۬۫ۨ۫ۛۦۙۘۡۨۥ۟ۖ۬ۜۨۨۘ"
+  move-object          v2, v3
+  move-object          v4, v3
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v3
+  const/16             v5, 391
+  xor-int/2addr        v3, v5
+  xor-int/lit8         v3, v3, 39
+  const/16             v5, 539
+  const                v6, 1774694586
+  xor-int/2addr        v3, v5
+  xor-int/2addr        v3, v6
+  sparse-switch        v3, +0000070h
+  goto                 -13h
+  const-string         v0, "ۘۧۖۘۥۘۙۘۗۘۘۛۥۡۘۧۖۧۘۢۢ۫۫ۖۘۘۥۢۘۘۨ۠ۨۘۦۡۦ۫ۖۛۚۦۤۧۥۘۖ۬ۨۘۦۛۗۢۛۥۖۖۧۘۛۗ۟"
+  goto                 -16h
+  iget-object          v3, v7, Lcom/happproxy/internal/cancel;->dispatchDraw Lcom/happproxy/internal/retry;
+  const-string         v0, "ۦۤۖۚۨۥۘۙۤ۫۠ۢۚ۫ۖۧۘ۠ۥۡۧۨۙۢۙ۬ۚ۬ۘ۠ۜۗۛۜ۠ۚ۫ۜۦۨۨۥ۫ۡۘ"
+  move-object          v4, v3
+  goto                 -1ch
+  const                v3, 1673556068
+  const-string         v0, "ۥ۟۟۠ۗۦۘۤۧۨ۫۫ۡ۫ۜۘۘۥۤۙۜۚۖۘۗۢۥۘۥ۬ۦۘۛۧۤ۬ۥۢ۟۫۟ۢ۬ۖۘۦۚۥ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v5
+  xor-int/2addr        v5, v3
+  sparse-switch        v5, +0000087h
+  goto                 -8h
+  const                v5, 42046310
+  const-string         v0, "۬۬۬ۘ۫ۡۘۘ۬ۦۥۤۡۛۚۨۤۥۥۗۨۤۚۦ۫ۢۛۜ۠۫ۡ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v6
+  xor-int/2addr        v6, v5
+  sparse-switch        v6, +000008bh
+  goto                 -8h
+  const-string         v0, "ۡۖۜۘۙ۬ۙۚۤ۟ۜۥۧۘ۠ۢ۟۟۠ۨۙ۬ۧۦۡۦۖۜۘۘۛۚ۠ۥۦ۠ۚۗۧ۬ۨۢ۟۫۟"
+  goto                 -19h
+  const-string         v0, "ۛۘۚۧۦۨۡ۫ۜۘۙ۟ۧۨۨۘۜۨۛۘۜۦۘ۟۟ۦۜۘۘۘۢ۬ۨۘۗۜۘۘۢۛۛ"
+  goto                 -eh
+  iget-object          v0, v4, Lcom/happproxy/internal/retry;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  invoke-virtual       v0, Landroid/app/Activity;->isFinishing()Z
+  move-result          v0
+  if-eqz               v0, -009h
+  const-string         v0, "ۘۛ۬ۘۧۨۘۨۜۥۘۦۨۧۘ۬ۦۢۡۢ۫ۡۘۤۜۨۥۦ۟ۡۙۚۥۘۦۤۨۚ۬ۜ"
+  goto                 -19h
+  const-string         v0, "ۥۜۜۥۨۖۘۚۧۥۘ۬ۗۗۘۜۜۢۨۥۘۗۢ۟ۙ۫ۦۘ۬۠ۦۘۗۖ۬۬ۘ۬ۢۡۦۤۜۥۘۜ۟ۜۘ۠ۚۡۘۗۧۧ"
+  goto                 -1ch
+  const-string         v0, "ۥۥۙۚۤۡۗ۟ۖۗ۫ۡ۠ۜۗ۫ۗۦۘۗ۠ۡۘۗۙۙۡ۬ۨۘۨۡۨۤۜ۠ۚۢۜۤۚۛۧۗۦۘۘۨۘۜۜۢۙۨۤ۟ۤۜۘ"
+  goto                 -2dh
+  const-string         v0, "ۚۚۘۘۙ۫ۢۥ۠ۨۚۚ۫ۛ۟ۚۜ۬ۦۗ۬ۤۥۗ۬۬ۚۖۚۗۜۥۘۖۘۖۦۘ"
+  goto                 -30h
+  const-string         v0, "۟۬ۥۘۧ۫۟ۗ۬ۤۘۡۜۨۛ۠ۗۥۗۤ۬ۨۤۚۘۘۡۛۨۘۗۗۥۘ"
+  goto                 -55h
+  iget-object          v2, v4, Lcom/happproxy/internal/retry;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  const-string         v0, "۬ۜۢۡۤۛۢۖ۫ۨ۠ۦۖ۬ۡۘۘ۟۬ۡۘۛۥ۠ۧۢۧ۟ۚۥۖۘۤۥۘۘۛۢۙۙۛۗۢ۫ۗ"
+  goto                 -5ah
+  iget-object          v0, v7, Lcom/happproxy/internal/cancel;->onMeasure [J
+  iput-object          v0, v2, Lcom/happproxy/ui/ServerActivity;->close [J
+  const-string         v0, "ۨۘۚ۬۟ۤۜۘۖۤۛ۬ۚۚۤۛۤۢ۫ۡۘۗۜۨۘ۫ۛۚۡۜ۟ۨ۬ۚۦۛۖۧۙۜۘۖۥۘۙۘ۫ۡ۬ۡۘۢ۫ۘۙۘۥۘ"
+  goto                 -61h
+  iget                 v1, v7, Lcom/happproxy/internal/cancel;->onLayout I
+  const-string         v0, "۠ۤ۫ۙۡۦۘۥۖۡۘۦۙۘۘ۫۠ۛۘۨۥۢۜۥۢۗۥۤۚ۬ۘ۟ۦ۬ۜۖ۠ۢۢ۟ۖۨۥۨۖۙۘۜۧۘۘۘۖۗۖۨۚ۟"
+  goto                 -66h
+  iput                 v1, v2, Lcom/happproxy/ui/ServerActivity;->cancel I
+  const-string         v0, "ۛ۠ۜۘ۬ۚۤۧۙ۫ۜ۫۬ۨۤۥۘ۠۟۬ۜ۫ۛ۠ۤۨۤ۫ۘۘ۫ۢۥۘۚۜۦۘۧۜ۟ۥۨۘۡۤۨۤۚۖۜۦ"
+  goto                 -6bh
+  const/16             v0, 255
+  invoke-static        v0, v1, Lcom/happproxy/NativeProvider;->nIoctl(I I)V
+  const-string         v0, "۬ۜۢۥ۫ۗۡ۟۬ۙۥۧۘ۠ۚ۠ۜ۬ۡۘۜۧۤ۫ۨۧۦۢۛۢۛ۬۠ۖۧۜۘ"
+  goto                 -73h
+  iget-object          v0, v4, Lcom/happproxy/internal/retry;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  invoke-static        v0, Lcom/happproxy/ui/ServerActivity;->onMeasure(Lcom/happproxy/ui/ServerActivity;)V
+  const-string         v0, "ۤۙۚۤ۠ۦۦۧۚۤۗۗۡۦ۫ۧۦۜۘۗۦۡۘۖ۠ۦۘ۟ۢۛۤ۟ۢۢۥۚۢۜۘ۫ۥۦۘۙۜ۫ۧۡۜۘۘ۫ۘ۟ۤۡۙۧۖ"
+  goto                 -7bh
+  const-string         v0, "ۛۥۜۘۘۢۢۚ۫ۡۥ۬ۨۢۥۤ۬ۥ۬ۙۘۘۧۛۧۙۦۤۛۨ۠ۨۧۗۖۙۖۥۧۥۡۡۦ"
+  goto                 -7eh
+  return-void          
+  sparse-switch-payload -5c679ff7 -3cfbf2f0 -19d64b0d 1a694666 3382f98c 56d5f988 6364c5f9 67d15047 6b992af7 7b732ba8 7f97f1b4
+  sparse-switch-payload -7add6964 2bd11a9e 4f9a7ebd 65dace47
+  sparse-switch-payload -50c6be85 -334a63af -2d9c9af6 -a05a1ba

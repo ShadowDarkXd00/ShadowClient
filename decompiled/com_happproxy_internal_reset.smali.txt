@@ -1,0 +1,36 @@
+// Class: Lcom/happproxy/internal/reset;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/ui/ServerActivity;)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  iput-object          v1, v0, Lcom/happproxy/internal/reset;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const-string         v0, "ۤۚۛ۫۠ۢۡۙۛۚۗ۫ۘۨۡ۠۟۬ۡۘۘۤۘۘ۟ۨۨۘۡۢۨ۠۬ۡۜۧۧۙۥۧۥۦۧۘۡۛۥۘۦۛۙۦۖۥۘۜۖۛ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 287
+  xor-int/2addr        v1, v2
+  xor-int/lit16        v1, v1, 291
+  const/16             v2, 380
+  const                v3, 1413634941
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +0000016h
+  goto                 -13h
+  const-string         v0, "ۥۧۦۥۙۙۥۦۜۘۢۚۡۧۚۚۘۡۨۘۡ۫ۖۙۧۖۦۙۜۘ۠ۖۘۦۙۡۜۤۧ"
+  goto                 -16h
+  sget                 v0, Lcom/happproxy/ui/ServerActivity;->recv I
+  const-string         v0, "ۖۨۛۦۛۤۛۜۦۘۤۖ۫۫ۧۗۢۛ۬ۤۦۘۗۡ۬ۤۡۥۥۢۦۘۨۜۦۘۡۜۗۛۘ۟ۥۨۡۚۦۙۘۚۥۡۙۖۘۖۨۡۘ"
+  goto                 -1bh
+  iget-object          v0, v4, Lcom/happproxy/internal/reset;->onMeasure Lcom/happproxy/ui/ServerActivity;
+  invoke-virtual       v0, Lcom/happproxy/ui/ServerActivity;->onEvent()V
+  const-string         v0, "۠۠۬ۨۛۙ۬۠ۖۛۚ۫ۘۨۧۧۛۨۘ۟ۡۗۥۥ۬ۡۦۦۨۖۡۖۦۘ۫ۨۚۖۥۦۛۖ۬"
+  goto                 -23h
+  return-void          
+  nop                  
+  sparse-switch-payload 1c57f5f2 26eff5ac 37994bae 55dd41c5

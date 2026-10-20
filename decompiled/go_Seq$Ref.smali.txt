@@ -1,0 +1,55 @@
+// Class: Lgo/Seq$Ref;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I Ljava/lang/Object;)V
+  // bytecode:
+  invoke-direct        v2, Ljava/lang/Object;-><init>()V
+  if-ltz               v3, +00ah
+  iput                 v3, v2, Lgo/Seq$Ref;->refnum I
+  const/4              v3, 0
+  iput                 v3, v2, Lgo/Seq$Ref;->refcnt I
+  iput-object          v4, v2, Lgo/Seq$Ref;->obj Ljava/lang/Object;
+  return-void          
+  new-instance         v4, Ljava/lang/RuntimeException;
+  new-instance         v0, Ljava/lang/StringBuilder;
+  const-string         v1, "Ref instantiated with a Go refnum "
+  invoke-direct        v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v0, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual       v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v3
+  invoke-direct        v4, v3, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v4
+
+// Method: None (Lgo/Seq$Ref;)I
+  // bytecode:
+  iget                 v0, v0, Lgo/Seq$Ref;->refcnt I
+  return               v0
+
+// Method: None (Lgo/Seq$Ref;)I
+  // bytecode:
+  iget                 v0, v2, Lgo/Seq$Ref;->refcnt I
+  add-int/lit8         v1, v0, -1
+  iput                 v1, v2, Lgo/Seq$Ref;->refcnt I
+  return               v0
+
+// Method: None ()V
+  // bytecode:
+  iget                 v0, v3, Lgo/Seq$Ref;->refcnt I
+  const                v1, 2147483647
+  if-eq                v0, v1, +007h
+  add-int/lit8         v0, v0, 1
+  iput                 v0, v3, Lgo/Seq$Ref;->refcnt I
+  return-void          
+  new-instance         v0, Ljava/lang/RuntimeException;
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "refnum "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget                 v2, v3, Lgo/Seq$Ref;->refnum I
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string         v2, " overflow"
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-direct        v0, v1, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+  throw                v0

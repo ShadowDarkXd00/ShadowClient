@@ -1,0 +1,1148 @@
+// Class: Lcom/happproxy/ui/ServerActivity;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v1, Landroid/app/Activity;-><init>()V
+  new-instance         v0, Lcom/happproxy/internal/notify;
+  invoke-direct        v0, v1, Lcom/happproxy/internal/notify;-><init>(Lcom/happproxy/ui/ServerActivity;)V
+  iput-object          v0, v1, Lcom/happproxy/ui/ServerActivity;->onMeasure Lcom/happproxy/internal/notify;
+  const/4              v0, -1
+  iput                 v0, v1, Lcom/happproxy/ui/ServerActivity;->cancel I
+  return-void          
+
+// Method: None (Landroid/widget/TextView; J)V
+  // bytecode:
+  const/high16         v0, 1093664768
+  invoke-virtual       v5, v0, Landroid/widget/TextView;->setTextSize(F)V
+  sget-object          v0, Landroid/graphics/Typeface;->MONOSPACE Landroid/graphics/Typeface;
+  invoke-virtual       v5, v0, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+  const-wide/16        v0, 0
+  cmp-long             v0, v6, v0
+  const                v1, -39322
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  if-ltz               v0, +033h
+  new-instance         v0, Ljava/lang/StringBuilder;
+  invoke-direct        v0, Ljava/lang/StringBuilder;-><init>()V
+  invoke-virtual       v0, v6, v7, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+  const-wide           v3, -600336654310
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v5, v0, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  const-wide/16        v2, 80
+  cmp-long             v0, v6, v2
+  if-gez               v0, +006h
+  const                v1, -10027162
+  goto                 +9h
+  const-wide/16        v2, 150
+  cmp-long             v6, v6, v2
+  if-gez               v6, +004h
+  const/16             v1, -13312
+  invoke-virtual       v5, v1, Landroid/widget/TextView;->setTextColor(I)V
+  return-void          
+  const-wide           v6, -617516523494
+  invoke-static        v6, v7, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v6
+  invoke-virtual       v5, v6, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  invoke-virtual       v5, v1, Landroid/widget/TextView;->setTextColor(I)V
+  return-void          
+
+// Method: None (Lcom/happproxy/ui/ServerActivity;)V
+  // bytecode:
+  move-object/from16   v0, v16
+  sget-object          v1, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  new-instance         v2, Lorg/json/JSONArray;
+  iget-object          v3, v0, Lcom/happproxy/ui/ServerActivity;->apply Ljava/lang/String;
+  invoke-direct        v2, v3, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+  iget                 v3, v0, Lcom/happproxy/ui/ServerActivity;->cancel I
+  if-ltz               v3, +141h
+  invoke-virtual       v2, Lorg/json/JSONArray;->length()I
+  move-result          v4
+  if-lt                v3, v4, +004h
+  goto/16              +139h
+  iget-object          v3, v0, Lcom/happproxy/ui/ServerActivity;->indexOf Landroid/widget/TextView;
+  iget                 v4, v0, Lcom/happproxy/ui/ServerActivity;->cancel I
+  invoke-virtual       v2, v4, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+  move-result-object   v4
+  const-wide           v5, -583156785126
+  invoke-static        v5, v6, v1, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v4, v5, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v4
+  invoke-virtual       v3, v4, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v3, v0, Lcom/happproxy/ui/ServerActivity;->isEmpty Landroid/view/View;
+  invoke-virtual       v3, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+  move-result-object   v3
+  check-cast           v3, Landroid/graphics/drawable/GradientDrawable;
+  const                v4, -10027162
+  invoke-virtual       v3, v4, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+  iget-object          v3, v0, Lcom/happproxy/ui/ServerActivity;->remove Landroid/widget/TextView;
+  iget-object          v5, v0, Lcom/happproxy/ui/ServerActivity;->close [J
+  iget                 v6, v0, Lcom/happproxy/ui/ServerActivity;->cancel I
+  aget-wide            v6, v5, v6
+  invoke-static        v3, v6, v7, Lcom/happproxy/ui/ServerActivity;->onLayout(Landroid/widget/TextView; J)V
+  iget-object          v3, v0, Lcom/happproxy/ui/ServerActivity;->reset Landroid/widget/LinearLayout;
+  invoke-virtual       v3, Landroid/view/ViewGroup;->removeAllViews()V
+  const/4              v3, 0
+  move                 v5, v3
+  invoke-virtual       v2, Lorg/json/JSONArray;->length()I
+  move-result          v6
+  if-ge                v5, v6, +0fbh
+  invoke-virtual       v2, v5, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+  move-result-object   v6
+  const-wide           v7, -591746719718
+  invoke-static        v7, v8, v1, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v7
+  invoke-virtual       v6, v7, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v6
+  iget-object          v7, v0, Lcom/happproxy/ui/ServerActivity;->close [J
+  aget-wide            v8, v7, v5
+  iget                 v7, v0, Lcom/happproxy/ui/ServerActivity;->cancel I
+  const/4              v10, 1
+  if-ne                v7, v5, +004h
+  move                 v7, v10
+  goto                 +2h
+  move                 v7, v3
+  new-instance         v11, Landroid/widget/LinearLayout;
+  invoke-direct        v11, v0, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+  invoke-virtual       v11, v3, Landroid/widget/LinearLayout;->setOrientation(I)V
+  const/16             v12, 16
+  invoke-virtual       v11, v12, Landroid/widget/LinearLayout;->setGravity(I)V
+  const/16             v12, 12
+  invoke-virtual       v0, v12, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v13
+  invoke-virtual       v0, v12, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v14
+  invoke-virtual       v0, v12, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v15
+  invoke-virtual       v0, v12, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v4
+  invoke-virtual       v11, v13, v14, v15, v4, Landroid/view/View;->setPadding(I I I I)V
+  if-eqz               v7, +006h
+  const                v4, 2130837517
+  goto                 +2h
+  move                 v4, v3
+  invoke-virtual       v11, v4, Landroid/view/View;->setBackgroundResource(I)V
+  invoke-virtual       v11, v10, Landroid/view/View;->setClickable(Z)V
+  invoke-virtual       v11, v10, Landroid/view/View;->setFocusable(Z)V
+  new-instance         v4, Landroid/view/View;
+  invoke-direct        v4, v0, Landroid/view/View;-><init>(Landroid/content/Context;)V
+  new-instance         v13, Landroid/widget/LinearLayout$LayoutParams;
+  const/16             v14, 8
+  invoke-virtual       v0, v14, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v15
+  invoke-virtual       v0, v14, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v14
+  invoke-direct        v13, v15, v14, Landroid/widget/LinearLayout$LayoutParams;-><init>(I I)V
+  invoke-virtual       v4, v13, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  const                v13, 2130837513
+  invoke-virtual       v4, v13, Landroid/view/View;->setBackgroundResource(I)V
+  invoke-virtual       v4, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+  move-result-object   v13
+  check-cast           v13, Landroid/graphics/drawable/GradientDrawable;
+  if-eqz               v7, +006h
+  const                v14, -10027162
+  goto                 +4h
+  const                v14, -12303292
+  invoke-virtual       v13, v14, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+  invoke-virtual       v11, v4, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  new-instance         v4, Landroid/widget/TextView;
+  invoke-direct        v4, v0, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+  new-instance         v13, Landroid/widget/LinearLayout$LayoutParams;
+  const/4              v14, -2
+  const/high16         v15, 1065353216
+  invoke-direct        v13, v3, v14, v15, Landroid/widget/LinearLayout$LayoutParams;-><init>(I I F)V
+  invoke-virtual       v0, v12, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v12
+  invoke-virtual       v13, v12, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+  invoke-virtual       v4, v13, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  invoke-virtual       v4, v6, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  const/4              v6, -1
+  if-eqz               v7, +004h
+  move                 v7, v6
+  goto                 +4h
+  const                v7, -1427971358
+  invoke-virtual       v4, v7, Landroid/widget/TextView;->setTextColor(I)V
+  const/high16         v7, 1096810496
+  invoke-virtual       v4, v7, Landroid/widget/TextView;->setTextSize(F)V
+  invoke-virtual       v11, v4, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  new-instance         v4, Landroid/widget/TextView;
+  invoke-direct        v4, v0, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+  invoke-static        v4, v8, v9, Lcom/happproxy/ui/ServerActivity;->onLayout(Landroid/widget/TextView; J)V
+  invoke-virtual       v11, v4, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  new-instance         v4, Lcom/happproxy/internal/apply;
+  invoke-direct        v4, v0, v5, Lcom/happproxy/internal/apply;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v11, v4, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  iget-object          v4, v0, Lcom/happproxy/ui/ServerActivity;->reset Landroid/widget/LinearLayout;
+  invoke-virtual       v4, v11, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  invoke-virtual       v2, Lorg/json/JSONArray;->length()I
+  move-result          v4
+  sub-int/2addr        v4, v10
+  if-ge                v5, v4, +027h
+  new-instance         v4, Landroid/view/View;
+  invoke-direct        v4, v0, Landroid/view/View;-><init>(Landroid/content/Context;)V
+  new-instance         v7, Landroid/widget/LinearLayout$LayoutParams;
+  invoke-virtual       v0, v10, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v8
+  invoke-direct        v7, v6, v8, Landroid/widget/LinearLayout$LayoutParams;-><init>(I I)V
+  const/16             v6, 32
+  invoke-virtual       v0, v6, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v6
+  invoke-virtual       v7, v6, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+  invoke-virtual       v4, v7, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  const                v6, 234881023
+  invoke-virtual       v4, v6, Landroid/view/View;->setBackgroundColor(I)V
+  iget-object          v6, v0, Lcom/happproxy/ui/ServerActivity;->reset Landroid/widget/LinearLayout;
+  invoke-virtual       v6, v4, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  add-int/lit8         v5, v5, 1
+  const                v4, -10027162
+  goto/16              -0fdh
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  sget                 v0, Landroid/os/Build$VERSION;->SDK_INT I
+  const/16             v1, 33
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  if-lt                v0, v1, +030h
+  const-wide           v0, -1545229459430
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v5, v0, Landroid/content/Context;->checkSelfPermission(Ljava/lang/String;)I
+  move-result          v0
+  if-eqz               v0, +021h
+  const-wide           v0, -1708438216678
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  const-wide           v3, -1794337562598
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v2, Lcom/happproxy/internal/indexOf;
+  const/4              v3, 0
+  invoke-direct        v2, v5, v3, Lcom/happproxy/internal/indexOf;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  const                v3, 2130837544
+  invoke-virtual       v5, v3, v2, v0, v1, Lcom/happproxy/ui/ServerActivity;->onResult(I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  return-void          
+  invoke-static        v5, Landroid/provider/Settings;->canDrawOverlays(Landroid/content/Context;)Z
+  move-result          v0
+  if-nez               v0, +021h
+  const-wide           v0, -1944661417958
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  const-wide           v3, -2021970829286
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v2, Lcom/happproxy/internal/indexOf;
+  const/4              v3, 1
+  invoke-direct        v2, v5, v3, Lcom/happproxy/internal/indexOf;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  const                v3, 2130837541
+  invoke-virtual       v5, v3, v2, v0, v1, Lcom/happproxy/ui/ServerActivity;->onResult(I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  return-void          
+  const-wide           v0, -2185179586534
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v5, v0, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object   v0
+  check-cast           v0, Landroid/os/PowerManager;
+  if-eqz               v0, +02ah
+  invoke-virtual       v5, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Landroid/os/PowerManager;->isIgnoringBatteryOptimizations(Ljava/lang/String;)Z
+  move-result          v0
+  if-nez               v0, +020h
+  const-wide           v0, -2210949390310
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  const-wide           v3, -2301143703526
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v2, Lcom/happproxy/internal/indexOf;
+  const/4              v3, 2
+  invoke-direct        v2, v5, v3, Lcom/happproxy/internal/indexOf;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  const                v3, 2130837537
+  invoke-virtual       v5, v3, v2, v0, v1, Lcom/happproxy/ui/ServerActivity;->onResult(I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  return-void          
+
+// Method: None (I I Landroid/content/Intent;)V
+  // bytecode:
+  invoke-super         v5, v6, v7, v8, Landroid/app/Activity;->onActivityResult(I I Landroid/content/Intent;)V
+  const/4              v8, 3
+  if-eq                v6, v8, +0cbh
+  const/4              v0, 4
+  if-ne                v6, v0, +004h
+  goto/16              +0c6h
+  const/4              v0, 1
+  if-eq                v6, v0, +003h
+  return-void          
+  const/4              v6, -1
+  const/4              v1, 0
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  if-eq                v7, v6, +013h
+  const-wide           v6, -3022698209254
+  invoke-static        v6, v7, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v6
+  invoke-static        v5, v6, v1, Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;
+  move-result-object   v6
+  invoke-virtual       v6, Landroid/widget/Toast;->show()V
+  return-void          
+  new-instance         v6, Landroid/content/Intent;
+  const-class          v7, Lcom/happproxy/service/XRayVpnService;
+  invoke-direct        v6, v5, v7, Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V
+  const-wide           v3, -3117187489766
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v7
+  invoke-virtual       v6, v7, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+  move-result-object   v6
+  invoke-static        v5, v6, Lcom/happproxy/internal/setState;->onAttach(Lcom/happproxy/ui/ServerActivity; Landroid/content/Intent;)V
+  iput-boolean         v0, v5, Lcom/happproxy/ui/ServerActivity;->clear Z
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->send Lcom/happproxy/internal/onPause;
+  if-eqz               v6, +007h
+  iget-object          v7, v5, Lcom/happproxy/ui/ServerActivity;->merge Landroid/os/Handler;
+  invoke-virtual       v7, v6, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onLayout Landroid/view/View;
+  invoke-virtual       v6, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+  move-result-object   v6
+  check-cast           v6, Landroid/graphics/drawable/GradientDrawable;
+  const                v7, 2130771979
+  invoke-virtual       v5, v7, Landroid/content/Context;->getColor(I)I
+  move-result          v3
+  invoke-virtual       v6, v3, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onDraw Landroid/widget/TextView;
+  const-wide           v3, -3203086835686
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  invoke-virtual       v6, v3, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onDraw Landroid/widget/TextView;
+  invoke-virtual       v5, v7, Landroid/content/Context;->getColor(I)I
+  move-result          v7
+  invoke-virtual       v6, v7, Landroid/widget/TextView;->setTextColor(I)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onUpdate Landroid/widget/ImageView;
+  const                v7, 2130837548
+  invoke-virtual       v6, v7, Landroid/widget/ImageView;->setImageResource(I)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  const                v7, 2130837505
+  invoke-virtual       v6, v7, Landroid/view/View;->setBackgroundResource(I)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  const-wide           v3, -3241741541350
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v7
+  new-array            v3, v8, [F
+  fill-array-data      v3, +0000046h
+  invoke-static        v6, v7, v3, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object; Ljava/lang/String; [F)Landroid/animation/ObjectAnimator;
+  move-result-object   v6
+  iget-object          v7, v5, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  const-wide           v3, -3271806312422
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  new-array            v8, v8, [F
+  fill-array-data      v8, +000003ch
+  invoke-static        v7, v2, v8, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object; Ljava/lang/String; [F)Landroid/animation/ObjectAnimator;
+  move-result-object   v7
+  new-instance         v8, Landroid/animation/AnimatorSet;
+  invoke-direct        v8, Landroid/animation/AnimatorSet;-><init>()V
+  const/4              v2, 2
+  new-array            v2, v2, [Landroid/animation/Animator;
+  aput-object          v6, v2, v1
+  aput-object          v7, v2, v0
+  invoke-virtual       v8, v2, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
+  const-wide/16        v6, 900
+  invoke-virtual       v8, v6, v7, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
+  invoke-virtual       v8, Landroid/animation/AnimatorSet;->start()V
+  new-instance         v6, Lcom/happproxy/internal/onPause;
+  invoke-direct        v6, v5, v1, v0, Lcom/happproxy/internal/onPause;-><init>(Ljava/lang/Object; I I)V
+  iput-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->send Lcom/happproxy/internal/onPause;
+  iget-object          v7, v5, Lcom/happproxy/ui/ServerActivity;->merge Landroid/os/Handler;
+  const-wide/16        v0, 300
+  invoke-virtual       v7, v6, v0, v1, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable; J)Z
+  return-void          
+  invoke-virtual       v5, Lcom/happproxy/ui/ServerActivity;->dispatchDraw()V
+  return-void          
+  nop                  
+  fill-array-data-payload b'\x00\x00\x80?\x14\xae\x87?\x00\x00\x80?' | \x00\x00\x80\x3f\x14\xae\x87\x3f\x00\x00\x80\x3f
+  fill-array-data-payload b'\x00\x00\x80?\x14\xae\x87?\x00\x00\x80?' | \x00\x00\x80\x3f\x14\xae\x87\x3f\x00\x00\x80\x3f
+
+// Method: None (Ljava/lang/String;)V
+  // bytecode:
+  iput-object          v14, v13, Lcom/happproxy/ui/ServerActivity;->apply Ljava/lang/String;
+  iget-object          v0, v13, Lcom/happproxy/ui/ServerActivity;->indexOf Landroid/widget/TextView;
+  const-wide           v1, -531617177574
+  sget-object          v3, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v1, v2, v3, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v0, v13, Lcom/happproxy/ui/ServerActivity;->remove Landroid/widget/TextView;
+  const-wide           v1, -578861817830
+  invoke-static        v1, v2, v3, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  new-instance         v10, Lcom/happproxy/internal/retry;
+  invoke-direct        v10, v13, Lcom/happproxy/internal/retry;-><init>(Lcom/happproxy/ui/ServerActivity;)V
+  new-instance         v0, Lorg/json/JSONArray;
+  invoke-direct        v0, v14, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v0, Lorg/json/JSONArray;->length()I
+  move-result          v9
+  new-array            v7, v9, [J
+  const/4              v14, 0
+  filled-new-array     v14, [I
+  move-result-object   v8
+  new-array            v5, v9, [Ljava/lang/String;
+  move                 v1, v14
+  if-ge                v1, v9, +01ch
+  const-wide/16        v11, -1
+  aput-wide            v11, v7, v1
+  invoke-virtual       v0, v1, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+  move-result-object   v2
+  const-wide           v11, -4495871991782
+  invoke-static        v11, v12, v3, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v4
+  invoke-virtual       v2, v4, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  aput-object          v2, v5, v1
+  add-int/lit8         v1, v1, 1
+  goto                 -1bh
+  move                 v6, v14
+  if-ge                v6, v9, +012h
+  new-instance         v14, Ljava/lang/Thread;
+  new-instance         v4, Lcom/happproxy/internal/onTick;
+  invoke-direct/range  v4 ... v10, Lcom/happproxy/internal/onTick;-><init>([Ljava/lang/String; I [J [I I Lcom/happproxy/internal/retry;)V
+  invoke-direct        v14, v4, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+  invoke-virtual       v14, Ljava/lang/Thread;->start()V
+  add-int/lit8         v6, v6, 1
+  goto                 -11h
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-virtual       v0, Lcom/happproxy/ui/ServerActivity;->onEvent()V
+  return-void          
+
+// Method: None (Landroid/content/pm/PackageManager; Ljava/lang/String; I I)V
+  // bytecode:
+  invoke-virtual       v2, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v0
+  const/4              v1, 0
+  invoke-virtual       v0, v4, v1, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+  move-result-object   v4
+  goto                 +2h
+  const/4              v4, 0
+  invoke-virtual       v2, v5, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v5
+  check-cast           v5, Landroid/widget/ImageView;
+  invoke-virtual       v2, v6, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v6
+  check-cast           v6, Landroid/widget/TextView;
+  if-eqz               v4, +011h
+  iget-object          v0, v4, Landroid/content/pm/PackageInfo;->applicationInfo Landroid/content/pm/ApplicationInfo;
+  invoke-virtual       v3, v0, Landroid/content/pm/PackageManager;->getApplicationIcon(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  move-result-object   v3
+  invoke-virtual       v5, v3, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  iget-object          v3, v4, Landroid/content/pm/PackageInfo;->versionName Ljava/lang/String;
+  invoke-virtual       v6, v3, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  return-void          
+  const-wide           v3, -1235991814118
+  sget-object          v5, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v3, v4, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  invoke-virtual       v6, v3, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  return-void          
+
+// Method: None (Landroid/os/Bundle;)V
+  // bytecode:
+  invoke-super         v8, v9, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+  invoke-static        Lcom/happproxy/NativeProvider;->load()V
+  invoke-static        Lcom/happproxy/NativeProvider;->nIsAuth()Z
+  move-result          v9
+  if-nez               v9, +010h
+  new-instance         v9, Landroid/content/Intent;
+  const-class          v0, Lcom/happproxy/feature/main/MainActivity;
+  invoke-direct        v9, v8, v0, Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V
+  invoke-virtual       v8, v9, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+  invoke-virtual       v8, Landroid/app/Activity;->finish()V
+  return-void          
+  new-instance         v9, Landroid/content/IntentFilter;
+  const-wide           v0, -46285873126
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-direct        v9, v0, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+  iget-object          v0, v8, Lcom/happproxy/ui/ServerActivity;->onMeasure Lcom/happproxy/internal/notify;
+  invoke-static        v8, v0, v9, Lcom/happproxy/internal/setState;->onDetach(Lcom/happproxy/ui/ServerActivity; Lcom/happproxy/internal/notify; Landroid/content/IntentFilter;)V
+  const/high16         v9, 2130968576
+  invoke-virtual       v8, v9, Landroid/app/Activity;->setContentView(I)V
+  const                v9, 2130903085
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onLayout Landroid/view/View;
+  const                v9, 2130903086
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onDraw Landroid/widget/TextView;
+  const                v9, 2130903082
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onAttach Landroid/widget/TextView;
+  const                v9, 2130903084
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onDetach Landroid/widget/TextView;
+  const                v9, 2130903083
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onBind Landroid/widget/TextView;
+  const                v9, 2130903071
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/ImageView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onUpdate Landroid/widget/ImageView;
+  const/high16         v9, 2130903040
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/FrameLayout;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  const                v9, 2130903076
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Lcom/happproxy/ui/BackgroundView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->getState Lcom/happproxy/ui/BackgroundView;
+  const                v9, 2130903067
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onEvent Landroid/widget/TextView;
+  const                v9, 2130903070
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onResult Landroid/widget/TextView;
+  const                v9, 2130903062
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/ImageView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onTick Landroid/widget/ImageView;
+  const                v9, 2130903072
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/ImageView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->onPause Landroid/widget/ImageView;
+  const                v9, 2130903061
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->getValue Landroid/view/View;
+  const                v9, 2130903064
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setValue Landroid/view/View;
+  const                v9, 2130903063
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->hasNext Landroid/view/View;
+  new-instance         v9, Landroid/os/Handler;
+  invoke-static        Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+  move-result-object   v0
+  invoke-direct        v9, v0, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->merge Landroid/os/Handler;
+  const-wide           v0, -132185219046
+  invoke-static        v0, v1, Lcom/happproxy/internal/onLayout;->onMeasure(J)V
+  invoke-virtual       v8, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v9
+  const-wide           v0, -651876261862
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  const/4              v1, 0
+  const/4              v3, 0
+  invoke-virtual       v8, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v4
+  invoke-virtual       v4, v0, v3, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+  move-result-object   v0
+  goto                 +2h
+  move-object          v0, v1
+  const/4              v4, 1
+  if-eqz               v0, +004h
+  move                 v0, v4
+  goto                 +2h
+  move                 v0, v3
+  const-wide           v5, -733480640486
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  invoke-virtual       v8, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v6
+  invoke-virtual       v6, v5, v3, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+  move-result-object   v1
+  if-eqz               v1, +004h
+  move                 v1, v4
+  goto                 +2h
+  move                 v1, v3
+  const-wide           v5, -819379986406
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  const                v6, 2130903068
+  const                v7, 2130903069
+  invoke-virtual       v8, v9, v5, v6, v7, Lcom/happproxy/ui/ServerActivity;->onBind(Landroid/content/pm/PackageManager; Ljava/lang/String; I I)V
+  const-wide           v5, -900984365030
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v5
+  const                v6, 2130903065
+  const                v7, 2130903066
+  invoke-virtual       v8, v9, v5, v6, v7, Lcom/happproxy/ui/ServerActivity;->onBind(Landroid/content/pm/PackageManager; Ljava/lang/String; I I)V
+  if-eqz               v0, +00fh
+  const-wide           v5, -986883710950
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v9
+  invoke-virtual       v8, v9, Lcom/happproxy/ui/ServerActivity;->onDetach(Ljava/lang/String;)V
+  goto                 +1ch
+  if-eqz               v1, +00fh
+  const-wide           v5, -1068488089574
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v9
+  invoke-virtual       v8, v9, Lcom/happproxy/ui/ServerActivity;->onDetach(Ljava/lang/String;)V
+  goto                 +dh
+  const-wide           v5, -1154387435494
+  invoke-static        v5, v6, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v9
+  invoke-virtual       v8, v9, Lcom/happproxy/ui/ServerActivity;->onDetach(Ljava/lang/String;)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setValue Landroid/view/View;
+  const                v5, 1051931443
+  const/high16         v6, 1065353216
+  if-eqz               v0, +004h
+  move                 v7, v6
+  goto                 +2h
+  move                 v7, v5
+  invoke-virtual       v9, v7, Landroid/view/View;->setAlpha(F)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setValue Landroid/view/View;
+  invoke-virtual       v9, v0, Landroid/view/View;->setClickable(Z)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->hasNext Landroid/view/View;
+  if-eqz               v1, +004h
+  move                 v7, v6
+  goto                 +2h
+  move                 v7, v5
+  invoke-virtual       v9, v7, Landroid/view/View;->setAlpha(F)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->hasNext Landroid/view/View;
+  invoke-virtual       v9, v1, Landroid/view/View;->setClickable(Z)V
+  if-nez               v0, +006h
+  if-eqz               v1, +003h
+  goto                 +2h
+  move                 v4, v3
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  if-eqz               v4, +003h
+  move                 v5, v6
+  invoke-virtual       v9, v5, Landroid/view/View;->setAlpha(F)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  invoke-virtual       v9, v4, Landroid/view/View;->setClickable(Z)V
+  const                v9, 2130903046
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  new-instance         v4, Lcom/happproxy/internal/isEmpty;
+  const/4              v5, 5
+  invoke-direct        v4, v8, v5, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v4, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  if-eqz               v0, +00dh
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setValue Landroid/view/View;
+  new-instance         v0, Lcom/happproxy/internal/isEmpty;
+  const/4              v4, 0
+  invoke-direct        v0, v8, v4, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  if-eqz               v1, +00dh
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->hasNext Landroid/view/View;
+  new-instance         v0, Lcom/happproxy/internal/isEmpty;
+  const/4              v1, 1
+  invoke-direct        v0, v8, v1, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  const                v9, 2130903077
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->isEmpty Landroid/view/View;
+  const                v9, 2130903080
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->indexOf Landroid/widget/TextView;
+  const                v9, 2130903081
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/TextView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->remove Landroid/widget/TextView;
+  const                v9, 2130903079
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/ImageView;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->notify Landroid/widget/ImageView;
+  const                v9, 2130903078
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  check-cast           v9, Landroid/widget/LinearLayout;
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->reset Landroid/widget/LinearLayout;
+  const                v9, 2130903052
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  new-instance         v0, Lcom/happproxy/internal/isEmpty;
+  const/4              v1, 2
+  invoke-direct        v0, v8, v1, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  invoke-static        Lcom/happproxy/NativeProvider;->nGetServers()Ljava/lang/String;
+  move-result-object   v9
+  if-eqz               v9, +015h
+  const-wide           v0, -518732275686
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v9, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result          v0
+  if-nez               v0, +006h
+  invoke-virtual       v8, v9, Lcom/happproxy/ui/ServerActivity;->onAttach(Ljava/lang/String;)V
+  goto                 +fh
+  new-instance         v9, Ljava/lang/Thread;
+  new-instance         v0, Lcom/happproxy/internal/indexOf;
+  const/4              v1, 5
+  invoke-direct        v0, v8, v1, Lcom/happproxy/internal/indexOf;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-direct        v9, v0, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+  invoke-virtual       v9, Ljava/lang/Thread;->start()V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  new-instance         v0, Lcom/happproxy/internal/isEmpty;
+  const/4              v1, 3
+  invoke-direct        v0, v8, v1, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  invoke-virtual       v8, Lcom/happproxy/ui/ServerActivity;->dispatchDraw()V
+  sget                 v9, Landroid/os/Build$VERSION;->SDK_INT I
+  const/16             v0, 33
+  if-lt                v9, v0, +00eh
+  invoke-static        v8, Lcom/happproxy/internal/getState;->onMeasure(Lcom/happproxy/ui/ServerActivity;)Landroid/window/OnBackInvokedDispatcher;
+  move-result-object   v9
+  new-instance         v0, Lcom/happproxy/internal/reset;
+  invoke-direct        v0, v8, Lcom/happproxy/internal/reset;-><init>(Lcom/happproxy/ui/ServerActivity;)V
+  invoke-static        v9, v0, Lcom/happproxy/internal/getState;->onLayout(Landroid/window/OnBackInvokedDispatcher; Lcom/happproxy/internal/reset;)V
+  const                v9, 2130903049
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  new-instance         v0, Lcom/happproxy/internal/isEmpty;
+  const/4              v1, 4
+  invoke-direct        v0, v8, v1, Lcom/happproxy/internal/isEmpty;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  const                v9, 2130903044
+  invoke-virtual       v8, v9, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+  move-result-object   v9
+  iput-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->dispatchDraw Landroid/view/View;
+  invoke-static        v8, Lcom/happproxy/internal/onDraw;->onMeasure(Landroid/content/Context;)Ljava/io/File;
+  move-result-object   v9
+  invoke-virtual       v9, Ljava/io/File;->listFiles()[Ljava/io/File;
+  move-result-object   v9
+  iget-object          v0, v8, Lcom/happproxy/ui/ServerActivity;->dispatchDraw Landroid/view/View;
+  if-eqz               v9, +006h
+  array-length         v9, v9
+  if-lez               v9, +003h
+  goto                 +3h
+  const/16             v3, 8
+  invoke-virtual       v0, v3, Landroid/view/View;->setVisibility(I)V
+  iget-object          v9, v8, Lcom/happproxy/ui/ServerActivity;->dispatchDraw Landroid/view/View;
+  new-instance         v0, Lcom/happproxy/internal/getValue;
+  const/4              v1, 0
+  invoke-direct        v0, v1, v8, Lcom/happproxy/internal/getValue;-><init>(I Ljava/lang/Object;)V
+  invoke-virtual       v9, v0, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  iget-object          v0, v4, Lcom/happproxy/ui/ServerActivity;->onMeasure Lcom/happproxy/internal/notify;
+  invoke-virtual       v4, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+  invoke-super         v4, Landroid/app/Activity;->onDestroy()V
+  invoke-virtual       v4, Lcom/happproxy/ui/ServerActivity;->onTick()V
+  sget-object          v0, Lcom/happproxy/service/XRayProxyOnlyService;->poll [Ljava/lang/String;
+  new-instance         v0, Landroid/content/Intent;
+  const-class          v1, Lcom/happproxy/service/XRayProxyOnlyService;
+  invoke-direct        v0, v4, v1, Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V
+  invoke-virtual       v4, v0, Landroid/content/Context;->stopService(Landroid/content/Intent;)Z
+  sget-object          v0, Lcom/happproxy/service/XRayVpnService;->onMeasure Ljava/util/concurrent/atomic/AtomicBoolean;
+  invoke-virtual       v0, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+  move-result          v0
+  if-eqz               v0, +01bh
+  new-instance         v0, Landroid/content/Intent;
+  const-class          v1, Lcom/happproxy/service/XRayVpnService;
+  invoke-direct        v0, v4, v1, Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V
+  const-wide           v1, -3499439579110
+  sget-object          v3, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v1, v2, v3, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v0, v1, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+  move-result-object   v0
+  invoke-virtual       v4, v0, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+  return-void          
+
+// Method: None (Ljava/lang/String;)V
+  // bytecode:
+  invoke-virtual       v8, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v0
+  const/4              v1, 0
+  invoke-virtual       v8, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object   v2
+  invoke-virtual       v2, v9, v1, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+  move-result-object   v2
+  goto                 +2h
+  const/4              v2, 0
+  const-wide           v3, -1296121356262
+  sget-object          v5, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v3, v4, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  invoke-virtual       v9, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result          v9
+  iget-object          v3, v8, Lcom/happproxy/ui/ServerActivity;->onEvent Landroid/widget/TextView;
+  if-eqz               v9, +00ch
+  const-wide           v6, -1382020702182
+  invoke-static        v6, v7, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v4
+  goto                 +7h
+  const-wide           v6, -1442150244326
+  goto                 -ah
+  invoke-virtual       v3, v4, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  if-eqz               v2, +015h
+  iget-object          v3, v8, Lcom/happproxy/ui/ServerActivity;->onResult Landroid/widget/TextView;
+  iget-object          v4, v2, Landroid/content/pm/PackageInfo;->versionName Ljava/lang/String;
+  invoke-virtual       v3, v4, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v3, v8, Lcom/happproxy/ui/ServerActivity;->onTick Landroid/widget/ImageView;
+  iget-object          v2, v2, Landroid/content/pm/PackageInfo;->applicationInfo Landroid/content/pm/ApplicationInfo;
+  invoke-virtual       v0, v2, Landroid/content/pm/PackageManager;->getApplicationIcon(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  move-result-object   v0
+  invoke-virtual       v3, v0, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  goto                 +fh
+  iget-object          v0, v8, Lcom/happproxy/ui/ServerActivity;->onResult Landroid/widget/TextView;
+  const-wide           v2, -1485099917286
+  invoke-static        v2, v3, v5, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v0, v2, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v0, v8, Lcom/happproxy/ui/ServerActivity;->setValue Landroid/view/View;
+  const                v2, 2130837517
+  if-eqz               v9, +004h
+  move                 v3, v1
+  goto                 +2h
+  move                 v3, v2
+  invoke-virtual       v0, v3, Landroid/view/View;->setBackgroundResource(I)V
+  iget-object          v0, v8, Lcom/happproxy/ui/ServerActivity;->hasNext Landroid/view/View;
+  if-eqz               v9, +003h
+  move                 v1, v2
+  invoke-virtual       v0, v1, Landroid/view/View;->setBackgroundResource(I)V
+  return-void          
+
+// Method: None (I)I
+  // bytecode:
+  int-to-float         v2, v2
+  invoke-virtual       v1, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+  move-result-object   v0
+  invoke-virtual       v0, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+  move-result-object   v0
+  iget                 v0, v0, Landroid/util/DisplayMetrics;->density F
+  mul-float/2addr      v2, v0
+  float-to-int         v2, v2
+  return               v2
+
+// Method: None ()V
+  // bytecode:
+  invoke-virtual       v7, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+  move-result-object   v0
+  const                v1, 2130968578
+  const/4              v2, 0
+  invoke-virtual       v0, v1, v2, Landroid/view/LayoutInflater;->inflate(I Landroid/view/ViewGroup;)Landroid/view/View;
+  move-result-object   v0
+  const                v1, 2130903056
+  invoke-virtual       v0, v1, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v1
+  check-cast           v1, Landroid/widget/ImageView;
+  const                v2, 2130837536
+  invoke-virtual       v1, v2, Landroid/widget/ImageView;->setImageResource(I)V
+  const                v1, 2130903058
+  invoke-virtual       v0, v1, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v1
+  check-cast           v1, Landroid/widget/TextView;
+  const-wide           v2, -2447172591590
+  sget-object          v4, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  invoke-static        v2, v3, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  const                v1, 2130903057
+  invoke-virtual       v0, v1, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v1
+  check-cast           v1, Landroid/widget/TextView;
+  const-wide           v2, -2490122264550
+  invoke-static        v2, v3, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  new-instance         v1, Landroid/app/AlertDialog$Builder;
+  const                v2, 16974126
+  invoke-direct        v1, v7, v2, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context; I)V
+  invoke-virtual       v1, v0, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
+  move-result-object   v1
+  const/4              v2, 1
+  invoke-virtual       v1, v2, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+  move-result-object   v1
+  invoke-virtual       v1, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+  move-result-object   v1
+  invoke-virtual       v1, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v2
+  const/16             v3, 17
+  if-eqz               v2, +013h
+  invoke-virtual       v1, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v2
+  const                v5, 17170445
+  invoke-virtual       v2, v5, Landroid/view/Window;->setBackgroundDrawableResource(I)V
+  invoke-virtual       v1, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v2
+  invoke-virtual       v2, v3, Landroid/view/Window;->setGravity(I)V
+  const                v2, 2130903055
+  invoke-virtual       v0, v2, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v2
+  new-instance         v5, Lcom/happproxy/internal/onEvent;
+  const/4              v6, 2
+  invoke-direct        v5, v7, v1, v6, Lcom/happproxy/internal/onEvent;-><init>(Landroid/app/Activity; Ljava/lang/Object; I)V
+  invoke-virtual       v2, v5, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  new-instance         v2, Landroid/widget/TextView;
+  invoke-direct        v2, v7, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+  const-wide           v5, -2773590106086
+  invoke-static        v5, v6, v4, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v4
+  invoke-virtual       v2, v4, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  invoke-virtual       v7, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+  move-result-object   v4
+  const                v5, 2130771972
+  invoke-virtual       v4, v5, Landroid/content/res/Resources;->getColor(I)I
+  move-result          v4
+  invoke-virtual       v2, v4, Landroid/widget/TextView;->setTextColor(I)V
+  const/high16         v4, 1096810496
+  invoke-virtual       v2, v4, Landroid/widget/TextView;->setTextSize(F)V
+  invoke-virtual       v2, v3, Landroid/widget/TextView;->setGravity(I)V
+  new-instance         v3, Landroid/widget/LinearLayout$LayoutParams;
+  const/16             v4, 40
+  invoke-virtual       v7, v4, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v4
+  const/4              v5, -1
+  invoke-direct        v3, v5, v4, Landroid/widget/LinearLayout$LayoutParams;-><init>(I I)V
+  const/16             v4, 10
+  invoke-virtual       v7, v4, Lcom/happproxy/ui/ServerActivity;->onDraw(I)I
+  move-result          v4
+  iput                 v4, v3, Landroid/widget/LinearLayout$LayoutParams;->topMargin I
+  invoke-virtual       v2, v3, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new-instance         v3, Lcom/happproxy/internal/remove;
+  const/4              v4, 0
+  invoke-direct        v3, v4, v1, Lcom/happproxy/internal/remove;-><init>(I Ljava/lang/Object;)V
+  invoke-virtual       v2, v3, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  check-cast           v0, Landroid/widget/LinearLayout;
+  invoke-virtual       v0, v2, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+  invoke-virtual       v1, Landroid/app/Dialog;->show()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-super         v2, Landroid/app/Activity;->onPause()V
+  invoke-virtual       v2, Lcom/happproxy/ui/ServerActivity;->onTick()V
+  iget-object          v0, v2, Lcom/happproxy/ui/ServerActivity;->getState Lcom/happproxy/ui/BackgroundView;
+  const/4              v1, 0
+  iput-boolean         v1, v0, Lcom/happproxy/ui/BackgroundView;->onBind Z
+  return-void          
+
+// Method: None (I [Ljava/lang/String; [I)V
+  // bytecode:
+  invoke-super         v0, v1, v2, v3, Landroid/app/Activity;->onRequestPermissionsResult(I [Ljava/lang/String; [I)V
+  const/4              v2, 2
+  if-ne                v1, v2, +005h
+  invoke-virtual       v0, Lcom/happproxy/ui/ServerActivity;->dispatchDraw()V
+  return-void          
+
+// Method: None (I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  // bytecode:
+  invoke-virtual       v3, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+  move-result-object   v0
+  const                v1, 2130968578
+  const/4              v2, 0
+  invoke-virtual       v0, v1, v2, Landroid/view/LayoutInflater;->inflate(I Landroid/view/ViewGroup;)Landroid/view/View;
+  move-result-object   v0
+  const                v1, 2130903056
+  invoke-virtual       v0, v1, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v1
+  check-cast           v1, Landroid/widget/ImageView;
+  invoke-virtual       v1, v4, Landroid/widget/ImageView;->setImageResource(I)V
+  const                v4, 2130903058
+  invoke-virtual       v0, v4, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v4
+  check-cast           v4, Landroid/widget/TextView;
+  invoke-virtual       v4, v6, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  const                v4, 2130903057
+  invoke-virtual       v0, v4, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v4
+  check-cast           v4, Landroid/widget/TextView;
+  invoke-virtual       v4, v7, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  new-instance         v4, Landroid/app/AlertDialog$Builder;
+  const                v6, 16974126
+  invoke-direct        v4, v3, v6, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context; I)V
+  invoke-virtual       v4, v0, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
+  move-result-object   v4
+  const/4              v6, 0
+  invoke-virtual       v4, v6, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+  move-result-object   v4
+  invoke-virtual       v4, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+  move-result-object   v4
+  invoke-virtual       v4, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v6
+  if-eqz               v6, +015h
+  invoke-virtual       v4, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v6
+  const                v7, 17170445
+  invoke-virtual       v6, v7, Landroid/view/Window;->setBackgroundDrawableResource(I)V
+  invoke-virtual       v4, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v6
+  const/16             v7, 17
+  invoke-virtual       v6, v7, Landroid/view/Window;->setGravity(I)V
+  const                v6, 2130903055
+  invoke-virtual       v0, v6, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v6
+  new-instance         v7, Lcom/happproxy/internal/onEvent;
+  invoke-direct        v7, v4, v5, Lcom/happproxy/internal/onEvent;-><init>(Landroid/app/AlertDialog; Ljava/lang/Runnable;)V
+  invoke-virtual       v6, v7, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  invoke-virtual       v4, Landroid/app/Dialog;->show()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-super         v3, Landroid/app/Activity;->onResume()V
+  sget-object          v0, Lcom/happproxy/service/XRayVpnService;->onMeasure Ljava/util/concurrent/atomic/AtomicBoolean;
+  invoke-virtual       v0, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+  move-result          v0
+  invoke-virtual       v3, v0, Lcom/happproxy/ui/ServerActivity;->setState(Z)V
+  const/4              v1, 0
+  if-eqz               v0, +02ch
+  invoke-virtual       v3, Lcom/happproxy/ui/ServerActivity;->onTick()V
+  new-instance         v0, Lcom/happproxy/internal/indexOf;
+  const/4              v2, 4
+  invoke-direct        v0, v3, v2, Lcom/happproxy/internal/indexOf;-><init>(Lcom/happproxy/ui/ServerActivity; I)V
+  iput-object          v0, v3, Lcom/happproxy/ui/ServerActivity;->commit Lcom/happproxy/internal/indexOf;
+  iget-object          v2, v3, Lcom/happproxy/ui/ServerActivity;->merge Landroid/os/Handler;
+  invoke-virtual       v2, v0, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  iget-object          v0, v3, Lcom/happproxy/ui/ServerActivity;->getState Lcom/happproxy/ui/BackgroundView;
+  iget-boolean         v2, v0, Lcom/happproxy/ui/BackgroundView;->onBind Z
+  if-eqz               v2, +003h
+  return-void          
+  const/4              v2, 1
+  iput-boolean         v2, v0, Lcom/happproxy/ui/BackgroundView;->onBind Z
+  const/16             v2, 14
+  if-ge                v1, v2, +008h
+  invoke-virtual       v0, v1, Lcom/happproxy/ui/BackgroundView;->onMeasure(I)V
+  add-int/lit8         v1, v1, 1
+  goto                 -9h
+  iget-object          v1, v0, Lcom/happproxy/ui/BackgroundView;->onUpdate Lcom/happproxy/internal/onMeasure;
+  invoke-virtual       v0, v1, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
+  return-void          
+  invoke-virtual       v3, Lcom/happproxy/ui/ServerActivity;->onTick()V
+  iget-object          v0, v3, Lcom/happproxy/ui/ServerActivity;->getState Lcom/happproxy/ui/BackgroundView;
+  iput-boolean         v1, v0, Lcom/happproxy/ui/BackgroundView;->onBind Z
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  iget-object          v0, v2, Lcom/happproxy/ui/ServerActivity;->commit Lcom/happproxy/internal/indexOf;
+  if-eqz               v0, +00ah
+  iget-object          v1, v2, Lcom/happproxy/ui/ServerActivity;->merge Landroid/os/Handler;
+  invoke-virtual       v1, v0, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+  const/4              v0, 0
+  iput-object          v0, v2, Lcom/happproxy/ui/ServerActivity;->commit Lcom/happproxy/internal/indexOf;
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  invoke-virtual       v5, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+  move-result-object   v0
+  const                v1, 2130968579
+  const/4              v2, 0
+  invoke-virtual       v0, v1, v2, Landroid/view/LayoutInflater;->inflate(I Landroid/view/ViewGroup;)Landroid/view/View;
+  move-result-object   v0
+  new-instance         v1, Landroid/app/AlertDialog$Builder;
+  const                v2, 16974121
+  invoke-direct        v1, v5, v2, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context; I)V
+  invoke-virtual       v1, v0, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
+  move-result-object   v1
+  invoke-virtual       v1, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+  move-result-object   v1
+  invoke-virtual       v1, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v2
+  if-eqz               v2, +00ch
+  invoke-virtual       v1, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+  move-result-object   v2
+  const                v3, 17170445
+  invoke-virtual       v2, v3, Landroid/view/Window;->setBackgroundDrawableResource(I)V
+  const                v2, 2130903042
+  invoke-virtual       v0, v2, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v2
+  new-instance         v3, Lcom/happproxy/internal/getValue;
+  const/4              v4, 1
+  invoke-direct        v3, v4, v1, Lcom/happproxy/internal/getValue;-><init>(I Ljava/lang/Object;)V
+  invoke-virtual       v2, v3, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  const                v2, 2130903050
+  invoke-virtual       v0, v2, Landroid/view/View;->findViewById(I)Landroid/view/View;
+  move-result-object   v0
+  new-instance         v2, Lcom/happproxy/internal/hasNext;
+  invoke-direct        v2, v5, v1, Lcom/happproxy/internal/hasNext;-><init>(Lcom/happproxy/ui/ServerActivity; Landroid/app/AlertDialog;)V
+  invoke-virtual       v0, v2, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+  invoke-virtual       v1, Landroid/app/Dialog;->show()V
+  return-void          
+
+// Method: None (Z)V
+  // bytecode:
+  iget-object          v0, v5, Lcom/happproxy/ui/ServerActivity;->onLayout Landroid/view/View;
+  invoke-virtual       v0, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+  move-result-object   v0
+  check-cast           v0, Landroid/graphics/drawable/GradientDrawable;
+  const                v1, 2130771979
+  if-eqz               v6, +004h
+  move                 v2, v1
+  goto                 +3h
+  const/high16         v2, 2130771968
+  invoke-virtual       v5, v2, Landroid/content/Context;->getColor(I)I
+  move-result          v2
+  invoke-virtual       v0, v2, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+  iget-object          v0, v5, Lcom/happproxy/ui/ServerActivity;->onDraw Landroid/widget/TextView;
+  sget-object          v2, Lcom/happproxy/internal/onLayout;->onMeasure [Ljava/lang/String;
+  if-eqz               v6, +00ch
+  const-wide           v3, -2803654877158
+  invoke-static        v3, v4, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v3
+  goto                 +7h
+  const-wide           v3, -2838014615526
+  goto                 -ah
+  invoke-virtual       v0, v3, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v0, v5, Lcom/happproxy/ui/ServerActivity;->onDraw Landroid/widget/TextView;
+  if-eqz               v6, +003h
+  goto                 +4h
+  const                v1, 2130771972
+  invoke-virtual       v5, v1, Landroid/content/Context;->getColor(I)I
+  move-result          v1
+  invoke-virtual       v0, v1, Landroid/widget/TextView;->setTextColor(I)V
+  iget-object          v0, v5, Lcom/happproxy/ui/ServerActivity;->onUpdate Landroid/widget/ImageView;
+  if-eqz               v6, +006h
+  const                v1, 2130837548
+  goto                 +4h
+  const                v1, 2130837545
+  invoke-virtual       v0, v1, Landroid/widget/ImageView;->setImageResource(I)V
+  iget-object          v0, v5, Lcom/happproxy/ui/ServerActivity;->setState Landroid/widget/FrameLayout;
+  if-eqz               v6, +006h
+  const                v1, 2130837505
+  goto                 +3h
+  const/high16         v1, 2130837504
+  invoke-virtual       v0, v1, Landroid/view/View;->setBackgroundResource(I)V
+  if-nez               v6, +02ch
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onAttach Landroid/widget/TextView;
+  const-wide           v0, -2872374353894
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v6, v0, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onDetach Landroid/widget/TextView;
+  const-wide           v0, -2889554223078
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v6, v0, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  iget-object          v6, v5, Lcom/happproxy/ui/ServerActivity;->onBind Landroid/widget/TextView;
+  const-wide           v0, -2915324026854
+  invoke-static        v0, v1, v2, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getString(J [Ljava/lang/String;)Ljava/lang/String;
+  move-result-object   v0
+  invoke-virtual       v6, v0, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+  return-void          

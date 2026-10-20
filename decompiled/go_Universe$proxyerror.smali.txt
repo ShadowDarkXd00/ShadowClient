@@ -1,0 +1,26 @@
+// Class: Lgo/Universe$proxyerror;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I)V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Exception;-><init>()V
+  iput                 v1, v0, Lgo/Universe$proxyerror;->refnum I
+  invoke-static        v1, v0, Lgo/Seq;->trackGoRef(I Lgo/Seq$GoObject;)V
+  return-void          
+
+// Method: None ()Ljava/lang/String;
+  // native / abstract / no code
+
+// Method: None ()Ljava/lang/String;
+  // bytecode:
+  invoke-virtual       v1, Lgo/Universe$proxyerror;->error()Ljava/lang/String;
+  move-result-object   v0
+  return-object        v0
+
+// Method: None ()I
+  // bytecode:
+  iget                 v0, v1, Lgo/Universe$proxyerror;->refnum I
+  invoke-static        v0, v1, Lgo/Seq;->incGoRef(I Lgo/Seq$GoObject;)V
+  iget                 v0, v1, Lgo/Universe$proxyerror;->refnum I
+  return               v0

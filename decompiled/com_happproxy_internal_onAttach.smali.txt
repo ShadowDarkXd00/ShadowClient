@@ -1,0 +1,57 @@
+// Class: Lcom/happproxy/internal/onAttach;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (I Ljava/lang/Runnable; Ljava/lang/String; Ljava/lang/String;)V
+  // bytecode:
+  iput                 v1, v0, Lcom/happproxy/internal/onAttach;->onMeasure I
+  iput-object          v3, v0, Lcom/happproxy/internal/onAttach;->onLayout Ljava/lang/String;
+  iput-object          v4, v0, Lcom/happproxy/internal/onAttach;->dispatchDraw Ljava/lang/String;
+  iput-object          v2, v0, Lcom/happproxy/internal/onAttach;->onDraw Ljava/lang/Runnable;
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None ()V
+  // bytecode:
+  const-string         v0, "ۘ۫ۛۦ۫ۚۧ۬ۘ۬۬ۥۙۤۦۘۧ۠ۜۘۛۦۘۜۨۗۨۜۧۘۨۚۖۦۥۜۘۛۙۖۘ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v1
+  const/16             v2, 201
+  xor-int/2addr        v1, v2
+  xor-int/lit16        v1, v1, 134
+  const/16             v2, 842
+  const                v3, -326272378
+  xor-int/2addr        v1, v2
+  xor-int/2addr        v1, v3
+  sparse-switch        v1, +0000038h
+  goto                 -13h
+  const-string         v0, "ۨۘ۫۬ۗۡۦۤۗۙۘۡۥۢۡۘۗۤۤۧۖۨۡۙۥۚۦۗۦۨ"
+  goto                 -16h
+  iget                 v0, v4, Lcom/happproxy/internal/onAttach;->onMeasure I
+  packed-switch        v0, +0000049h
+  const-string         v0, "ۢ۠ۨ۬ۘۨۙ۠ۘۘۢۨۦۖۖۘۛۨۗۛۤۦۘ۠۫ۦۧۖۗۚۛۙ"
+  goto                 -1eh
+  iget-object          v0, v4, Lcom/happproxy/internal/onAttach;->onDraw Ljava/lang/Runnable;
+  check-cast           v0, Lcom/happproxy/internal/onDetach;
+  iget-object          v0, v0, Lcom/happproxy/internal/onDetach;->dispatchDraw Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v1, v4, Lcom/happproxy/internal/onAttach;->onLayout Ljava/lang/String;
+  iget-object          v2, v4, Lcom/happproxy/internal/onAttach;->dispatchDraw Ljava/lang/String;
+  invoke-static        v0, v1, v2, Lcom/happproxy/feature/main/MainActivity;->onMeasure(Lcom/happproxy/feature/main/MainActivity; Ljava/lang/String; Ljava/lang/String;)V
+  const-string         v0, "ۥۤۘۜۜۖۤۦۖۗ۬ۜۘۛ۟ۖۘۗۗۜۨۧ۫ۥۘۤۙ۬ۨۘ۬ۗ۬ۨۡۥ۟ۢۦۧۖۦۘۥۜۘۥ۫ۨۚ۟ۥۘ"
+  goto                 -30h
+  iget-object          v0, v4, Lcom/happproxy/internal/onAttach;->onDraw Ljava/lang/Runnable;
+  check-cast           v0, Lcom/happproxy/internal/onDetach;
+  iget-object          v0, v0, Lcom/happproxy/internal/onDetach;->dispatchDraw Ljava/lang/Object;
+  check-cast           v0, Lcom/happproxy/feature/main/MainActivity;
+  iget-object          v1, v4, Lcom/happproxy/internal/onAttach;->onLayout Ljava/lang/String;
+  iget-object          v2, v4, Lcom/happproxy/internal/onAttach;->dispatchDraw Ljava/lang/String;
+  invoke-static        v0, v1, v2, Lcom/happproxy/feature/main/MainActivity;->onMeasure(Lcom/happproxy/feature/main/MainActivity; Ljava/lang/String; Ljava/lang/String;)V
+  const-string         v0, "ۛۧۖۘۥۢۘۘۤ۠ۙۥ۫۠۫ۘۢ۬ۚ۬ۢۡۖۘۖۙۨۛۖۢۘۖۡ"
+  goto                 -42h
+  const-string         v0, "ۤ۫ۚۜۗۛۧۧۡۘ۬ۨۜۡۡۜۘ۫ۚۤۨۛۦۥۦۦۘۨۗۗۢۛۚۗۨۘۧۤۖۘ۠ۤۥۘۘۛ"
+  goto                 -45h
+  return-void          
+  nop                  
+  sparse-switch-payload -5a8a9d14 -39df49c7 -1fd7484c 5b3b93f fc4f7e8 1f2a891d
+  packed-switch-payload 0

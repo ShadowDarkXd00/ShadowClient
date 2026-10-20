@@ -1,0 +1,323 @@
+// Class: Lcom/happproxy/internal/onDraw;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None (Lcom/happproxy/feature/main/MainActivity;)V
+  // bytecode:
+  invoke-direct        v1, Ljava/lang/Object;-><init>()V
+  invoke-virtual       v2, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+  move-result-object   v0
+  iput-object          v0, v1, Lcom/happproxy/internal/onDraw;->onLayout Landroid/content/Context;
+  invoke-static        Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
+  move-result-object   v0
+  iput-object          v0, v1, Lcom/happproxy/internal/onDraw;->onMeasure Ljava/lang/Thread$UncaughtExceptionHandler;
+  return-void          
+
+// Method: None (Landroid/content/Context;)Ljava/io/File;
+  // bytecode:
+  const/4              v2, 0
+  const-string         v0, "۠ۤۘۘۛۖۡۖۙۖۧۨۡۘۖۛۖۘۚ۟ۘۘ۫ۗۢۨۜۗۗۤۥۤۤۡۨۖۗۛ۠"
+  move-object          v1, v2
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v3
+  const/16             v4, 45
+  xor-int/2addr        v3, v4
+  xor-int/lit8         v3, v3, 7
+  const/16             v4, 923
+  const                v5, 777558105
+  xor-int/2addr        v3, v4
+  xor-int/2addr        v3, v5
+  sparse-switch        v3, +0000056h
+  goto                 -13h
+  const-string         v0, "۬ۙ۬ۤۢۘۘ۟ۥۦۙۡۧۘۙۛۢۦۨۢۜۘۡۘ۫۟۠ۖۦۦۘ۫ۚ۠ۥ۟ۖ۠ۤۨۘۜۙۙۤۘۘۛۡ۠ۘۘ"
+  goto                 -16h
+  new-instance         v1, Ljava/io/File;
+  invoke-virtual       v6, v2, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+  move-result-object   v0
+  const-string         v3, "crash_logs"
+  invoke-direct        v1, v0, v3, Ljava/io/File;-><init>(Ljava/io/File; Ljava/lang/String;)V
+  const-string         v0, "ۨۨۥۘۘۨۡۘۘۧۨۘ۫ۥۖۘۗ۬ۛۦۤۤۗۖۥۘۡ۟ۘ۬ۢۘۚۖۙ۟۫ۘۘۨۖ۠۫ۘۜۚۙۤ"
+  goto                 -24h
+  const                v3, 1767275894
+  const-string         v0, "ۙ۟ۛۡۖۘۥۙۙۘۙ۬۬ۨۘۦۡۖۘ۟ۦۤۗۡ۠ۖۢۛ۬ۤۨۘۖ۠ۦۘ۠ۦۚۖ۬ۙۛۘۘۧۚۚۖۘۡۘ۟ۗ۟ۚ۟ۘۘ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v3
+  sparse-switch        v4, +000004dh
+  goto                 -8h
+  const                v4, 1854035430
+  const-string         v0, "ۗۘۥ۬ۙۖۘۖۨۨۘ۬ۤۙۗۤۘۘۖۘۦۘۨۧۜۘۜۚۘۨۦۤۢۧۥ۫ۙ۠ۗۘۘۚۚۘۤۙۥ"
+  invoke-virtual       v0, Ljava/lang/String;->hashCode()I
+  move-result          v5
+  xor-int/2addr        v5, v4
+  sparse-switch        v5, +0000051h
+  goto                 -8h
+  const-string         v0, "ۢۛ۬۟ۗۤۘۖ۟ۦۢۛۚۨۖۘۙۨۖۘۨۗۜۘۦ۠۠ۦۜ۬ۜۙۛۧۜۜۜۚۗ"
+  goto                 -19h
+  const-string         v0, "ۛۤۚۜۖۙۘۨۘۘۦۘ۠ۗۜۜۦۧۜۚۡ۠۟۫ۙ۟ۚۖۘۖ۠ۜ۟ۛۧ۫ۦۘۘ"
+  goto                 -eh
+  invoke-virtual       v1, Ljava/io/File;->exists()Z
+  move-result          v0
+  if-nez               v0, -007h
+  const-string         v0, "ۥۖۘۘۥ۬ۦۜ۫ۡۘۜۧۥۙۧۙ۠ۘ۫ۜۖۧۘۘۚۡۢۛۡۘ۬ۛۡۥۗۨۘۙۘۖۘ"
+  goto                 -17h
+  const-string         v0, "ۦۦۦۜۡ۟ۚ۟ۧۧ۫ۥۦۡۚۡۥۡۜۧۥۢۙ۟ۥۥۦۖۙ"
+  goto                 -1ah
+  const-string         v0, "۫۬ۦۡۚۧۚۨ۠ۗۗۚۙۧ۫ۤۗۥ۫ۙۨۘۜۧۜۗۤۜۘۘۡۦۘۙۨۜۘۡۙۗۗۗۡۛۜۦ۫۬ۛۙۗۦۡۙ۬۟ۤۘۘ"
+  goto                 -2bh
+  const-string         v0, "ۛۦۚۙۜۨۘ۬ۧۧۗۙۚۤۨۥ۫ۖۚ۬ۖ۟ۙۡۗۤۜۦۘۥ۬۬ۤۜۗۤۜ۬ۘۧۧۦ۟ۖ۬ۦۜۢۢۦۤۧ۟ۘۗ"
+  goto                 -2eh
+  const-string         v0, "ۖۖۘۧۧۗ۟ۡۤۜۙۙۡۛۖۘۚۛ۬ۦۥۨۘ۟ۗ۬۟ۦ۬ۗ۫ۥۘۚۦۦ۫ۚ۠۬ۗۘۘ۟ۗۨۘ"
+  goto                 -5bh
+  invoke-virtual       v1, Ljava/io/File;->mkdirs()Z
+  const-string         v0, "ۖۥ۫ۢۗۡۘۘۥۛۙۛۘۙۦۡۘۨۢۥۢۧۡۙۘۦ۠ۖۥۘۚۙ۬ۗۢۥۦۧۗۦۛۘۘ۫ۖۡ"
+  goto                 -61h
+  const-string         v0, "ۖۥ۫ۢۗۡۘۘۥۛۙۛۘۙۦۡۘۨۢۥۢۧۡۙۘۦ۠ۖۥۘۚۙ۬ۗۢۥۦۧۗۦۛۘۘ۫ۖۡ"
+  goto                 -64h
+  return-object        v1
+  sparse-switch-payload -3b5beb24 -134fb511 12362b 215a6a8b 69c5d766
+  sparse-switch-payload 94bb452 2198cfd5 6908ac8b 69df538e
+  sparse-switch-payload -697a2d61 -1d662f27 -1d0b23f4 5f699e0f
+
+// Method: None (Ljava/lang/Thread; Ljava/lang/Throwable;)V
+  // bytecode:
+  const/4              v3, 0
+  new-instance         v1, Ljava/text/SimpleDateFormat;
+  const-string         v2, "yyyyMMdd_HHmmss"
+  sget-object          v4, Ljava/util/Locale;->US Ljava/util/Locale;
+  invoke-direct        v1, v2, v4, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String; Ljava/util/Locale;)V
+  new-instance         v2, Ljava/util/Date;
+  invoke-direct        v2, Ljava/util/Date;-><init>()V
+  invoke-virtual       v1, v2, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+  move-result-object   v1
+  new-instance         v5, Ljava/io/File;
+  iget-object          v2, v12, Lcom/happproxy/internal/onDraw;->onLayout Landroid/content/Context;
+  invoke-static        v2, Lcom/happproxy/internal/onDraw;->onMeasure(Landroid/content/Context;)Ljava/io/File;
+  move-result-object   v2
+  new-instance         v4, Ljava/lang/StringBuilder;
+  const-string         v6, "crash_"
+  invoke-direct        v4, v6, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v1, ".txt"
+  invoke-virtual       v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-direct        v5, v2, v1, Ljava/io/File;-><init>(Ljava/io/File; Ljava/lang/String;)V
+  new-instance         v6, Ljava/io/PrintWriter;
+  new-instance         v1, Ljava/io/FileWriter;
+  invoke-direct        v1, v5, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
+  invoke-direct        v6, v1, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
+  const-string         v1, "=== CRASH REPORT ==="
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "Time: "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  new-instance         v2, Ljava/util/Date;
+  invoke-direct        v2, Ljava/util/Date;-><init>()V
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "Thread: "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual       v13, Ljava/lang/Thread;->getName()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "Device: "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  sget-object          v2, Landroid/os/Build;->MANUFACTURER Ljava/lang/String;
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v2, " "
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget-object          v2, Landroid/os/Build;->MODEL Ljava/lang/String;
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "Android: "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  sget-object          v2, Landroid/os/Build$VERSION;->RELEASE Ljava/lang/String;
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v2, " (SDK "
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  sget                 v2, Landroid/os/Build$VERSION;->SDK_INT I
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string         v2, ")"
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  const-string         v2, "ABI: "
+  invoke-direct        v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  sget-object          v2, Landroid/os/Build;->SUPPORTED_ABIS [Ljava/lang/String;
+  const/4              v4, 0
+  aget-object          v2, v2, v4
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  invoke-virtual       v6, Ljava/io/PrintWriter;->println()V
+  const-string         v1, "=== EXCEPTION ==="
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  invoke-virtual       v14, v6, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
+  invoke-virtual       v6, Ljava/io/PrintWriter;->println()V
+  const-string         v1, "=== ALL THREADS ==="
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  invoke-static        Ljava/lang/Thread;->getAllStackTraces()Ljava/util/Map;
+  move-result-object   v1
+  invoke-interface     v1, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object   v1
+  invoke-interface     v1, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object   v7
+  const                v2, 2105701025
+  const-string         v1, "ۖۙۤۥۨۥۤۧۘۢۖ۟۫ۨۨۘۧۖ۟ۙۢۥۙۧۡۖۢۨۗۜۨ۠ۡۘ۟ۥۢۨ۬۫ۨ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v2
+  sparse-switch        v4, +0000105h
+  goto                 -8h
+  invoke-virtual       v6, Ljava/io/PrintWriter;->flush()V
+  invoke-virtual       v6, Ljava/io/PrintWriter;->close()V
+  new-instance         v1, Ljava/lang/StringBuilder;
+  invoke-direct        v1, Ljava/lang/StringBuilder;-><init>()V
+  const-string         v2, "crash log saved: "
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v5, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+  move-result-object   v2
+  invoke-virtual       v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v2, "ErrorReporter"
+  invoke-virtual       v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-static        v2, v1, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  iget-object          v2, v12, Lcom/happproxy/internal/onDraw;->onMeasure Ljava/lang/Thread$UncaughtExceptionHandler;
+  const                v3, 1880372736
+  const-string         v1, "ۢۜۤۢ۬ۛۚۙۘۘۘۛۚۘۧۖ۠ۡۘۛ۟ۖ۠۫ۡۧۘۖۧ۟ۜۦۙۥ۫ۗ۫ۖۖۜۘۥ۫ۧۤۚۢۢۧۦۘ۟ۤۥۜۙۧ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v4
+  xor-int/2addr        v4, v3
+  sparse-switch        v4, +00000e7h
+  goto                 -8h
+  return-void          
+  const-string         v1, "۫۟ۖۥ۬ۖۡۗۥ۬۫۬ۢۤ۠ۚۤۗۖۜۚۡ۫۟ۤۦۗۨۦۡۘۧۖۧۦۘۛۛۢ۬ۧۧۨ"
+  goto                 -3ch
+  const                v4, 1585575334
+  const-string         v1, "ۦۜۢۦ۫ۦۧۢۡۘۨۙۘۘ۠ۡ۫ۘۤۙۨۚۖۦۘ۬۫ۡ۠ۖۦۛۦۨۘۖۗۘۘۧۘ۠ۘۨۡ۠۫ۘۘۨۖۨۖۛۛۨۖۚ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v8
+  xor-int/2addr        v8, v4
+  sparse-switch        v8, +00000e7h
+  goto                 -8h
+  invoke-interface     v7, Ljava/util/Iterator;->hasNext()Z
+  move-result          v1
+  if-eqz               v1, +005h
+  const-string         v1, "ۜۨۖۙۚ۫۬ۛۨۘۗۡۘۘۦ۫ۘۧۧۖۘۗۘۖۚۜ۟ۤۤۖۘۡ۫ۨۘ۟۟ۨۗۦۖۘ۟ۧۥۘۤۢۗۧۦۙۨۜ"
+  goto                 -11h
+  const-string         v1, "ۖۜۧۢ۟ۧ۠ۖۢۚۨۢۙ۟ۦۘۡۚۦۧۖۡۘۙ۫۠ۖۧۘۜۜۦۘۜۥۘۘۚ۟ۘۘ"
+  goto                 -14h
+  const-string         v1, "ۢۙۥۘۦ۬ۢۢ۬ۗۤ۬ۤۙۘۡۘۖۤ۬ۙۛۙ۫ۦۦۘۧ۟ۦۡۘۗۤ۟۫۟ۚۡۖۡۘ۬ۚۥۢ۫ۛۙۡ"
+  goto                 -17h
+  const-string         v1, "ۚۚ۠ۢۛۥۚۚۧۧ۠ۜ۫ۢۡۘۜۢ۬۫ۛ۠ۧۡۚ۫ۗۢ۫ۚۢۜۜۚۜۨۜ"
+  goto                 -5ch
+  const-string         v1, "ۛۦۧۡۢۖۘۖۛ۠۠ۧۖۚ۬ۤۤۥ۫ۚۦۦۙۥ۟ۚ۫۠ۢۖۘۘۨۛۨۧۢ۠ۜۜۦۘۨۛۖۘ۫۫۟"
+  goto                 -5fh
+  invoke-interface     v7, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object   v1
+  move-object          v0, v1
+  check-cast           v0, Ljava/util/Map$Entry;
+  move-object          v2, v0
+  new-instance         v4, Ljava/lang/StringBuilder;
+  invoke-direct        v4, Ljava/lang/StringBuilder;-><init>()V
+  const-string         v1, "--- "
+  invoke-virtual       v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-interface     v2, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object   v1
+  check-cast           v1, Ljava/lang/Thread;
+  invoke-virtual       v1, Ljava/lang/Thread;->getName()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string         v1, " ---"
+  invoke-virtual       v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v1
+  invoke-virtual       v6, v1, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  invoke-interface     v2, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object   v1
+  check-cast           v1, [Ljava/lang/StackTraceElement;
+  array-length         v8, v1
+  move                 v2, v3
+  const                v9, -708254790
+  const-string         v4, "ۤۥۘۗۤۘۘۦۗۨۘۡۥۚۗ۠ۦۦ۟ۙۤۨۥۘۛۙ۫ۦ۟ۤۨۦۜۦۡۡۡۗۤۚۛۘۡۚۡ۫ۢۨۘۗ۠ۗۘۘۦۢۙ"
+  invoke-virtual       v4, Ljava/lang/String;->hashCode()I
+  move-result          v10
+  xor-int/2addr        v10, v9
+  sparse-switch        v10, +00000a3h
+  goto                 -8h
+  const-string         v4, "ۚۧۥۘۡۢ۟ۦۢۤۜ۟ۘۘۚۙ۠ۚ۬ۖۘۚۤۖۤۢۥۘۥ۫ۘۘۗۘۙ۟ۤۧۜ۬ۥۘ"
+  goto                 -bh
+  const-string         v4, "۬ۜۦۘۢۚۡۨۥۘۨۙۢۢۛۦۘۜۧۙۗۥۛۚۨ۠ۡۛ۫ۛ۟ۢ۠۟ۜۘ۫ۚۚ"
+  goto                 -eh
+  const                v10, -1983097547
+  const-string         v4, "ۥۜۦۘۚۗۢۨۨۜۙ۠ۡۙ۬ۦۘۗۦۤۙۦ۟۫ۙ۫ۖۡ۫ۢ۫ۤۧۛۦ۫۠ۤۧۨۥۥۘۨ۠ۥۗۚۧ"
+  invoke-virtual       v4, Ljava/lang/String;->hashCode()I
+  move-result          v11
+  xor-int/2addr        v11, v10
+  sparse-switch        v11, +00000a1h
+  goto                 -8h
+  if-ge                v2, v8, +005h
+  const-string         v4, "۬ۥۚۢۚۡۡۖ۠ۜۥۦ۟ۦۛۚۢۨ۠ۡۙۦۧۥۘۥ۫ۦۘ۟ۛۘ۟۟ۙۚۛۢۘۚ۬ۗۚۡۜ۠ۖۘۛۨۜۘۜۢۘۥ۠۠"
+  goto                 -dh
+  const-string         v4, "ۛۛۨۛۨۖ۫۟ۜۘۘ۠ۖ۠ۙۧ۟ۛۚۗۧ۠ۘۧۜۛۛۦۘۨ۠ۖ۟ۤ۬ۦۨۜۛۜۡۘۢۧۡۗۨۤۥۗۜۘۙ۬ۡۚۢ۫"
+  goto                 -10h
+  const-string         v4, "ۖۙۨۘ۬ۢۘۘ۫ۤۦ۬ۥۥۘۗۗۢ۠ۨۚۖۜۘۧۢۙۡۥۨ۬ۥۘۡۡۖۗۜۢۛۢۘۘۨ۠ۚ"
+  goto                 -13h
+  const-string         v4, "ۡۚ۫ۛۘۥۘۜۘ۬ۘ۫ۛۛۢۤۘۘۡۦۛ۟ۤ۠ۡۘ۬ۧۨۡۜۘۛۖۦۖۧۦ۫ۦۨۡۜ۠"
+  goto                 -2ah
+  aget-object          v4, v1, v2
+  new-instance         v9, Ljava/lang/StringBuilder;
+  invoke-direct        v9, Ljava/lang/StringBuilder;-><init>()V
+  const-string         v10, "  at "
+  invoke-virtual       v9, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual       v9, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual       v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object   v4
+  invoke-virtual       v6, v4, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+  add-int/lit8         v2, v2, 1
+  goto                 -48h
+  const-string         v1, "ۖۚۨۗۨ۟۫ۤۦۛۖ۠ۜۛۨۘۦۢۥۘ۠ۢۡۘۜۛ۫ۖۖۗۡۚ۬ۜۛۧۥۥۘۘۧۢۘۘۨۛۥ۬ۘۤۙۦۜۖۛۜۗۧ"
+  goto/16              -0aeh
+  const                v4, 1768605527
+  const-string         v1, "ۢۡۢۙۚۚ۟ۜۦۜ۠ۥۘۨۡۢۨۦۤۚۛ۠ۡۨۧۙ۫ۥۘۚۜۡۘۧۥ۬ۤۥۘۢۜۘۘۚ۬۟ۡۖۧۘ۬ۧ۫۠ۥۨۘ۟ۡۘ"
+  invoke-virtual       v1, Ljava/lang/String;->hashCode()I
+  move-result          v5
+  xor-int/2addr        v5, v4
+  sparse-switch        v5, +000007ah
+  goto                 -8h
+  if-eqz               v2, +005h
+  const-string         v1, "ۡۨۦۘۡۘۖۘۥۗۚۡ۟ۤۘ۟ۡۘۜۥ۟ۙۨ۠ۡۦۛ۟ۖۤۛۡۖۤ۫۫ۗۢ۫ۗۦۘ۠ۡ۠"
+  goto                 -dh
+  const-string         v1, "۫ۗۡۘۗ۟ۨۘۖۥۙ۠ۢۖۘ۫ۛۨۘۢۤۜۜۢۜۦۛۧۚ۠ۚۤۗۖۘۜۨۛۙۘۨۘ"
+  goto                 -10h
+  const-string         v1, "ۗۛ۬ۧۥۜۧ۬ۛ۠ۥۨۘ۠ۘ۟۫ۘ۟۬۬ۚۤۗۖۘ۬ۙۡۥۦۡۘۛۙۘۘۘۜۚۜۦۧۘۤۦۘۘ۫۬ۥۘۢۡۤ۟ۡۚۚ۠ۘ"
+  goto                 -13h
+  const-string         v1, "۫ۧ۬۠۫ۘۘۦ۬ۘ۟ۘۧۘۙۢۤۜۙۖۤۥۜۧۗۘۗۦۨۖۛۨ۠ۛۘۨۛۖ"
+  goto/16              -0cbh
+  const-string         v1, "ۢۜۘۛۚۗۛۙۖۡۖۨۧۥۨۢۗ۫۬۟ۛۥۨۘۜ۟ۢ۬ۥۨۘ"
+  goto/16              -0cfh
+  invoke-interface     v2, v13, v14, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread; Ljava/lang/Throwable;)V
+  goto/16              -0cbh
+  move-exception       v1
+  goto/16              -0deh
+  nop                  
+  sparse-switch-payload -4aa4b3af -7023278 4344c792 5cbced22
+  sparse-switch-payload -560bf3e4 3d6eabb2 7789ecf9 7dcf599a
+  sparse-switch-payload -523426d3 -1b2c51a1 -8615908 2b371645
+  sparse-switch-payload -235e8022 -13823c2e -8cdb2be 7786266b
+  sparse-switch-payload -1ae553ce -196d1177 259bed20 3f714e18
+  sparse-switch-payload -5db9f43c -5376534b -3a6eb374 562ab30f

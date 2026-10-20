@@ -1,0 +1,68 @@
+// Class: Lorg/lsposed/lsparanoid/DeobfuscatorHelper;
+// SourceFile: apk dumper via androguard
+
+
+// Method: None ()V
+  // bytecode:
+  invoke-direct        v0, Ljava/lang/Object;-><init>()V
+  return-void          
+
+// Method: None (I [Ljava/lang/String; J)J
+  // bytecode:
+  invoke-static        v3, v4, Lorg/lsposed/lsparanoid/RandomHelper;->next(J)J
+  move-result-wide     v3
+  div-int/lit16        v0, v1, 8191
+  aget-object          v2, v2, v0
+  rem-int/lit16        v1, v1, 8191
+  invoke-virtual       v2, v1, Ljava/lang/String;->charAt(I)C
+  move-result          v1
+  int-to-long          v1, v1
+  const/16             v0, 32
+  shl-long/2addr       v1, v0
+  xor-long/2addr       v1, v3
+  return-wide          v1
+
+// Method: None (J [Ljava/lang/String;)Ljava/lang/String;
+  // bytecode:
+  const-wide           v0, 4294967295
+  and-long/2addr       v0, v11
+  invoke-static        v0, v1, Lorg/lsposed/lsparanoid/RandomHelper;->seed(J)J
+  move-result-wide     v0
+  invoke-static        v0, v1, Lorg/lsposed/lsparanoid/RandomHelper;->next(J)J
+  move-result-wide     v0
+  const/16             v2, 32
+  ushr-long            v3, v0, v2
+  const-wide/32        v5, 65535
+  and-long/2addr       v3, v5
+  invoke-static        v0, v1, Lorg/lsposed/lsparanoid/RandomHelper;->next(J)J
+  move-result-wide     v0
+  const/16             v7, 16
+  ushr-long            v7, v0, v7
+  const-wide/32        v9, -65536
+  and-long/2addr       v7, v9
+  ushr-long/2addr      v11, v2
+  xor-long/2addr       v11, v3
+  xor-long/2addr       v11, v7
+  long-to-int          v11, v11
+  invoke-static        v11, v13, v0, v1, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getCharAt(I [Ljava/lang/String; J)J
+  move-result-wide     v0
+  ushr-long            v3, v0, v2
+  and-long/2addr       v3, v5
+  long-to-int          v12, v3
+  new-array            v3, v12, [C
+  const/4              v4, 0
+  if-ge                v4, v12, +014h
+  add-int              v7, v11, v4
+  add-int/lit8         v7, v7, 1
+  invoke-static        v7, v13, v0, v1, Lorg/lsposed/lsparanoid/DeobfuscatorHelper;->getCharAt(I [Ljava/lang/String; J)J
+  move-result-wide     v0
+  ushr-long            v7, v0, v2
+  and-long/2addr       v7, v5
+  long-to-int          v7, v7
+  int-to-char          v7, v7
+  aput-char            v7, v3, v4
+  add-int/lit8         v4, v4, 1
+  goto                 -13h
+  new-instance         v11, Ljava/lang/String;
+  invoke-direct        v11, v3, Ljava/lang/String;-><init>([C)V
+  return-object        v11
